@@ -1,13 +1,19 @@
 <template>
-  <p>Drawing page</p>
+  <div>
+    <navbar />
+    <p> Drawing page</p>
+    <Footer />
+  </div>
 </template>
 
 <script>
+import Navbar from "./Navbar.vue";
+import Footer from "./Footer.vue"
 export default {
-name:'Drawing'
-}
+  components: { Navbar,Footer },
+  name: "Drawing",
+};
 </script>
 
 <style>
-
 </style>

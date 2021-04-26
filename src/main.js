@@ -13,7 +13,8 @@ Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 
 Vue.config.productionTip = false
-
+Vue.component("Navbar",require('./components/Navbar.vue'))
+Vue.component("Footer",require('./components/Footer.vue'))
 new Vue({
   router,
   render: h => h(App)
