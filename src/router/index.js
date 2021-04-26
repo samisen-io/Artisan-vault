@@ -1,14 +1,45 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Mainpage from '../components/Mainpage.vue'
+import Crafts from '../components/Crafts.vue'
+import Digital from '../components/Digital.vue'
+import Drawing from '../components/Drawing.vue'
+import Photography from '../components/Photography.vue'
+import Sculpture from '../components/Sculpture.vue'
+
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'Mainpage',
+    component: Mainpage
+  },
+  {
+    path: '/Crafts',
+    name: 'Crafts',
+    component: Crafts
+  },
+  {
+    path: '/Digital',
+    name: 'Digital',
+    component: Digital
+  },
+  {
+    path: '/Drawing',
+    name: 'Drawing',
+    component: Drawing
+  },
+  {
+    path: '/Photography',
+    name: 'Photography',
+    component: Photography
+  },
+  {
+    path: '/Sculpture',
+    name: 'Sculpture',
+    component: Sculpture
   },
   {
     path: '/about',
