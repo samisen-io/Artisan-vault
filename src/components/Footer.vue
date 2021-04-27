@@ -3,7 +3,13 @@
     <b-row align-v="center" class="justify-content-lg-between">
       <b-col lg="6">
         <div class="copyright text-center text-lg-left text-muted">
-          © {{year}} <a href="https://www.google.com" class="font-weight-bold ml-1" target="_blank">Aristan</a>
+          © {{ year }}
+          <a
+            href="https://www.google.com"
+            class="font-weight-bold ml-1"
+            target="_blank"
+            >Aristan</a
+          >
         </div>
       </b-col>
       <b-col lg="6">
@@ -12,7 +18,7 @@
             Creative Tim
           </b-nav-item> -->
           <b-nav-item href="https://www.google.com" target="_blank">
-           About Us
+            About Us
           </b-nav-item>
           <b-nav-item href="https://www.google.com" target="_blank">
             Blog
@@ -29,13 +35,11 @@
 export default {
   data() {
     return {
-      year: new Date().getFullYear()
+      year: new Date().getFullYear(),
     };
-  }
+  },
 };
 </script>
 <style>
-.footer{
-    background:whitesmoke;
-}
+
 </style>

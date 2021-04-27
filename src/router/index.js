@@ -6,7 +6,7 @@ import Digital from '../components/Digital.vue'
 import Drawing from '../components/Drawing.vue'
 import Photography from '../components/Photography.vue'
 import Sculpture from '../components/Sculpture.vue'
-
+import Login from '../components/Login.vue'
 
 Vue.use(VueRouter)
 
@@ -40,6 +40,11 @@ const routes = [
     path: '/Sculpture',
     name: 'Sculpture',
     component: Sculpture
+  },
+  {
+    path: '/Login',
+    name: 'Login',
+    component: Login
   },
   {
     path: '/about',

@@ -1,9 +1,7 @@
 <template>
   <div>
-    
-    <b-navbar toggleable="lg" type="waring" variant="light">
-        <!-- <img alt="Vue logo" src="../assets/artisan.png" class="rounded-0" width="150" height="50" /> -->
-      <h3 style="padding-right:25px">Artisan</h3>
+    <b-navbar toggleable="lg" type="light" variant="light">
+      <h3 style="padding-right: 25px">Artisan</h3>
       <b-navbar-brand href="/">All Arts</b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
@@ -15,7 +13,9 @@
           <b-nav-item href="/Sculpture">Sculpture</b-nav-item>
         </b-navbar-nav>
         <b-navbar-nav class="ml-auto">
-          <b-nav-item href="/Sculpture">Login</b-nav-item>
+          <b-button variant="outline-primary" href="/about">
+            <b-icon icon="person-fill"></b-icon> Login
+          </b-button>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -31,5 +31,11 @@ export default {
 <style>
 .nav-item {
   padding: 5px;
+}
+.carousel-item{
+    height: 350px;
+} 
+.carousel-item img{
+    height: 350px;
 }
 </style>
