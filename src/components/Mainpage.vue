@@ -15,7 +15,7 @@
         caption="First slide"
         img-src="https://picsum.photos/1024/480/?image=10"
       ></b-carousel-slide>
-      <b-carousel-slide 
+      <b-carousel-slide
         caption="Second Slide"
         img-src="https://picsum.photos/1024/480/?image=12"
       ></b-carousel-slide>
@@ -24,140 +24,108 @@
         img-src="https://picsum.photos/1024/480/?image=22"
       ></b-carousel-slide>
     </b-carousel>
-    <!-- card part -->
-    <!-- <b-card no-body class="overflow-hidden" style="max-width: 540px">
-      <b-row no-gutters>
-        <b-col md="6">
-          <img alt="Vue logo" src="../assets/logo.png" class="rounded-0" />
-        </b-col>
-        <b-col md="6">
-          <b-card-body title="Horizontal Card">
-            <b>Horizontal Card</b>
-            <b-card-text>
-              This is a wider card with supporting text as a natural lead-in to
-              additional content. This content is a little bit longer.
-            </b-card-text>
-            <button class="btn btn-danger" style="margin:5px;">venkat</button>
-            <button class="btn btn-danger" style="margin:5px;">venkat</button>
-          </b-card-body>
-        </b-col>
-      </b-row>
-    </b-card> -->
-
-   <!-- Featured Arts Section Begin -->
-   <br />
-   <br />
-  <section class="carousal-section">
-    <div class="container">
-      
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-title">
-            <h3>Featured <span>Artwork</span>     </h3> 
-          </div>        
+    <!-- Featured Arts Section Begin -->
+    <br />
+    <br />
+    <section class="carousal-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h3>Featured <span>Artwork</span></h3>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <br>
-    <center>  View All Featured Artwork </center>
-  </section>  
-  <!-- Featured Arts Section End -->
+      <br />
+      <center>View All Featured Artwork</center>
+    </section>
+    <!-- Featured Arts Section End -->
 
-
-  <!-- Latest Arts Section Begin -->
-   <br />
-   <br />
-  <section class="carousal-section">
-    <div class="container">
-      
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-title">
-            <h3>Latest <span>Artwork</span>     </h3> 
-          </div>        
+    <!-- Latest Arts Section Begin -->
+    <br />
+    <br />
+    <section class="carousal-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h3>Latest <span>Artwork</span></h3>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <br>
-    <center>  View All Latest Artwork </center>
-  </section>
-  <button v-on:click="say('hi how are you')">Say hi</button>  
-  <!-- Latest Arts Section End -->
- <Footer />
-  
+      <br />
+      <center>View All Latest Artwork</center>
+    </section>
+
+    <!-- Latest Arts Section End -->
+    <Footer />
   </div>
 </template>
 
 <script>
-
 import Navbar from "./Navbar.vue";
-import Footer from './Footer.vue'
+import Footer from "./Footer.vue";
 export default {
   components: { Navbar, Footer },
   name: "Mainpage",
-  methods: {
-    say: function (message) {
-      alert(message)
-    }
-  }
 };
 </script>
 
 <style>
- 
 .carousal-section {
-margin-bottom: 70px;
+  margin-bottom: 70px;
 }
-  
+
 .section-title {
-	position: relative;
-	padding-bottom: 16px;
-	margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 16px;
+  margin-bottom: 30px;
 }
 
 .section-title.sidebar-title:before {
-	height: 2px;
+  height: 2px;
 }
 
 .section-title.sidebar-title:after {
-	height: 2px;
+  height: 2px;
 }
 
 .section-title.sidebar-title h5 {
-	font-size: 20px;
-	color: #151618;
-	font-weight: 500;
+  font-size: 20px;
+  color: #151618;
+  font-weight: 500;
 }
 
 .section-title:before {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	height: 3px;
-	width: 70px;
-	background: #dd1515;
-	content: "";
-	z-index: 1;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 70px;
+  background: #dd1515;
+  content: "";
+  z-index: 1;
 }
 
 .section-title:after {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	height: 3px;
-	width: 100%;
-	background: #f2f2f2;
-	content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: #f2f2f2;
+  content: "";
 }
 
 .section-title h3 {
-	font-size: 28px;
-	color: #151618;
-	font-weight: 300;
+  font-size: 28px;
+  color: #151618;
+  font-weight: 300;
 }
 
 .section-title h3 span {
-	font-weight: 700;
+  font-weight: 700;
 }
-
 </style>
