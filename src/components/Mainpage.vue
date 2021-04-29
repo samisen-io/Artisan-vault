@@ -43,11 +43,13 @@
         </b-col>
       </b-row>
     </b-card> -->
+
    <!-- Featured Arts Section Begin -->
    <br />
    <br />
-  <section class="video-section">
+  <section class="carousal-section">
     <div class="container">
+      
       <div class="row">
         <div class="col-lg-12">
           <div class="section-title">
@@ -55,173 +57,107 @@
           </div>        
         </div>
       </div>
-      <div class="row">       
-        <div class="video-slider owl-carousel"> 
-
-          <div class="col-12 col-sm-8 col-md-6 col-lg-3">
-            <div class="card">
-              <center>
-                <h6> @Malkiel </h6>
-              </center>
-              <img class="card-img-top" id="myImg" src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg" alt="Bologna" onclick="myFunction(this.src,this.alt)">
-            <!-- The Modal -->
-  <div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <div id="caption">     
-    </div>
-  </div>
-              <center>
-                <h4 class="card-title">The Mansion</h4>
-              </center>
-              <div class="card-body text-center">
-                <img class="featuredart rounded-circle" src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg" alt="Bologna">
-
-                <footer>
-
-                  <button class="button button2">View Details</button>
-
-                </footer>
-              </div>
-            
-            </div>
-          </div>
-
-
-
-          <div class="col-12 col-sm-8 col-md-6 col-lg-3">
-            <div class="card">
-              <center>
-                <h6> @Malkiel </h6>
-              </center>
-              <img class="card-img-top" id="myImg" src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg" alt="Bologna" onclick="myFunction(this.src,this.alt)">
-              <!-- The Modal -->
-  <div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <div id="caption">     
-       
-    </div>
-  </div>
-              <center>
-                <h4 class="card-title">The Mansion</h4>
-              </center>
-              <div class="card-body text-center">
-                <img class="featuredart rounded-circle" src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg" alt="Bologna">
-
-                <footer>
-
-                  <button class="button button2">View Details</button>
-
-                </footer>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-8 col-md-6 col-lg-3">
-            <div class="card">
-              <center>
-                <h6> @Malkiel </h6>
-              </center>
-              <img class="card-img-top" id="myImg" src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg" alt="Bologna2" onclick="myFunction(this.src,this.alt)">
-              <!-- The Modal -->
-  <div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <div id="caption">      
-    </div>
-  </div>
-
-              <center>
-                <h4 class="card-title">The Mansion</h4>
-              </center>
-              <div class="card-body text-center">
-                <img class="featuredart rounded-circle" src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg" alt="Bologna3">
-
-                <footer>
-                  <button class="button button2">View Details</button>
-                </footer>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-8 col-md-6 col-lg-3">
-            <div class="card">
-              <center>
-                <h6> @Malkiel </h6>
-              </center>
-              <img class="card-img-top" id="myImg" src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg" alt="Bologna3" onclick="myFunction(this.src,this.alt)">
-            <!-- The Modal -->
-  <div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <div id="caption">      
-    </div>
-  </div>
-              <center>
-                <h4 class="card-title">The Mansion</h4>
-              </center>
-              <div class="card-body text-center">
-                <img class="featuredart rounded-circle" src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg" alt="Bologna">
-
-                <footer>
-
-                  <button class="button button2">View Details</button>
-
-                </footer>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-8 col-md-6 col-lg-3">
-            <div class="card">
-              <center>
-                <h6> @Malkiel </h6>
-              </center>
-           <img class="card-img-top"  id="myImg" src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg" alt="Bologna5" onclick="myFunction(this.src,this.alt)">
-                <!--<a href="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg" class="play-btn video-popup">
-                <img class="card-img-top"  src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg" alt="Bologna"></a>--> 
-             <!-- The Modal -->
-  <div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <div id="caption">      
-    </div>
-  </div>
-
-                <center>
-                <h4 class="card-title">The Mansion</h4>
-              </center>
-              <div class="card-body text-center">
-                <img class="featuredart rounded-circle" src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg" alt="Bologna">                
-                <footer>
-
-                  <button class="button button2">View Details</button>
-
-                </footer>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>    
     </div>
     <br>
     <center>  View All Featured Artwork </center>
-  </section>
+  </section>  
   <!-- Featured Arts Section End -->
+
+
+  <!-- Latest Arts Section Begin -->
+   <br />
+   <br />
+  <section class="carousal-section">
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-title">
+            <h3>Latest <span>Artwork</span>     </h3> 
+          </div>        
+        </div>
+      </div>
+    </div>
+    <br>
+    <center>  View All Latest Artwork </center>
+  </section>
+  <button v-on:click="say('hi how are you')">Say hi</button>  
+  <!-- Latest Arts Section End -->
+ <Footer />
+  
   </div>
 </template>
 
 <script>
 
 import Navbar from "./Navbar.vue";
+import Footer from './Footer.vue'
 export default {
-  components: { Navbar,  },
+  components: { Navbar, Footer },
   name: "Mainpage",
+  methods: {
+    say: function (message) {
+      alert(message)
+    }
+  }
 };
 </script>
 
 <style>
+ 
+.carousal-section {
+margin-bottom: 70px;
+}
+  
+.section-title {
+	position: relative;
+	padding-bottom: 16px;
+	margin-bottom: 30px;
+}
+
+.section-title.sidebar-title:before {
+	height: 2px;
+}
+
+.section-title.sidebar-title:after {
+	height: 2px;
+}
+
+.section-title.sidebar-title h5 {
+	font-size: 20px;
+	color: #151618;
+	font-weight: 500;
+}
+
+.section-title:before {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 70px;
+	background: #dd1515;
+	content: "";
+	z-index: 1;
+}
+
+.section-title:after {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 100%;
+	background: #f2f2f2;
+	content: "";
+}
+
+.section-title h3 {
+	font-size: 28px;
+	color: #151618;
+	font-weight: 300;
+}
+
+.section-title h3 span {
+	font-weight: 700;
+}
 
 </style>
