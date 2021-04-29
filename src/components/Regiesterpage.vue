@@ -17,33 +17,36 @@
           />
         </div>
         <div class="col-md-6">
-          <form>
+          <form @success="onSubmit" v-if="show">
             <div class="form-group">
               <label for="email">Email</label>
-              <input
+             <b-form-input
+                id="input-1"
+                v-model="form.email"
                 type="email"
-                name="email"
-                placeholder="Enter your email"
-                class="form-control"
-              />
+                placeholder="Enter  email"
+                required
+              ></b-form-input>
             </div>
             <div class="form-group">
               <label for="Password">Password</label>
-              <input
-                type="Password"
-                name="Password"
+             <b-form-input
+                id="input-2"
+                v-model="form.password"
+                type="password"
                 placeholder="Enter your Password"
-                class="form-control"
-              />
+                required
+              ></b-form-input>
             </div>
             <div class="form-group">
               <label for="Password">Confirm Password</label>
-              <input
-                type="Password"
-                name="Password"
+           <b-form-input
+                id="input-3"
+                v-model="form.confirmpassword"
+                type="password"
                 placeholder="Re-enter your Password"
-                class="form-control"
-              />
+                required
+              ></b-form-input>
             </div>
             <b-form-checkbox
               id="checkbox-1"
@@ -55,7 +58,7 @@
 
             </b-form-checkbox>
             <br />
-            <b-button block variant="success" href="/">Signup</b-button>
+            <b-button block type="success" variant="success">Signup</b-button>
             <br />
             <p>Already have an account? <a href="/Login">Sign in</a>.</p>
           </form>
@@ -68,6 +71,24 @@
 <script>
 export default {
   name: "Regiesterpage",
+  data(){
+    return{
+      form:{
+        email:"",
+        password:"",
+        confirmpassword:""
+      },
+      show:true,
+    };
+  },
+        methods: {
+    onsubmit(event) {
+      event.preventDefault();
+      alert(JSON.stringify(this.form));
+    },
+  
+    
+  }
 };
 </script>
 

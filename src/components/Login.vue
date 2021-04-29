@@ -1,5 +1,9 @@
 <template>
   <div>
+    <navbar />
+    <br>
+    <br />
+    <br />
     <center>
       <div class="header">
         <h1>WELCOME TO LOGIN PAGE</h1>
@@ -20,30 +24,33 @@
         </div>
         <div class="col-md-6">
           <h3 style="color: darkblue" class="signintext mb-3">Sign in</h3>
-          <form>
+          <form @submit="onSubmit" v-if="show">
             <div class="form-group">
               <label for="email">Email</label>
-              <input
+              <b-form-input
+                id="input-1"
+                v-model="form.email"
                 type="email"
-                name="email"
-                placeholder="Enter your email"
-                class="form-control"
-              />
+                placeholder="Enter email"
+                required
+              ></b-form-input>
             </div>
             <div class="form-group">
-              <label for="Password">Password</label>
-              <input
-                type="Password"
-                name="Password"
+              <label for="password">Password</label>
+              <b-form-input
+                id="input-2"
+                v-model="form.password"
+                type="password"
                 placeholder="Enter your Password"
-                class="form-control"
-              />
+                required
+              ></b-form-input>
             </div>
             <div class="a">
               <a style="right" href="/">Forgot Password?</a>
             </div>
             <br />
-            <b-button block variant="success" href="/">Sign in</b-button>
+            <!-- <b-button block variant="success" href="/">Sign in</b-button> -->
+            <b-button block type="submit" variant="primary">Sign in</b-button>
             <br />
             <center>
               <p>New user? <a href="/Regiesterpage">Create an account</a></p>
@@ -65,16 +72,41 @@
         </div>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
-export default {};
+import Footer from './Footer.vue';
+import Navbar from './Navbar.vue';
+
+export default {
+  components:{
+    Navbar,
+    Footer
+
+  },
+  data() {
+    return {
+      form: {
+        email: "",
+        password:"",
+      },
+      show: true,
+    };
+  },
+  methods: {
+    onsubmit(event) {
+      event.preventDefault();
+      alert(JSON.stringify(this.form));
+    },
+  },
+};
 </script>
 
 <style>
 .header {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   background: black;
   color: whitesmoke;
