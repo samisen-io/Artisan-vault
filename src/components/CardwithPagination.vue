@@ -1,16 +1,7 @@
 <template>
   <div>
-    <br />
-    <br />
-
-    <!--navbar-->
-    <Navbar />
-    <!-- carousel page -->
-    <Carousel />
-    <br />
-    <!-- card -->
     <b-container>
-      <!-- <b-row>
+       <b-row>
         <b-col md="12" class="my-1">
           <b-pagination
             @change="onPageChanged"
@@ -21,12 +12,12 @@
             align="right"
           />
         </b-col>
-      </b-row> -->
+      </b-row>
       <b-row>
-        <b-col col lg="4" v-for="user in craft" :key="user.id">
+        <b-col col lg="3" v-for="user in paginatedItems" :key="user.id">
           <b-card
             class="text-center"
-            img-src="..//assets//RG.png"
+            :img-src="user.Drwaingurl"
             img-alt="Image"
             img-top
             tag="article"
@@ -41,9 +32,11 @@
               ></b-avatar>
               <br />
               <br />
-              <b>
-                <h3>{{ user.Artistname }}</h3></b
-              >
+              <b-text>
+                <b>
+                  <h3>{{ user.Artistname }}</h3></b
+                >
+              </b-text>
               <hr />
               <!-- For email -->
               <b-card-text>
@@ -59,7 +52,7 @@
           </b-card>
         </b-col>
       </b-row>
-      <!-- <b-row>
+       <b-row>
         <b-col md="12" class="my-1">
           <b-pagination
             @change="onPageChanged"
@@ -70,30 +63,35 @@
             align="right"
           />
         </b-col>
-       </b-row> -->
+       </b-row>
     </b-container>
-    <!--footer -->
-    <Footer />
   </div>
 </template>
-
 <script>
-import Navbar from "./Navbar.vue";
-import Footer from "./Footer.vue";
-import Carousel from "./Carousel.vue";
-import craftdata from "./crafts.json";
+import usersData from "./users.json";
 
 export default {
-  name: "Crafts",
-  components: {
-    Navbar,
-    Footer,
-    Carousel,
-  },
   data() {
     return {
-      craft: craftdata,
+      paginatedItems: usersData,
+      currentPage: 1,
+      perPage: 4,
+      totalRows: usersData.length,
     };
+  },
+  methods: {
+    paginate(page_size, page_number) {
+      this.paginatedItems = usersData.slice(
+        page_number * page_size,
+        (page_number + 1) * page_size
+      );
+    },
+    onPageChanged(page) {
+      this.paginate(this.perPage, page - 1);
+    },
+  },
+  mounted() {
+    this.paginate(this.perPage, 0);
   },
 };
 </script>

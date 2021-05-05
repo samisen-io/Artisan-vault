@@ -1,7 +1,6 @@
 <template>
   <div>
     <navbar />
-    <br />
     <!-- carousel page -->
     <b-carousel
       id="carousel-fade"
@@ -24,407 +23,211 @@
         img-src="https://picsum.photos/1024/480/?image=22"
       ></b-carousel-slide>
     </b-carousel>
-    <!-- Featured Arts Section Begin -->
 
     <!-- Featured Arts Section Begin -->
-    <br />
     <br />
 
     <section class="carousal-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
+      <b-container>
+        <b-row>
+          <b-col class="my-1">
             <div class="section-title">
               <h3>Featured <span>Artwork</span></h3>
             </div>
             <h6 style="text-align: center">View All</h6>
             <br />
+          </b-col>
+        </b-row>
 
-            <div class="owl-carousel owl-theme">
-              <!-- IMAGE 1 -->
-              <div class="card">
-                <div class="item">
-                  <img
-                    class="card-img-top"
-                    id="myImg"
-                    src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
-                    alt="Bologna"
-                    onclick="myFunction(this.src,this.alt)"
-                  />
+        <div class="owl-carousel owl-theme">
+          <b-row v-for="user in featuredart" :key="user.id">
+            <b-col>
+              <b-card :img-src="user.Artimg" size="5rem" class="text-center">
+                <!-- For Creator photo and name -->
+                <div class="mb-1">
+                  <b-avatar
+                    :src="user.Creator"
+                    size="4rem"
+                    class="text-center"
+                    style="max-width: 25rem"
+                  ></b-avatar>
 
-                  <!-- The Modal -->
-                  <div id="myModal" class="modal">
-                    <span class="close">&times;</span>
-                    <img class="modal-content" id="img01" />
-                    <div id="caption"></div>
-                  </div>
+                  <b-text>
+                    <b>
+                      <h3>{{ user.Artistname }}</h3></b
+                    >
+                  </b-text>
 
-                  <div class="card-body">
-                    <img
-                      class="featuredart rounded-circle"
-                      src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg"
-                      alt="Bologna"
-                    />
-                  </div>
-
-                  <div class="container">
-                    <center>
-                      <h2>Jane Doe</h2>
-                      <p>jane@example.com</p>
-                    </center>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p><button class="button">Contact</button></p>
-                  </div>
+                  <hr style="padding: 0" />
+                  <!-- For email -->
+                  <b-card-text>
+                    <b>{{ user.email }}</b>
+                  </b-card-text>
+                  <!-- For image description -->
+                  <b-card-text>
+                    {{ user.Artdescription }}
+                  </b-card-text>
+                  <!-- button -->
+                  <b-button block href="/Artwork" variant="outline-primary"
+                    >View</b-button
+                  >
                 </div>
-              </div>
-              <!-- END IMAGE 1 -->
-
-              <div class="card">
-                <div class="item">
-                  <img
-                    class="card-img-top"
-                    id="myImg"
-                    src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
-                    alt="Bologna"
-                    onclick="myFunction(this.src,this.alt)"
-                  />
-
-                  <!-- The Modal -->
-                  <div id="myModal" class="modal">
-                    <span class="close">&times;</span>
-                    <img class="modal-content" id="img01" />
-                    <div id="caption"></div>
-                  </div>
-
-                  <div class="card-body">
-                    <img
-                      class="featuredart rounded-circle"
-                      src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg"
-                      alt="Bologna"
-                    />
-                  </div>
-
-                  <div class="container">
-                    <center>
-                      <h2>Jane Doe 2</h2>
-                      <p>jane@example.com</p>
-                    </center>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p><button class="button">Contact</button></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="item">
-                  <img
-                    class="card-img-top"
-                    id="myImg"
-                    src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
-                    alt="Bologna"
-                    onclick="myFunction(this.src,this.alt)"
-                  />
-
-                  <!-- The Modal -->
-                  <div id="myModal" class="modal">
-                    <span class="close">&times;</span>
-                    <img class="modal-content" id="img01" />
-                    <div id="caption"></div>
-                  </div>
-
-                  <div class="card-body">
-                    <img
-                      class="featuredart rounded-circle"
-                      src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg"
-                      alt="Bologna"
-                    />
-                  </div>
-
-                  <div class="container">
-                    <center>
-                      <h2>Mike Ross</h2>
-                      <p>jane@example.com</p>
-                    </center>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p><button class="button">Contact</button></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="item">
-                  <img
-                    class="card-img-top"
-                    id="myImg"
-                    src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
-                    alt="Bologna"
-                    onclick="myFunction(this.src,this.alt)"
-                  />
-
-                  <!-- The Modal -->
-                  <div id="myModal" class="modal">
-                    <span class="close">&times;</span>
-                    <img class="modal-content" id="img01" />
-                    <div id="caption"></div>
-                  </div>
-
-                  <div class="card-body">
-                    <img
-                      class="featuredart rounded-circle"
-                      src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg"
-                      alt="Bologna"
-                    />
-                  </div>
-
-                  <div class="container">
-                    <center>
-                      <h2>Mike Ross 2</h2>
-                      <p>jane@example.com</p>
-                    </center>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p><button class="button">Contact</button></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="item">
-                  <img
-                    class="card-img-top"
-                    id="myImg"
-                    src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
-                    alt="Bologna"
-                    onclick="myFunction(this.src,this.alt)"
-                  />
-
-                  <!-- The Modal -->
-                  <div id="myModal" class="modal">
-                    <span class="close">&times;</span>
-                    <img class="modal-content" id="img01" />
-                    <div id="caption"></div>
-                  </div>
-
-                  <div class="card-body">
-                    <img
-                      class="featuredart rounded-circle"
-                      src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg"
-                      alt="Bologna"
-                    />
-                  </div>
-
-                  <div class="container">
-                    <center>
-                      <h2>Mike Ross 3</h2>
-                      <p>jane@example.com</p>
-                    </center>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p><button class="button">Contact</button></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="item">
-                  <img
-                    class="card-img-top"
-                    id="myImg"
-                    src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
-                    alt="Bologna"
-                    onclick="myFunction(this.src,this.alt)"
-                  />
-
-                  <!-- The Modal -->
-                  <div id="myModal" class="modal">
-                    <span class="close">&times;</span>
-                    <img class="modal-content" id="img01" />
-                    <div id="caption"></div>
-                  </div>
-
-                  <div class="card-body">
-                    <img
-                      class="featuredart rounded-circle"
-                      src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg"
-                      alt="Bologna"
-                    />
-                  </div>
-
-                  <div class="container">
-                    <center>
-                      <h2>Mike Ross 4</h2>
-                      <p>jane@example.com</p>
-                    </center>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p><button class="button">Contact</button></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+              </b-card>
+            </b-col>
+          </b-row>
         </div>
-      </div>
+      </b-container>
     </section>
+    <br />
     <!-- Featured Arts Section End -->
 
-    <!-- Latest Arts Section Begin -->
+    <!-- Latest Arts Section Start -->
     <section class="carousal-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
+      <b-container>
+        <b-row>
+          <b-col>
             <div class="section-title">
               <h3>Latest <span>Artwork</span></h3>
             </div>
             <h6 style="text-align: center">View All</h6>
             <br />
+          </b-col>
+        </b-row>
 
-            <div class="owl-carousel owl-theme">
-              <div class="card">
-                <div class="item">
-                  <img
-                    class="card-img-top"
-                    id="myImg"
-                    src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
-                    alt="Snow"
-                    onclick="myFunction(this.src,this.alt)"
-                  />
-                  <div class="container">
-                    <h2>Jane Doe</h2>
-                    <p class="title">CEO & Founder</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>jane@example.com</p>
-                    <p><button class="button">Contact</button></p>
-                  </div>
-                </div>
-              </div>
+        <div class="owl-carousel owl-theme">
+          <b-row v-for="user in latestart" :key="user.id">
+            <b-col>
+              <b-card :img-src="user.Artimg" size="5rem" class="text-center">
+                <!-- For Creator photo and name -->
+                <div class="mb-1">
+                  <b-avatar
+                    :src="user.Creator"
+                    size="4rem"
+                    class="text-center"
+                    style="max-width: 25rem"
+                  >
+                  </b-avatar>
 
-              <div class="card">
-                <div class="item">
-                  <img
-                    class="card-img-top"
-                    id="myImg"
-                    src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
-                    alt="Snow"
-                    onclick="myFunction(this.src,this.alt)"
-                  />
-                  <div class="container">
-                    <h2>Jane Doe 2</h2>
-                    <p class="title">CEO & Founder</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>jane@example.com</p>
-                    <p><button class="button">Contact</button></p>
-                  </div>
-                </div>
-              </div>
+                  <b-text>
+                    <b>
+                      <h3>{{ user.Artistname }}</h3></b
+                    >
+                  </b-text>
 
-              <div class="card">
-                <div class="item">
-                  <img
-                    class="card-img-top"
-                    id="myImg"
-                    src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
-                    alt="Snow"
-                    onclick="myFunction(this.src,this.alt)"
-                  />
-                  <div class="container">
-                    <h2>Mike Ross</h2>
-                    <p class="title">Art Director</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>mike@example.com</p>
-                    <p><button class="button">Contact</button></p>
-                  </div>
+                  <hr />
+                  <!-- For email -->
+                  <b-card-text>
+                    <b>{{ user.email }}</b>
+                  </b-card-text>
+                  <!-- For image description -->
+                  <b-card-text>
+                    {{ user.Artdescription }}
+                  </b-card-text>
+                  <!-- button -->
+                  <b-button block href="/Artwork" variant="outline-primary"
+                    >View</b-button
+                  >
                 </div>
-              </div>
-
-              <div class="card">
-                <div class="item">
-                  <img
-                    class="card-img-top"
-                    id="myImg"
-                    src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
-                    alt="Snow"
-                    onclick="myFunction(this.src,this.alt)"
-                  />
-                  <div class="container">
-                    <h2>Mike Ross 2</h2>
-                    <p class="title">Art Director</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>mike@example.com</p>
-                    <p><button class="button">Contact</button></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="item">
-                  <img
-                    class="card-img-top"
-                    id="myImg"
-                    src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
-                    alt="Snow"
-                    onclick="myFunction(this.src,this.alt)"
-                  />
-                  <div class="container">
-                    <h2>Mike Ross 3</h2>
-                    <p class="title">Art Director</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>mike@example.com</p>
-                    <p><button class="button">Contact</button></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="item">
-                  <img
-                    class="card-img-top"
-                    id="myImg"
-                    src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
-                    alt="Snow"
-                    onclick="myFunction(this.src,this.alt)"
-                  />
-                  <div class="container">
-                    <h2>Mike Ross 4</h2>
-                    <p class="title">Art Director</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>mike@example.com</p>
-                    <p><button class="button">Contact</button></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+              </b-card>
+            </b-col>
+          </b-row>
         </div>
-      </div>
+      </b-container>
     </section>
 
     <!-- Latest Arts Section End -->
+    <br />
+    <!-- Top Arts Section Start -->
+    <section class="carousal-section">
+      <b-container>
+        <b-row>
+          <b-col>
+            <div class="section-title">
+              <h3>Top <span>Artwork</span></h3>
+            </div>
+            <h6 style="text-align: center">View All</h6>
+            <br />
+          </b-col>
+        </b-row>
+
+        <div class="owl-carousel owl-theme">
+          <b-row v-for="user in topart" :key="user.id">
+            <b-col>
+              <b-card :img-src="user.Artimg" size="5rem" class="text-center">
+                <!-- For Creator photo and name -->
+                <div class="mb-1">
+                  <b-avatar
+                    :src="user.Creator"
+                    size="4rem"
+                    class="text-center"
+                    style="max-width: 25rem"
+                  >
+                  </b-avatar>
+
+                  <b-text>
+                    <b>
+                      <h3>{{ user.Artistname }}</h3></b
+                    >
+                  </b-text>
+
+                  <hr />
+                  <!-- For email -->
+                  <b-card-text>
+                    <b>{{ user.email }}</b>
+                  </b-card-text>
+                  <!-- For image description -->
+                  <b-card-text>
+                    {{ user.Artdescription }}
+                  </b-card-text>
+                  <!-- button -->
+                  <b-button
+                    block
+                    href="/Artwork"
+                    variant="outline-primary"
+                    v-on:click="say(user.Artistname)"
+                    >View</b-button
+                  >
+                </div>
+              </b-card>
+            </b-col>
+          </b-row>
+        </div>
+      </b-container>
+    </section>
+    <!-- Top Arts Section End -->
+
     <Footer />
+    <br />
   </div>
 </template>
-
+ 
 <script>
 import Navbar from "./Navbar.vue";
 import Footer from "./Footer.vue";
+import featuredData from "./featuredart.json";
+import latestData from "./latestart.json";
+import topArtData from "./topart.json";
+
 export default {
   components: { Navbar, Footer },
   name: "Mainpage",
+  data() {
+    return {
+      featuredart: featuredData,
+      latestart: latestData,
+      topart: topArtData,
+    };
+  },
+  methods: {
+    say: function (message) {
+      alert(message);
+    },
+  },
 };
 </script>
 
+    
 <style>
- .featuredart {
-  border: 0.3rem solid rgba(#fff, 0.3);
-
-  margin-left: 4rem;
- margin-bottom: -1.5rem;
-  max-width: 5rem;
-  }
-
- .card-body{-ms-flex:1 1 auto;flex:1 1 auto;min-height:1px;padding:1rem}
-
-.carousal-section {
-margin-bottom: 70px;
-}
-  
 .section-title {
   position: relative;
   padding-bottom: 16px;
@@ -476,191 +279,43 @@ margin-bottom: 70px;
   font-weight: 700;
 }
 
-
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-.column {
-  float: left;
-  width: 25%;
-  margin-bottom: 16px;
-  padding: 0 8px;
+/* 
+.b-avatar {
+    border: 0.3rem solid rgba(#fff, 0.3);
+    margin-top: -21rem;
+    margin-left: -15rem;
+    margin-bottom: 1rem;
+    margin-right: 9rem;
+    max-width: 4rem;
+} */
+
+.owl-prev {
+  left: -15px;
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
+.owl-next {
+  right: -15px;
 }
 
-.about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: #474e5d;
-  color: white;
-}
-
-.container {
-  padding: 0 16px;
-}
-
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
-}
- /* Make the image fully responsive */
-  .carousel-inner img {
-    width: 100%;
-    height: 100%;
-  }
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
-
-
-
-
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
- 
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 2; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: hidden; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
- 
-}
-
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-
-
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 250px;
-}
-
-/* Add Animation */
-.modal-content, #caption {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
+.owl-prev,
+.owl-next {
   position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
+  top: 40%;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    height: 100px;
-    width: 100px;
-    outline: black;
-    background-color: rgba(0, 0, 0, 0.3);
-    background-size: 100%, 100%;
-    border-radius: 50%;
-    border: 1px solid black;
+.owl-prev span,
+.owl-next span {
+  font-size: 60px;
+  color: #787878;
 }
 
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.nav-btn{
-
-height: 50px;
-    width: 50px;   
-    background-color: orange;
-    background-size: 100%, 100%;
-    border-radius: 70%; 
-   
-}
-
-.prev-slide:hover {
-  background: red;
-  color: #ffffff;
-  border-color: #dd1515;
-  }
- 
- .next-slide:hover {
-  background: red;
-  color: #ffffff;
-  border-color: #dd1515;
-  } 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
+.owl-theme .owl-nav[class*="owl-"]:hover {
+  background-color: transparent;
 }
 </style>

@@ -1,20 +1,30 @@
 $(document).ready(function() {
     var owl = $('.owl-carousel');
     owl.owlCarousel({
-        margin: 10,
+        stagePadding: 5,
+        margin: 5,
         nav: true,
-        navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"],
         loop: true,
         dots: true,
+        autoplay: false,
+        autoplayHoverPause: true,
         responsive: {
             0: {
-                items: 1
+                items: 1,
+                dots: false
             },
-            600: {
-                items: 3
+            560: {
+                items: 2,
+                dots: false
             },
+            758: {
+                items: 3,
+                dots: false
+            },
+
             1000: {
-                items: 4
+                items: 4,
+                dots: false
             }
         }
     })

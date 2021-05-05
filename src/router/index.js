@@ -7,9 +7,9 @@ import Drawing from '../components/Drawing.vue'
 import Photography from '../components/Photography.vue'
 import Sculpture from '../components/Sculpture.vue'
 import Login from '../components/Login.vue'
-
+import Testjson from '../components/Testjson.vue'
 import Regiesterpage from '../components/Regiesterpage.vue'
-
+import Artwork from '../components/Artwork.vue'
 Vue.use(VueRouter)
 
 const routes = [{
@@ -17,7 +17,16 @@ const routes = [{
         name: 'Mainpage',
         component: Mainpage
     },
+    {
+        path: '/Artwork',
+        name: 'Artwork',
+        component: Artwork
+    }, {
+        path: '/Testjson',
+        name: 'Testjson',
+        component: Testjson
 
+    },
     {
         path: '/Crafts',
         name: 'Crafts',

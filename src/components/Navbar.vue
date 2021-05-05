@@ -16,6 +16,14 @@
           <b-button variant="outline-primary" href="/Login">
             <b-icon icon="person-fill"></b-icon> Login
           </b-button>
+          <div>
+            <b-button v-b-modal.modal-1>Launch demo modal</b-button>
+
+            <b-modal id="modal-1" title="BootstrapVue">
+              <p class="my-4">Hello from modal!</p>
+              
+            </b-modal>
+          </div>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>

@@ -7,7 +7,8 @@
             <div class="col-sm">
               <div class="col item social">
                 <h3>Follow us on</h3>
-                <a href="#"><i class="icon ion-social-facebook"></i></a
+                <a href="https://www.youtube.com" target="_blank"
+                  ><i class="icon ion-social-facebook"></i></a
                 ><a href="#"><i class="icon ion-social-twitter"></i></a
                 ><a href="#"><i class="icon ion-social-linkedin"></i></a
                 ><a href="#"><i class="icon ion-social-instagram"></i></a>
@@ -33,46 +34,9 @@
       </footer>
     </div>
   </div>
-  <!-- <footer class="footer px-4">
-    <b-row align-v="center" class="justify-content-lg-between">
-      <b-col lg="6">
-        <div class="copyright text-center text-lg-left text-muted">
-          © {{ year }}
-          <a
-            href="https://www.google.com"
-            class="font-weight-bold ml-1"
-            target="_blank"
-            >Aristan</a
-          >
-        </div>
-      </b-col>
-      <b-col lg="6">
-        <b-nav align="center" class="nav-footer justify-content-lg-end">
-          <b-nav-item href="https://www.creative-tim.com"  target="_blank">
-            Creative Tim
-          </b-nav-item>
-          <b-nav-item href="https://www.google.com" target="_blank">
-            About Us
-          </b-nav-item>
-          <b-nav-item href="https://www.google.com" target="_blank">
-            Blog
-          </b-nav-item>
-          <b-nav-item href="https://www.google.com" target="_blank">
-            License
-          </b-nav-item>
-        </b-nav>
-      </b-col>
-    </b-row>
-  </footer> -->
 </template>
 <script>
-export default {
-  data() {
-    return {
-      year: new Date().getFullYear(),
-    };
-  },
-};
+export default {};
 </script>
 <style>
 .footer-dark {
