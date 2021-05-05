@@ -11,7 +11,7 @@
     </center>
     <br />
     <br />
-    <!-- <div class="container">
+    <div class="container">
       <div class="row content">
         <div class="col-md-4 mb-3">
           <img
@@ -49,7 +49,7 @@
               <a style="right" href="/">Forgot Password?</a>
             </div>
             <br />
-            <b-button block variant="success" href="/">Sign in</b-button>
+
             <b-button block type="submit" variant="primary">Sign in</b-button>
             <br />
             <center>
@@ -70,15 +70,7 @@
           <br />
         </div>
       </div>
-    </div> -->
-    <b-button
-      class="fab fa-facebook-f"
-      block
-      style="background-color: #3b5998"
-      @click="facebook"
-    >
-      Continue with Facebook
-    </b-button>
+    </div>
     <Footer />
   </div>
 </template>
@@ -93,21 +85,21 @@ export default {
     Navbar,
     Footer,
   },
-  // data() {
-  //   return {
-  //     form: {
-  //       email: "",
-  //       password: "",
-  //     },
-  //     show: true,
-  //   };
-  // },
-  // methods: {
-  //   onsubmit(event) {
-  //     event.preventDefault();
-  //     alert(JSON.stringify(this.form));
-  //   },
+  data() {
+    return {
+      form: {
+        email: "",
+        password: "",
+      },
+      show: true,
+    };
+  },
+
   methods: {
+    onsubmit(event) {
+      event.preventDefault();
+      alert(JSON.stringify(this.form));
+    },
     facebook: function () {
       const provider = new firebase.auth.FacebookAuthProvider();
       firebase

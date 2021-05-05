@@ -31,14 +31,12 @@ const firebaseConfig = {
     measurementId: "G-6K3ZB6CGZB"
 };
 firebase.initializeApp(firebaseConfig);
-
-
-
-
-
 Vue.component("Navbar", require('./components/Navbar.vue'))
 Vue.component("Footer", require('./components/Footer.vue'))
 Vue.component("CardwithPagination", require('./components/CardwithPagination.vue'))
+Vue.component("Featuredarts", require('./components/Featuredarts.vue'))
+Vue.component("Latestarts", require('./components/Latestarts.vue'))
+Vue.component("Toparts", require('./components/Toparts.vue'))
 new Vue({
     router,
     render: h => h(App)
