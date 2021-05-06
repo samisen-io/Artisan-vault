@@ -1,0 +1,2 @@
+sha,filename,url,lines,title,comment,priority,category,additional,id,private
+"e195fbb067d9ac20af7e20bc4c2298857d6f3f56","\src\components\Login.vue","","7:4-11:13","Title of Login Page should be changed","The title of the login page should be Login. Also the title is taking too much screen area. Use H2 or H3","0","Maintainability","","83f57abf-53f1-4794-a844-2a41127ccc08","0"
