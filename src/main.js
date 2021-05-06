@@ -10,7 +10,9 @@ import shareIt from 'vue-share-it';
 
 import axios from "axios"
 import firebase from "firebase/app"
+import Carousel3d from 'vue-carousel-3d';
 
+Vue.use(Carousel3d);
 
 Vue.prototype.$axios = axios;
 Vue.config.productionTip = false
@@ -38,6 +40,7 @@ Vue.component("CardwithPagination", require('./components/CardwithPagination.vue
 Vue.component("Featuredarts", require('./components/Featuredarts.vue'))
 Vue.component("Latestarts", require('./components/Latestarts.vue'))
 Vue.component("Toparts", require('./components/Toparts.vue'))
+Vue.component("Carousel3d", require('./components/Carousel3d.vue'))
 new Vue({
     router,
     render: h => h(App)
