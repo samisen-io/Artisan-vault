@@ -7,10 +7,11 @@ import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import shareIt from 'vue-share-it';
-import 'owl.carousel/dist/assets/owl.carousel.css'
-import 'owl.carousel'
+
 import axios from "axios"
 import firebase from "firebase/app"
+
+
 Vue.prototype.$axios = axios;
 Vue.config.productionTip = false
 Vue.use(shareIt);
