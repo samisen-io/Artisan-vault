@@ -3,35 +3,36 @@
     <section class="carousal-section">
       <b-container>
         <b-row>
-          <b-col>
+          <b-col class="my-1">
             <div class="section-title">
-              <h3>Latest <span>Artwork</span></h3>
+              <h3>Featured <span>Artwork</span></h3>
             </div>
             <h6 style="text-align: right">View All</h6>
             <br />
           </b-col>
         </b-row>
-
-        <div class="owl-carousel owl-theme">
-          <b-row v-for="user in latestart" :key="user.id">
-            <b-col>
-              <b-card :img-src="user.Artimg" size="5rem" class="text-center">
+        <b-container>
+          <b-row>
+            <b-col md="12" class="my-1"> </b-col>
+          </b-row>
+          <b-row>
+            <b-col col lg="3" v-for="user in latestart" :key="user.id">
+              <b-card
+                class="text-center"
+                :img-src="user.Artimg"
+                img-alt="Image"
+                img-top
+                tag="article"
+                style="max-width: 25rem"
+              >
                 <!-- For Creator photo and name -->
-                <div class="mb-1">
-                  <b-avatar
-                    :src="user.Creator"
-                    size="4rem"
-                    class="text-center"
-                    style="max-width: 25rem"
-                  >
-                  </b-avatar>
-
-                  <b-text>
-                    <b>
-                      <h3>{{ user.Artistname }}</h3></b
-                    >
-                  </b-text>
-
+                <div class="mb-5">
+                  <b-avatar :src="user.Creator" size="8rem" class="text-center"></b-avatar>
+                  <br />
+                  <br />
+                  
+                    <b> <h3>{{user.Artistname}}</h3></b>
+                 
                   <hr />
                   <!-- For email -->
                   <b-card-text>
@@ -42,18 +43,22 @@
                     {{ user.Artdescription }}
                   </b-card-text>
                   <!-- button -->
-                  <b-button block href="/Artwork" variant="outline-primary"
+                  <b-button block href="#" variant="outline-primary"
                     >View</b-button
                   >
                 </div>
               </b-card>
             </b-col>
           </b-row>
-        </div>
+          <b-row>
+            <b-col md="12" class="my-1"> </b-col>
+          </b-row>
+        </b-container>
       </b-container>
     </section>
   </div>
 </template>
+
 
 <script>
 import latestData from "./latestart.json";

@@ -2,7 +2,7 @@
   <div>
     <navbar />
     <!-- carousel page -->
-    <carousel />
+    <Carousel />
     <!-- Featured Arts Section Begin -->
     <br />
     <Featuredarts />
