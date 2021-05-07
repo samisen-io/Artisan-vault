@@ -1,9 +1,12 @@
 <template>
   <div>
-    <br />
-    <br />
+   
     <navbar />
-    <carousel />
+     <br />
+    <br />
+     <br />
+    <br />
+    <drawingcard />
      <br />
     <cardwith-pagination />
     <Footer />
@@ -12,11 +15,12 @@
 
 <script>
 import CardwithPagination from "./CardwithPagination.vue";
-import Carousel from "./Carousel.vue";
+import Drawingcard from './Drawingcard.vue';
+
 import Footer from "./Footer.vue";
 import Navbar from "./Navbar.vue";
 export default {
-  components: { Navbar, Carousel, CardwithPagination, Footer },
+  components: { Navbar, CardwithPagination, Footer, Drawingcard },
 };
 </script>
 

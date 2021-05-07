@@ -1,14 +1,20 @@
 <template>
   <div>
     <navbar />
-    <!-- carousel page -->
-    <Carousel />
+    <br />
+    <br />
+    <br />
+    <br />
+    <Maincard />
     <!-- Featured Arts Section Begin -->
     <br />
     <Featuredarts />
     <!-- Latestarts Arts Section Begin -->
     <br />
     <Latestarts />
+    <br />
+    <!-- Highestpaidarts  -->
+    <Highestpaidart />
     <!-- Top Arts Section End -->
     <br />
     <Toparts />
@@ -21,13 +27,23 @@
 <script>
 import Navbar from "./Navbar.vue";
 import Footer from "./Footer.vue";
-import Carousel from "./Carousel.vue";
+import Maincard from "./Maincard.vue";
 import Featuredarts from "./Featuredarts.vue";
 import Latestarts from "./Latestarts.vue";
 import Toparts from "./Toparts.vue";
+import Highestpaidart from "./Highestpaidart.vue";
 
 export default {
-  components: { Navbar, Footer, Carousel, Featuredarts, Latestarts, Toparts },
+  components: {
+    Navbar,
+    Footer,
+    Featuredarts,
+    Latestarts,
+    Toparts,
+    Maincard,
+    Highestpaidart,
+  },
+
   name: "Mainpage",
   methods: {
     say: function (message) {

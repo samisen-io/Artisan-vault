@@ -2,14 +2,16 @@
   <div>
     <section class="carousal-section">
       <b-container>
-        <b-row>
-          <b-col class="my-1">
+      <b-row>
+          <b-col col md="11">
             <div class="section-title">
               <h3>Top <span>Artwork</span></h3>
             </div>
-            <h6 style="text-align: right">View All</h6>
-            <br />
           </b-col>
+          <b-col col md="1">
+            <a href="/Artwork" style="align: right">ViewAll</a>
+          </b-col>
+          <br />
         </b-row>
         <b-container>
           <b-row>
@@ -19,31 +21,31 @@
             <b-col col lg="3" v-for="user in topart" :key="user.id">
               <b-card
                 class="text-center"
-                :img-src="user.Artimg"
+                :img-src="user.Pic"
                 img-alt="Image"
                 img-top
                 tag="article"
                 style="max-width: 25rem"
               >
-                <!-- For Creator photo and name -->
+                <!-- For Author photo and name -->
                 <div class="mb-5">
-                  <b-avatar :src="user.Creator" size="8rem" class="text-center"></b-avatar>
+                  <b-avatar
+                    :src="user.Authorprofilepic"
+                    size="8rem"
+                    class="text-center"
+                  ></b-avatar>
                   <br />
                   <br />
-                  
-                    <b> <h3>{{user.Artistname}}</h3></b>
-                 
+                  <b>
+                    <h3>{{ user.Authorname }}</h3></b
+                  >
                   <hr />
-                  <!-- For email -->
-                  <b-card-text>
-                    <b>{{ user.email }}</b>
-                  </b-card-text>
                   <!-- For image description -->
                   <b-card-text>
-                    {{ user.Artdescription }}
+                    <p>{{ user.Title }}</p>
                   </b-card-text>
                   <!-- button -->
-                  <b-button block href="#" variant="outline-primary"
+                  <b-button block href="/Artwork" variant="outline-primary"
                     >View</b-button
                   >
                 </div>
@@ -62,11 +64,11 @@
 <script>
 import topArtData from "./topart.json";
 export default {
-data(){
-  return{
-     topart: topArtData
-  }
-}
+  data() {
+    return {
+      topart: topArtData,
+    };
+  },
 };
 </script>
 
@@ -127,16 +129,6 @@ data(){
 *:after {
   box-sizing: inherit;
 }
-
-/* 
-.b-avatar {
-    border: 0.3rem solid rgba(#fff, 0.3);
-    margin-top: -21rem;
-    margin-left: -15rem;
-    margin-bottom: 1rem;
-    margin-right: 9rem;
-    max-width: 4rem;
-} */
 
 .owl-prev {
   left: -15px;

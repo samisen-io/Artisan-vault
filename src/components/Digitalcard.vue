@@ -6,7 +6,7 @@
           <b-row no-gutters>
             <b-col md="7">
               <b-card-img
-                src="https://www.painterartist.com/static/ptr/product_content/painter/2021/gallery/Hal-Fisher-Ballerina.jpg"
+                src="https://www.cgma.org/content/dam/cgma/resources/reports/publishingimages/reinventing-finance-819x400.jpg"
                 alt="Image"
                 class="rounded-0"
                 height="500"

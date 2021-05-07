@@ -31,11 +31,11 @@ export default {
 <style>
 .nav-item {
   padding: 5px;
+  
+  }
+.nav-item{
+  
+	color: #fff;
 }
-.carousel-item {
-  height: 350px;
-}
-.carousel-item img {
-  height: 350px;
-}
+
 </style>

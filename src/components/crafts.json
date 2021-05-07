@@ -1,9 +1,84 @@
 [{
-    "id": "1",
-    "Artistname": "venkat",
-    "email": "venkat@gmail.com",
-    "Artdescription": "hi how are you",
-    "Artimg": "assets/logo.png",
-    "Drawingurl": "../assets/RG.png"
+        "Id": 1,
+        "Authorname": "Malkiel",
+        "Authorprofilepic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Captain_America%27s_shield.svg/1200px-Captain_America%27s_shield.svg.png",
+        "Authortdescription": "hi how are you",
+        "Title": "ddddddddddddddd",
+        "email": "malkiel@gmail.com",
+        "Pic": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
 
-}]
+    },
+
+    {
+
+        "Id": 2,
+        "Authorname": "venkat2",
+        "Authorprofilepic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Captain_America%27s_shield.svg/1200px-Captain_America%27s_shield.svg.png",
+        "email": "venkat2@gmail.com",
+        "Authortdescription": "hi how are you2",
+        "Title": "ddddddddddddddd",
+        "Pic": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
+
+    }, {
+        "Id": 3,
+        "Authorname": "Malkiel3",
+        "Authorprofilepic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Captain_America%27s_shield.svg/1200px-Captain_America%27s_shield.svg.png",
+        "email": "malkiel3@gmail.com",
+        "Authortdescription": "hi how are you3",
+        "Title": "ddddddddddddddd",
+        "Pic": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
+
+    }, {
+        "Id": 4,
+        "Authorname": "venkat4",
+        "Authorprofilepic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Captain_America%27s_shield.svg/1200px-Captain_America%27s_shield.svg.png",
+        "email": "venkat4@gmail.com",
+        "Authortdescription": "hi how are you4",
+        "Title": "ddddddddddddddd",
+        "Pic": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
+
+    }, {
+
+        "Id": 5,
+        "Authorname": "malkiel5",
+        "Authorprofilepic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Captain_America%27s_shield.svg/1200px-Captain_America%27s_shield.svg.png",
+        "email": "malkiel5@gmail.com",
+        "Authortdescription": "hi how are you5",
+        "Title": "ddddddddddddddd",
+        "Pic": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
+    }, {
+        "Id": 6,
+        "Authorname": "venkat6",
+        "Authorprofilepic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Captain_America%27s_shield.svg/1200px-Captain_America%27s_shield.svg.png",
+        "email": "venkat6@gmail.com",
+        "Authortdescription": "hi how are you6",
+        "Title": "ddddddddddddddd",
+        "Pic": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
+    }, {
+        "Id": 7,
+        "Authorname": "malkiel7",
+        "Authorprofilepic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Captain_America%27s_shield.svg/1200px-Captain_America%27s_shield.svg.png",
+        "email": "malkiel7@gmail.com",
+        "Authortdescription": "hi how are you7",
+        "Title": "ddddddddddddddd",
+        "Pic": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
+    }, {
+        "Id": 8,
+        "Authorname": "venkat8",
+        "Authorprofilepic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Captain_America%27s_shield.svg/1200px-Captain_America%27s_shield.svg.png",
+        "email": "venkat8@gmail.com",
+        "Authortdescription": "hi how are you8",
+        "Title": "ddddddddddddddd",
+        "Pic": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
+    }, {
+
+        "Id": 9,
+        "Authorname": "malkiel9",
+        "Authorprofilepic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Captain_America%27s_shield.svg/1200px-Captain_America%27s_shield.svg.png",
+        "email": "malkiel@gmail.com",
+        "Authortdescription": "hi how are you9",
+        "Title": "ddddddddddddddd",
+        "Pic": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
+    }
+
+]

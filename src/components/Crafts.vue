@@ -6,9 +6,13 @@
     <!--navbar-->
     <Navbar />
     <!-- carousel page -->
-    <Carousel />
+    <br />
+    <br />
+    <br />
     <br />
     <!-- card -->
+    <craftcard />
+    <br />
     <b-container>
       <!-- <b-row>
         <b-col md="12" class="my-1">
@@ -80,15 +84,16 @@
 <script>
 import Navbar from "./Navbar.vue";
 import Footer from "./Footer.vue";
-import Carousel from "./Carousel.vue";
+
 import craftdata from "./crafts.json";
+import Craftcard from "./Craftcard.vue";
 
 export default {
   name: "Crafts",
   components: {
     Navbar,
     Footer,
-    Carousel,
+    Craftcard,
   },
   data() {
     return {

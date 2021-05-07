@@ -6,7 +6,7 @@
           <b-row no-gutters>
             <b-col md="7">
               <b-card-img
-                src="https://www.painterartist.com/static/ptr/product_content/painter/2021/gallery/Hal-Fisher-Ballerina.jpg"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Moses_San_Pietro_in_Vincoli.jpg/258px-Moses_San_Pietro_in_Vincoli.jpg"
                 alt="Image"
                 class="rounded-0"
                 height="500"

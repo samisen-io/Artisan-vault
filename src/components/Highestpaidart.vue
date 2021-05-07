@@ -1,11 +1,12 @@
 <template>
+
   <div>
     <section class="carousal-section">
       <b-container>
-        <b-row>
+      <b-row>
           <b-col col md="11">
             <div class="section-title">
-              <h3>Featured <span>Artwork</span></h3>
+              <h3>HighestPaid <span>Artwork</span></h3>
             </div>
           </b-col>
           <b-col col md="1">
@@ -13,13 +14,12 @@
           </b-col>
           <br />
         </b-row>
-
         <b-container>
           <b-row>
             <b-col md="12" class="my-1"> </b-col>
           </b-row>
           <b-row>
-            <b-col col lg="3" v-for="user in featuredart" :key="user.id">
+            <b-col col lg="3" v-for="user in latestart" :key="user.id">
               <b-card
                 class="text-center"
                 :img-src="user.Pic"
@@ -28,7 +28,7 @@
                 tag="article"
                 style="max-width: 25rem"
               >
-                <!-- For Author photo and name -->
+                <!-- For Author  photo and name -->
                 <div class="mb-5">
                   <b-avatar
                     :src="user.Authorprofilepic"
@@ -39,16 +39,14 @@
                   <br />
 
                   <b>
-                    <h3>{{ user.Authorname }}</h3></b
+                    <h3>{{ user.Authorname}}</h3></b
                   >
-
                   <hr />
-
                   <!-- For image description -->
                   <b-card-text>
                     {{ user.Title }}
                   </b-card-text>
-                  <!-- button -->
+                  <!-- button to view -->
                   <b-button block href="/Artwork" variant="outline-primary"
                     >View</b-button
                   >
@@ -65,12 +63,13 @@
   </div>
 </template>
 
+
 <script>
-import featuredData from "./featuredart.json";
+import latestData from "./latestart.json";
 export default {
   data() {
     return {
-      featuredart: featuredData,
+      latestart: latestData,
     };
   },
 };
@@ -133,6 +132,16 @@ export default {
 *:after {
   box-sizing: inherit;
 }
+
+/* 
+.b-avatar {
+    border: 0.3rem solid rgba(#fff, 0.3);
+    margin-top: -21rem;
+    margin-left: -15rem;
+    margin-bottom: 1rem;
+    margin-right: 9rem;
+    max-width: 4rem;
+} */
 
 .owl-prev {
   left: -15px;
