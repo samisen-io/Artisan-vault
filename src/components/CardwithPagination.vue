@@ -22,7 +22,9 @@
             img-top
             tag="article"
             style="max-width: 25rem"
+            img-height="180"
           >
+          <hr />
             <!-- For Creator photo and name -->
             <div class="mb-5">
               <b-avatar

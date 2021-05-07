@@ -55,4 +55,7 @@ export default {
 
     
 <style>
+.body{
+  background-color: salmon;
+}
 </style>
