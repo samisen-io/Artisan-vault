@@ -84,7 +84,7 @@
       </b-card>
     </b-container>
 
-    <h3><b>Creator</b></h3>
+    <h3 style="text-align:center"><b>Creator</b></h3>
     <b-list-group>
       <b-list-group-item>
         <b-container>

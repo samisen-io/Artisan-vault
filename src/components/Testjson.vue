@@ -1,80 +1,67 @@
 <template>
   <div>
-    <b-container>
-      <div>
-        <b-card no-body class="overflow-hidden">
-          <b-row no-gutters>
-            <b-col md="7">
-              <b-card-img
-                src="https://www.painterartist.com/static/ptr/product_content/painter/2021/gallery/Hal-Fisher-Ballerina.jpg"
-                alt="Image"
-                class="rounded-0"
-                height="500"
-              ></b-card-img>
-            </b-col>
-            <b-col md="5">
-              <b-card-body>
-                <br />
-                <b-row>
-                  <b-col col md="3">
-                    <b-avatar
-                      size="5rem"
-                      src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mh-chris-hemsworth-attends-the-tag-heuer-museum-in-motion-news-photo-968210608-1554829603.jpg"
-                    >
-                    </b-avatar>
-                  </b-col>
-                  <b-col col md="8">
-                    <br />
-                    <a
-                      href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man"
-                    >
-                      <h3>@venkat</h3></a
-                    >
-                  </b-col>
-                </b-row>
-                <hr />
-                <b-card-text>
-                  <br />
-                  <h1><p class="font-weight-bold">venkat</p></h1>
-                </b-card-text>
-                <b-card-text>
-                  <br />
-                  <h4>PhotoPrice</h4>
-                  <h3>5000 Rs</h3>
-                </b-card-text>
-                <b-card-text>
-                  <br />
-                  <center>
-                    <b-row>
-                      <b-col col md="3">
-                        <b-card-text>
-                          <b-button href="/Artwork" variant="outline-dark"
-                            >Place a bid</b-button
-                          >
-                        </b-card-text>
-                      </b-col>
-                      <b-col col md="8">
-                        <b-card-text>
-                          <b-button href="/Artwork" variant="outline-dark"
-                            >View artwork</b-button
-                          >
-                        </b-card-text>
-                      </b-col>
-                    </b-row>
-                  </center>
-                </b-card-text>
-              </b-card-body>
-            </b-col>
-          </b-row>
-        </b-card>
-      </div>
-    </b-container>
+     <facebook :url="url" scale="3"></facebook>
+    <twitter :url="url" title="Check me on Github" scale="3"></twitter>
+    <linkedin :url="url" scale="3"></linkedin>
+    <telegram :url="url" scale="3"></telegram>
+    <whats-app :url="url" title="Hello" scale="3"></whats-app>
+    <pinterest :url="url" scale="3"></pinterest>
+    <reddit :url="url" scale="3" title="My Github"></reddit>
+    <google :url="url" scale="3"></google>
+    <email :url="url" subject="Hello" scale="3"></email>
   </div>
 </template>
 
 <script>
-export default {};
+import {
+  Facebook,
+  Twitter,
+  Linkedin,
+  Pinterest,
+  Reddit,
+  Telegram,
+  WhatsApp,
+  Email,
+  Google
+} from "vue-socialmedia-share";
+export default {
+  name: "HelloWorld",
+  components: {
+    Facebook,
+    Twitter,
+    Linkedin,
+    Pinterest,
+    Reddit,
+    Telegram,
+    WhatsApp,
+    Email,
+    Google
+  },
+  data() {
+    return {
+      url: "https://google.com"
+    };
+  }
+};
 </script>
 
 <style>
+h1,
+h2 {
+  font-weight: normal;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+}
+.hello > span {
+  padding: 1em;
+}
 </style>
