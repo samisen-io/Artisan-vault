@@ -46,8 +46,7 @@
                     {{ user.Title }}
                   </b-card-text>
                   <!-- button to view -->
-                  <b-button block href="/Artwork" variant="outline-primary"
-                    >View</b-button
+                  <b-button block v-bind:href="'/Artwork?latestartworkid='+ user.Id" variant="outline-primary" >View</b-button
                   >
                 </div>
               </b-card>

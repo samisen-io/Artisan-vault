@@ -6,35 +6,21 @@
     <br />
     <Carousel3d />
     <b-container>
-      <b-list-group-item>
-        <b-row>
-          <b-col>
-            <b-avatar
-              src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg"
-              size="3rem"
-            ></b-avatar>
-          </b-col>
-          <b-col col sm="10">
-            <br />
-            <h6 class="display-6">@TonyStrack</h6>
-          </b-col>
-          <b-col col sm="0">
-            <b-button variant="outline-dark">share</b-button>
-          </b-col>
-        </b-row>
-      </b-list-group-item>
-      <b-card no-body class="overflow-hidden">
-        <b-row no-gutters>
-          <b-col md="9">
-            <b-card-body>
-              <h4 class="display-4">TonyStrack</h4>
+         
+      <b-card no-body class="overflow-hidden" style="border: none; width:1200px; padding-top:20px">
+
+         <b-row no-gutters>
+            <b-col md="7">
+              
+               <b-card-body>
+              <h2>Karaoke Old Man x Amrit</h2>
               <br />
               <h6 class="display-6">Art informatation</h6>
               <b-card-text>
                 <br />
                 Description
               </b-card-text>
-              <b-card-text>
+              <b-card-text style="text-align: justify; padding-right:30px;">
                 Iron Man is a fictional superhero appearing in American comic
                 books published by Marvel Comics. The character was co-created
                 by writer and editor Stan Lee, developed by scripter Larry
@@ -60,35 +46,70 @@
                 War motifs to contemporary matters of the time.[1]<br />
               </b-card-text>
               <br />
-            </b-card-body>
-          </b-col>
-          <b-col md="3">
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <b-card>
-              <b-card-text>
-                This is a wider card with supporting text as a natural lead-in
-                to additional content. This content is a little bit longer. This
-                is a wider card with supporting text as a natural lead-in to
-                additional content. This content is a little bit longer. This is
-                a wider card with supporting text as a natural lead-in to
-                additional content. This content is a little bit longer.<br />
-              </b-card-text>
-              <b-button block variant="primary">Add to cart</b-button>
-            </b-card>
-          </b-col>
-        </b-row>
+            </b-card-body>           
+            </b-col>
+            <b-col md="5">
+              <b-card-body>
+                <br />
+                <b-row>
+                  <b-col col md="3">
+                    <b-avatar
+                      size="5rem"
+                      src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mh-chris-hemsworth-attends-the-tag-heuer-museum-in-motion-news-photo-968210608-1554829603.jpg"
+                    >
+                    </b-avatar>
+                  </b-col>
+                  <b-col col md="8">
+                    <br />
+                    <a
+                      href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man"
+                    >
+                      <h3>@venkat</h3></a
+                    >
+                  </b-col>
+                </b-row>                
+
+                <hr />
+                <b-card-text>
+                  <br />
+                  <h1><p class="font-weight-bold">venkat</p></h1>
+                </b-card-text>
+                <b-card-text>
+                  <br />
+                  <h4>PhotoPrice</h4>
+                  <h3>5000 Rs</h3>
+                </b-card-text>
+                <b-card-text>
+                  <br />
+                  
+                    <b-row>
+                      <b-col col md="8">
+                        <b-card-text>
+                          <b-button block href="/Artwork" variant="outline-dark">Add to Cart</b-button
+                          >
+                           <b-button block href="/Artwork" variant="outline-dark">Add to Favourite</b-button
+                          >
+                        </b-card-text>
+                      </b-col>
+                   
+                    </b-row>
+                   
+                </b-card-text>
+              </b-card-body>
+            </b-col>
+          </b-row>
       </b-card>
     </b-container>
 
-    <h3 style="text-align: center"><b>Creator</b></h3>
+<br>
+  
     <b-list-group>
       <b-list-group-item>
         <b-container>
+           <h5 style="padding-left:50px;"><b>Creator</b></h5>
+              <br>
           <b-row>
+             
             <b-col col md="2">
               <b-avatar
                 button
@@ -99,7 +120,7 @@
             <b-col md="5">
               <br />
               <br />
-              <h3>
+              <h4>
                 <b><p>Tony Strack</p></b>
                 <b
                   ><a
@@ -108,9 +129,9 @@
                     >@TonyStrack</a
                   ></b
                 >
-              </h3>
+              </h4>
             </b-col>
-            <b-col md="5">
+            <b-col md="4">
               <br />
               <h3 class="display-3">Ironman</h3>
             </b-col>
