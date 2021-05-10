@@ -5,24 +5,14 @@
       :clickable="false"
       :autoplay="true"
       :autoplayTimeout="3500"
-      :autoplayHoverPause="true"
-      :perspective="0"
+      :width="410"
       :height="350"
     >
       <slide v-for="(slide, i) in slides" :key="i" :index="i">
         <figure>
           <img
-            src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg"
-          />
-        </figure>
-        <figure>
-          
-           <figure>
-          <img
-            src=
-          />
-        </figure>
-          />
+            src="https://assets.hongkiat.com/uploads/really-nice-ironman-wallpapers/original/ironman-wp.jpg"
+          height="350" width="450" />
         </figure>
       </slide>
     </carousel-3d>
@@ -40,7 +30,7 @@ export default {
   },
   data() {
     return {
-      slides: 6,
+      slides: 5,
     };
   },
 };
@@ -50,6 +40,4 @@ export default {
 .carousel-3d-container .current figure {
   margin: 0;
 }
-
-
 </style>

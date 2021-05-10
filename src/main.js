@@ -11,6 +11,8 @@ import shareIt from 'vue-share-it';
 import axios from "axios"
 import firebase from "firebase/app"
 import Carousel3d from 'vue-carousel-3d';
+import 'owl.carousel/dist/assets/owl.carousel.css'
+import 'owl.carousel'
 
 Vue.use(Carousel3d);
 

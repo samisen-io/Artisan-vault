@@ -3,13 +3,13 @@
     <section class="carousal-section">
       <b-container>
   <b-row>
-          <b-col col md="11">
+          <b-col col md="10">
             <div class="section-title">
               <h3>Latest <span>Artwork</span></h3>
             </div>
           </b-col>
-          <b-col col md="1">
-            <a href="/Artwork" style="align: right">ViewAll</a>
+          <b-col col md="2">
+            <a href="/Artwork" style="align: right">View all artworks</a>
           </b-col>
           <br />
         </b-row>

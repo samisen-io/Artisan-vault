@@ -1,67 +1,51 @@
 <template>
   <div>
-     <facebook :url="url" scale="3"></facebook>
-    <twitter :url="url" title="Check me on Github" scale="3"></twitter>
-    <linkedin :url="url" scale="3"></linkedin>
-    <telegram :url="url" scale="3"></telegram>
-    <whats-app :url="url" title="Hello" scale="3"></whats-app>
-    <pinterest :url="url" scale="3"></pinterest>
-    <reddit :url="url" scale="3" title="My Github"></reddit>
-    <google :url="url" scale="3"></google>
-    <email :url="url" subject="Hello" scale="3"></email>
+    <a
+      href="https://www.google.com"
+      target="_blank"
+      ><img
+        src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/email.png"
+        border="0"
+        alt="Email"
+    /></a>
+    <a
+      href="https://api.addthis.com/oexchange/0.8/forward/facebook/offer?url=https%3A%2F%2Fwww.addthis.com%2F&pubid=ra-42fed1e187bae420&title=AddThis%20%7C%20Home&ct=1"
+      target="_blank"
+      ><img
+        src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/facebook.png"
+        border="0"
+        alt="Facebook"
+    /></a>
+    <a
+      href="https://api.addthis.com/oexchange/0.8/forward/twitter/offer?url=https%3A%2F%2Fwww.addthis.com%2F&pubid=ra-42fed1e187bae420&title=AddThis%20%7C%20Home&ct=1"
+      target="_blank"
+      ><img
+        src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/twitter.png"
+        border="0"
+        alt="Twitter"
+    /></a>
+    <a
+      href="https://api.addthis.com/oexchange/0.8/forward/whatsapp/offer?url=https%3A%2F%2Fwww.addthis.com%2F&pubid=ra-42fed1e187bae420&title=AddThis%20%7C%20Home&ct=1"
+      target="_blank"
+      ><img
+        src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/whatsapp.png"
+        border="0"
+        alt="WhatsApp"
+    /></a>
+    <a
+      href="https://api.addthis.com/oexchange/0.8/forward/gmail/offer?url=https%3A%2F%2Fwww.addthis.com%2F&pubid=ra-42fed1e187bae420&title=AddThis%20%7C%20Home&ct=1"
+      target="_blank"
+      ><img
+        src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/gmail.png"
+        border="0"
+        alt="Gmail"
+    /></a>
   </div>
 </template>
 
 <script>
-import {
-  Facebook,
-  Twitter,
-  Linkedin,
-  Pinterest,
-  Reddit,
-  Telegram,
-  WhatsApp,
-  Email,
-  Google
-} from "vue-socialmedia-share";
-export default {
-  name: "HelloWorld",
-  components: {
-    Facebook,
-    Twitter,
-    Linkedin,
-    Pinterest,
-    Reddit,
-    Telegram,
-    WhatsApp,
-    Email,
-    Google
-  },
-  data() {
-    return {
-      url: "https://google.com"
-    };
-  }
-};
+export default {};
 </script>
 
 <style>
-h1,
-h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-.hello > span {
-  padding: 1em;
-}
 </style>

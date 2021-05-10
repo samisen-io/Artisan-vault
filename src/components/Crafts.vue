@@ -14,7 +14,7 @@
     <craftcard />
     <br />
     <b-container>
-      <!-- <b-row>
+      <b-row>
         <b-col md="12" class="my-1">
           <b-pagination
             @change="onPageChanged"
@@ -25,12 +25,12 @@
             align="right"
           />
         </b-col>
-      </b-row> -->
+      </b-row>
       <b-row>
-        <b-col col lg="4" v-for="user in craft" :key="user.id">
+        <b-col col lg="4" v-for="user in paginatedItems" :key="user.id">
           <b-card
             class="text-center"
-            img-src="..//assets//RG.png"
+            :img-src="user.Pic"
             img-alt="Image"
             img-top
             tag="article"
@@ -39,7 +39,7 @@
             <!-- For Creator photo and name -->
             <div class="mb-5">
               <b-avatar
-                :src="user.Artimg"
+                :src="user.Authorprofilepic"
                 size="8rem"
                 class="text-center"
               ></b-avatar>
@@ -63,7 +63,7 @@
           </b-card>
         </b-col>
       </b-row>
-      <!-- <b-row>
+      <b-row>
         <b-col md="12" class="my-1">
           <b-pagination
             @change="onPageChanged"
@@ -74,7 +74,7 @@
             align="right"
           />
         </b-col>
-       </b-row> -->
+       </b-row>
     </b-container>
     <!--footer -->
     <Footer />
@@ -84,8 +84,7 @@
 <script>
 import Navbar from "./Navbar.vue";
 import Footer from "./Footer.vue";
-
-import craftdata from "./crafts.json";
+import craft from "./crafts.json";
 import Craftcard from "./Craftcard.vue";
 
 export default {
@@ -95,10 +94,27 @@ export default {
     Footer,
     Craftcard,
   },
-  data() {
+   data() {
     return {
-      craft: craftdata,
+      paginatedItems: craft,
+      currentPage: 1,
+      perPage: 4,
+      totalRows: craft.length,
     };
+  },
+  methods: {
+    paginate(page_size, page_number) {
+      this.paginatedItems = craft.slice(
+        page_number * page_size,
+        (page_number + 1) * page_size
+      );
+    },
+    onPageChanged(page) {
+      this.paginate(this.perPage, page - 1);
+    },
+  },
+  mounted() {
+    this.paginate(this.perPage, 0);
   },
 };
 </script>

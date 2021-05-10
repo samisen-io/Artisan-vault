@@ -70,13 +70,13 @@
             <br />
             <b-card>
               <b-card-text>
-              This is a wider card with supporting text as a natural lead-in to
-              additional content. This content is a little bit longer. This is a
-              wider card with supporting text as a natural lead-in to additional
-              content. This content is a little bit longer. This is a wider card
-              with supporting text as a natural lead-in to additional content.
-              This content is a little bit longer.<br />
-            </b-card-text>
+                This is a wider card with supporting text as a natural lead-in
+                to additional content. This content is a little bit longer. This
+                is a wider card with supporting text as a natural lead-in to
+                additional content. This content is a little bit longer. This is
+                a wider card with supporting text as a natural lead-in to
+                additional content. This content is a little bit longer.<br />
+              </b-card-text>
               <b-button block variant="primary">Add to cart</b-button>
             </b-card>
           </b-col>
@@ -84,7 +84,7 @@
       </b-card>
     </b-container>
 
-    <h3 style="text-align:center"><b>Creator</b></h3>
+    <h3 style="text-align: center"><b>Creator</b></h3>
     <b-list-group>
       <b-list-group-item>
         <b-container>
