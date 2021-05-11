@@ -1,51 +1,93 @@
 <template>
-  <div>
-    <a
-      href="https://www.google.com"
-      target="_blank"
-      ><img
-        src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/email.png"
-        border="0"
-        alt="Email"
-    /></a>
-    <a
-      href="https://api.addthis.com/oexchange/0.8/forward/facebook/offer?url=https%3A%2F%2Fwww.addthis.com%2F&pubid=ra-42fed1e187bae420&title=AddThis%20%7C%20Home&ct=1"
-      target="_blank"
-      ><img
-        src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/facebook.png"
-        border="0"
-        alt="Facebook"
-    /></a>
-    <a
-      href="https://api.addthis.com/oexchange/0.8/forward/twitter/offer?url=https%3A%2F%2Fwww.addthis.com%2F&pubid=ra-42fed1e187bae420&title=AddThis%20%7C%20Home&ct=1"
-      target="_blank"
-      ><img
-        src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/twitter.png"
-        border="0"
-        alt="Twitter"
-    /></a>
-    <a
-      href="https://api.addthis.com/oexchange/0.8/forward/whatsapp/offer?url=https%3A%2F%2Fwww.addthis.com%2F&pubid=ra-42fed1e187bae420&title=AddThis%20%7C%20Home&ct=1"
-      target="_blank"
-      ><img
-        src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/whatsapp.png"
-        border="0"
-        alt="WhatsApp"
-    /></a>
-    <a
-      href="https://api.addthis.com/oexchange/0.8/forward/gmail/offer?url=https%3A%2F%2Fwww.addthis.com%2F&pubid=ra-42fed1e187bae420&title=AddThis%20%7C%20Home&ct=1"
-      target="_blank"
-      ><img
-        src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/gmail.png"
-        border="0"
-        alt="Gmail"
-    /></a>
+  <div class="hello">
+    <center>
+    <VueSlickCarousel v-bind="settings">
+      <div><h3>1</h3></div>
+      <div><h3>2</h3></div>
+      <div><h3>3</h3></div>
+      <div><h3>4</h3></div>
+      <div><h3>5</h3></div>
+      <div><h3>6</h3></div>
+    </VueSlickCarousel>
+    </center>
   </div>
 </template>
 
 <script>
-export default {};
-</script>
+import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+// optional style for arrows & dots
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
+export default {
+ 
+  components: {
+    VueSlickCarousel
+  },
+  data() {
+    return {
+   settings:  {
+  "dots": true,
+  "infinite": false,
+  "speed": 500,
+  "slidesToShow": 2,
+  "slidesToScroll": 1,
+  "initialSlide": 0,
+  "responsive": [
+    {
+      "breakpoint": 1024,
+      "settings": {
+        "slidesToShow": 3,
+        "slidesToScroll": 3,
+        "infinite": true,
+        "dots": true
+      }
+    },
+    {
+      "breakpoint": 600,
+      "settings": {
+        "slidesToShow": 2,
+        "slidesToScroll": 2,
+        "initialSlide": 2
+      }
+    },
+    {
+      "breakpoint": 480,
+      "settings": {
+        "slidesToShow": 1,
+        "slidesToScroll": 1
+      }
+    }
+  ]
+}
+    }
+  },
+}
+</script>
 <style>
+.slick-prev::before,
+.slick-next::before {
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 2.5rem;
+}
+
+.slick-prev,
+.slick-next {
+    width: 2.5rem;
+    height: 2.5rem;
+    z-index: 2;
+}
+
+.slick-list {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-next {
+    right: 0;
+}
 </style>

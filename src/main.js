@@ -13,6 +13,10 @@ import firebase from "firebase/app"
 import Carousel3d from 'vue-carousel-3d';
 import 'owl.carousel/dist/assets/owl.carousel.css'
 import 'owl.carousel'
+import VueSlickCarousel from 'vue-slick-carousel'
+// optional style for arrows & dots
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+Vue.use(VueSlickCarousel);
 
 Vue.use(Carousel3d);
 
@@ -50,6 +54,7 @@ Vue.component("Photographycard", require('./components/Photographycard.vue'))
 Vue.component("Digitalcard", require('./components/Digitalcard.vue'))
 Vue.component("Sculpturecard", require('./components/Sculpturecard.vue'))
 Vue.component("Drawingcard", require('./components/Drawingcard.vue'))
+Vue.component("VueSlickCarousel", require('./components/VueSlickCarousel.vue'))
 
 new Vue({
     router,
