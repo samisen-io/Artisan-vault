@@ -2,17 +2,17 @@
   <div>
     <section class="carousal-section">
       <b-container>
-        <b-row>
-          <b-col col md="10">
-            <div class="section-title">
+        <div class="section-title">
+          <b-row>
+            <b-col col md="10">
               <h3>HighestPaid <span>Artwork</span></h3>
-            </div>
-          </b-col>
-          <b-col col md="2">
-            <a href="/Artwork" style="align: right">View all artworks</a>
-          </b-col>
-          <br />
-        </b-row>
+            </b-col>
+            <b-col col md="2">
+              <a href="/Artwork" style="align: right">View all artworks</a>
+            </b-col>
+            <br />
+          </b-row>
+        </div>
         <b-container>
           <b-row>
             <b-col md="12" class="my-1"> </b-col>
@@ -36,11 +36,11 @@
                         style="max-width: 25rem"
                       ></b-avatar>
 
-                      <b-text>
+                      <b-card-text>
                         <b>
                           <h3>{{ user.Artistname }}</h3></b
                         >
-                      </b-text>
+                      </b-card-text>
 
                       <hr style="padding: 0" />
                       <!-- For email -->
@@ -127,25 +127,5 @@ export default {
 .slick-next::before {
   color: rgba(0, 0, 0, 0.2);
   font-size: 2.5rem;
-}
-
-.slick-prev,
-.slick-next {
-  width: 2.5rem;
-  height: 2.5rem;
-  z-index: 2;
-}
-
-.slick-list {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.slick-prev {
-  left: 0;
-}
-
-.slick-next {
-  right: 0;
 }
 </style>

@@ -1,122 +1,77 @@
 <template>
   <div>
-    <center>
-      <VueSlickCarousel v-bind="settings">
-        <b-row v-for="user in featuredart" :key="user.id">
-          <b-col>
-            <b-card :img-src="user.Pic" size="5rem" class="text-center">
-              <!-- For Creator photo and name -->
-              <div class="mb-1">
-                <b-avatar
-                  :src="user.Authorprofilepic"
-                  size="4rem"
-                  class="text-center"
-                  style="max-width: 25rem"
-                ></b-avatar>
-
-                <b-text>
-                  <b>
-                    <h3>{{ user.Artistname }}</h3></b
-                  >
-                </b-text>
-
-                <hr style="padding: 0" />
-                <!-- For email -->
-                <b-card-text>
-                  <b>{{ user.email }}</b>
-                </b-card-text>
-                <!-- For image description -->
-                <b-card-text>
-                  {{ user.Title }}
-                </b-card-text>
-                <!-- button -->
-                <b-button block href="/Artwork" variant="outline-primary"
-                  >View</b-button
-                >
-              </div>
-            </b-card>
-          </b-col>
-        </b-row>
-      </VueSlickCarousel>
-    </center>
+    <b-navbar toggleable="lg" type="light" variant="light" fixed="top">
+      <h3 style="padding-right: 25px">Artisan</h3>
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+      <b-collapse v-model="isCollapseOpen" id="nav-collapse" is-nav>
+        <b-navbar-nav>
+          <router-link tag="li" class="col" class-active="active" to="/" exact
+            >Allarts</router-link
+          >
+          <router-link
+            tag="li"
+            class="col"
+            class-active="active"
+            to="/Crafts"
+            exact
+            >Crafts</router-link
+          >
+          <router-link
+            tag="li"
+            class="col"
+            class-active="active"
+            to="/Drawing"
+            exact
+            >Drawing</router-link
+          >
+          <router-link
+            tag="li"
+            class="col"
+            class-active="active"
+            to="/Photography"
+            exact
+            >Photography</router-link
+          >
+          <router-link
+            tag="li"
+            class="col"
+            class-active="active"
+            to="/Drawing"
+            exact
+            >Drawing</router-link
+          >
+          <router-link
+            tag="li"
+            class="col"
+            class-active="active"
+            to="/Sculpture"
+            exact
+            >Sculpture</router-link
+          >
+        </b-navbar-nav>
+        <b-navbar-nav class="ml-auto">
+          <b-button variant="outline-primary" href="/Login">
+            <b-icon icon="person-fill"></b-icon> Login
+          </b-button>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
   </div>
 </template>
 
 <script>
-import VueSlickCarousel from "vue-slick-carousel";
-import "vue-slick-carousel/dist/vue-slick-carousel.css";
-// optional style for arrows & dots
-import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
-import featuredData from "./featuredart.json";
-export default {
-  components: {
-    VueSlickCarousel,
-  },
-  data() {
-    return {
-      featuredart: featuredData,
-      settings: {
-        dots: true,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        initialSlide: 0,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true,
-            },
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              initialSlide: 2,
-            },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            },
-          },
-        ],
-      },
-    };
-  },
-};
+export default {};
 </script>
+
 <style>
-.slick-prev::before,
-.slick-next::before {
-  color: rgba(0, 0, 0, 0.2);
-  font-size: 2.5rem;
+nav li:hover,
+nav li.router-link-active,
+nav li.router-link-exact-active {
+  color: red;
+  cursor: pointer;
+  list-style-type: none;
 }
-
-.slick-prev,
-.slick-next {
-  width: 2.5rem;
-  height: 2.5rem;
-  z-index: 2;
-}
-
-.slick-list {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.slick-prev {
-  left: 0;
-}
-
-.slick-next {
-  right: 0;
+nav li {
+  list-style-type: none;
 }
 </style>

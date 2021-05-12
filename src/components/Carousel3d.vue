@@ -7,7 +7,7 @@
         :autoplay="true"
         :autoplayTimeout="3500"
         :width="500"
-        :height="450"
+        :height="350"
       >
         <slide :index="0">
           <img
@@ -120,6 +120,7 @@ export default {
 }
 
 .jumbotron {
-  height: 535px;
+ 
+  height:440px;
 }
 </style>

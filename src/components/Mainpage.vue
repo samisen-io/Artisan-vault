@@ -15,7 +15,7 @@
     <Highestpaidart />
     <!-- Top Arts Section End -->
     <br />
-    <Toparts />
+    <topartist />
     <!--Footer -->
     <Footer />
     <br />
@@ -28,8 +28,9 @@ import Footer from "./Footer.vue";
 import Maincard from "./Maincard.vue";
 import Featuredarts from "./Featuredarts.vue";
 
-import Toparts from "./Toparts.vue";
+
 import Highestpaidart from "./Highestpaidart.vue";
+import Topartist from './Topartist.vue';
 
 export default {
   components: {
@@ -37,9 +38,10 @@ export default {
     Footer,
     Featuredarts,
 
-    Toparts,
+    
     Maincard,
     Highestpaidart,
+    Topartist,
   },
 
   name: "Mainpage",
@@ -81,21 +83,13 @@ export default {
   left: 0;
   bottom: 0;
   height: 3px;
-  width: 70px;
+  width: 100%;
   background: #dd1515;
   content: "";
-  z-index: 1;
+  z-index: 2;
 }
 
-.section-title:after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 100%;
-  background: #f2f2f2;
-  content: "";
-}
+
 
 .section-title h3 {
   font-size: 28px;
