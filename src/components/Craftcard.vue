@@ -2,28 +2,30 @@
   <div>
     <b-container>
       <div>
-        <b-card no-body class="overflow-hidden">
+        <b-card no-body class="overflow-hidden" border-variant="0">
           <b-row no-gutters>
             <b-col md="7">
               <b-card-img
                 src="https://cdn.kinsights.com/cache/ba/0b/ba0b91b435ddd6f3d829524869cfb943.png"
                 alt="Image"
                 class="rounded-0"
-                height="500"
+                img-alt="image"
+                style="max-width: 35rem"
+                height="450"
               ></b-card-img>
             </b-col>
             <b-col md="5">
               <b-card-body>
                 <br />
                 <b-row>
-                  <b-col col md="3">
+                  <b-col col md="4">
                     <b-avatar
                       size="5rem"
                       src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mh-chris-hemsworth-attends-the-tag-heuer-museum-in-motion-news-photo-968210608-1554829603.jpg"
                     >
                     </b-avatar>
                   </b-col>
-                  <b-col col md="8">
+                  <b-col col md="6">
                     <br />
                     <a
                       href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man"
@@ -32,7 +34,7 @@
                     >
                   </b-col>
                 </b-row>
-                <hr />
+                <br />
                 <b-card-text>
                   <br />
                   <h1><p class="font-weight-bold">venkat</p></h1>
@@ -44,24 +46,23 @@
                 </b-card-text>
                 <b-card-text>
                   <br />
-                  <center>
-                    <b-row>
-                      <b-col col md="3">
-                        <b-card-text>
-                          <b-button href="/Artwork" variant="outline-dark"
-                            >Place a bid</b-button
-                          >
-                        </b-card-text>
-                      </b-col>
-                      <b-col col md="8">
-                        <b-card-text>
-                          <b-button href="/Artwork" variant="outline-dark"
-                            >View artwork</b-button
-                          >
-                        </b-card-text>
-                      </b-col>
-                    </b-row>
-                  </center>
+
+                  <b-row>
+                    <b-col col md="3">
+                      <b-card-text>
+                        <b-button href="/Artwork" variant="outline-dark"
+                          >Place a bid</b-button
+                        >
+                      </b-card-text>
+                    </b-col>
+                    <b-col col>
+                      <b-card-text>
+                        <b-button href="/Artwork" variant="outline-dark"
+                          >View artwork</b-button
+                        >
+                      </b-card-text>
+                    </b-col>
+                  </b-row>
                 </b-card-text>
               </b-card-body>
             </b-col>
@@ -77,4 +78,7 @@ export default {};
 </script>
 
 <style>
+.card {
+  border: none;
+}
 </style>
