@@ -8,10 +8,8 @@
     <Maincard />
     <!-- Featured Arts Section Begin -->
     <br />
-    <Featuredarts />
-    <!-- Latestarts Arts Section Begin -->
     <br />
-    <Latestarts />
+    <Featuredarts />
     <br />
     <!-- Highestpaidarts  -->
     <Highestpaidart />
@@ -29,7 +27,7 @@ import Navbar from "./Navbar.vue";
 import Footer from "./Footer.vue";
 import Maincard from "./Maincard.vue";
 import Featuredarts from "./Featuredarts.vue";
-import Latestarts from "./Latestarts.vue";
+
 import Toparts from "./Toparts.vue";
 import Highestpaidart from "./Highestpaidart.vue";
 
@@ -38,7 +36,7 @@ export default {
     Navbar,
     Footer,
     Featuredarts,
-    Latestarts,
+
     Toparts,
     Maincard,
     Highestpaidart,
@@ -55,7 +53,7 @@ export default {
 
     
 <style>
-.body{
+.body {
   background-color: salmon;
 }
 .section-title {
