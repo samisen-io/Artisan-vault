@@ -3,54 +3,43 @@
     <section class="carousal-section">
       <b-container>
         <b-container>
-          <b-row>
-            <b-col col md="10">
-              <div class="section-title">
-                <h3>Top <span>Artwork</span></h3>
-              </div>
-            </b-col>
-            <b-col col md="2">
-              <a href="/Artwork" style="align: right">View all artworks</a>
-            </b-col>
-            <br />
-          </b-row>
+          <div class="section-title">
+            <b-row>
+              <b-col col md="10">
+                <h3>Top <span>Artist</span></h3>
+              </b-col>
+              <b-col col md="2">
+                <a href="" style="align: right">View all artists</a>
+              </b-col>
+              <br />
+            </b-row>
+          </div>
         </b-container>
         <center>
           <VueSlickCarousel v-bind="settings">
             <b-row v-for="user in topart" :key="user.id">
               <b-col>
                 <b-card
-                  :img-src="user.Pic"
+                  :img-src="user.Authorprofilepic"
                   size="5rem"
                   class="text-center"
                   style="max-width: 25rem"
                 >
-                  <!-- For Creator photo and name -->
                   <div class="mb-1">
-                    <b-avatar
-                      :src="user.Authorprofilepic"
-                      size="4rem"
-                      class="text-center"
-                      style="max-width: 25rem"
-                    ></b-avatar>
-
-                    <b-text>
+                    <b-card-text>
                       <b>
-                        <h3>{{ user.Artistname }}</h3></b
+                        <h3>{{ user.Authorname }}</h3></b
                       >
-                    </b-text>
+                    </b-card-text>
 
-                    <hr style="padding: 0" />
-                    <!-- For email -->
-                    <b-card-text>
-                      <b>{{ user.email }}</b>
-                    </b-card-text>
-                    <!-- For image description -->
-                    <b-card-text>
-                      {{ user.Title }}
-                    </b-card-text>
-                    <!-- button -->
-                    <b-button block href="/Artwork" variant="outline-primary"
+                    <a
+                      class="link"
+                      href="https://www.google.com"
+                      target="_blank"
+                      ><h5>@{{ user.Authorname }}</h5></a
+                    >
+
+                    <b-button block href="" variant="outline-primary"
                       >View</b-button
                     >
                   </div>
@@ -65,7 +54,7 @@
   <!-- Featured Arts Section End -->
 </template>
 <script>
-import topArtData from "./topart.json";
+import Topartist from "./Topartist.json";
 import VueSlickCarousel from "vue-slick-carousel";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 // optional style for arrows & dots
@@ -77,7 +66,7 @@ export default {
   },
   data() {
     return {
-      topart: topArtData,
+      topart: Topartist,
       settings: {
         dots: true,
         infinite: false,
@@ -127,6 +116,7 @@ export default {
 .slick-next {
   width: 2.5rem;
   height: 2.5rem;
+  padding-right: -50%;
   z-index: 2;
 }
 

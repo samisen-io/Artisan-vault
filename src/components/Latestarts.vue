@@ -2,14 +2,16 @@
   <div>
     <section class="carousal-section">
       <b-container>
-        <b-row>
-          <b-col class="my-1">
+  <b-row>
+          <b-col col md="10">
             <div class="section-title">
-              <h3>Featured <span>Artwork</span></h3>
+              <h3>Latest <span>Artwork</span></h3>
             </div>
-            <h6 style="text-align: right">View All</h6>
-            <br />
           </b-col>
+          <b-col col md="2">
+            <a href="/Artwork" style="align: right">View all artworks</a>
+          </b-col>
+          <br />
         </b-row>
         <b-container>
           <b-row>
@@ -19,32 +21,32 @@
             <b-col col lg="3" v-for="user in latestart" :key="user.id">
               <b-card
                 class="text-center"
-                :img-src="user.Artimg"
+                :img-src="user.Pic"
                 img-alt="Image"
                 img-top
                 tag="article"
                 style="max-width: 25rem"
               >
-                <!-- For Creator photo and name -->
+                <!-- For Author  photo and name -->
                 <div class="mb-5">
-                  <b-avatar :src="user.Creator" size="8rem" class="text-center"></b-avatar>
+                  <b-avatar
+                    :src="user.Authorprofilepic"
+                    size="8rem"
+                    class="text-center"
+                  ></b-avatar>
                   <br />
                   <br />
-                  
-                    <b> <h3>{{user.Artistname}}</h3></b>
-                 
+
+                  <b>
+                    <h3>{{ user.Authorname}}</h3></b
+                  >
                   <hr />
-                  <!-- For email -->
-                  <b-card-text>
-                    <b>{{ user.email }}</b>
-                  </b-card-text>
                   <!-- For image description -->
                   <b-card-text>
-                    {{ user.Artdescription }}
+                    {{ user.Title }}
                   </b-card-text>
-                  <!-- button -->
-                  <b-button block href="#" variant="outline-primary"
-                    >View</b-button
+                  <!-- button to view -->
+                  <b-button block v-bind:href="'/Artwork?latestartworkid='+ user.Id" variant="outline-primary" >View</b-button
                   >
                 </div>
               </b-card>
