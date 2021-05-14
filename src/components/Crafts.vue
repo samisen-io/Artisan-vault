@@ -17,10 +17,10 @@
       </b-row>
       <center>
         <VueSlickCarousel v-bind="settings">
-          <b-row v-for="user in users" :key="user.id">
+          <b-row v-for="craft in crafts" :key="craft.id">
             <b-col>
               <b-card
-                :img-src="user.Pic"
+                :img-src="craft.Pic"
                 size="5rem"
                 class="text-center"
                 style="max-width: 25rem"
@@ -29,7 +29,7 @@
                 <!-- For Creator photo and name -->
                 <div class="mb-1">
                   <b-avatar
-                    :src="user.Authorprofilepic"
+                    :src="craft.Authorprofilepic"
                     size="4rem"
                     class="text-center"
                     style="max-width: 25rem"
@@ -37,18 +37,18 @@
 
                   <b-text>
                     <b>
-                      <h3>{{ user.Artistname }}</h3></b
+                      <h3>{{ craft.Artistname }}</h3></b
                     >
                   </b-text>
 
                   <hr style="padding: 0" />
                   <!-- For email -->
                   <b-card-text>
-                    <b>{{ user.email }}</b>
+                    <b>{{ craft.email }}</b>
                   </b-card-text>
                   <!-- For image description -->
                   <b-card-text>
-                    {{ user.Title }}
+                    {{ craft.Title }}
                   </b-card-text>
                   <!-- button -->
                   <b-button block href="/Artwork" variant="outline-primary"
@@ -70,7 +70,6 @@
 <script>
 import Navbar from "./Navbar.vue";
 import Footer from "./Footer.vue";
-import craft from "./crafts.json";
 import Craftcard from "./Craftcard.vue";
 import VueSlickCarousel from "vue-slick-carousel";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
@@ -87,7 +86,7 @@ export default {
   },
   data() {
     return {
-      users: craft,
+      loading:false,
       settings: {
         dots: true,
         infinite: false,
@@ -124,6 +123,15 @@ export default {
       },
     };
   },
+  computed: {
+    crafts() {
+      return this.$store.state.crafts;
+    }
+  },
+  created(){
+    this.loading = true;
+    this.$store.dispatch('fetchCrafts');
+  }
 };
 </script>
 <style>
