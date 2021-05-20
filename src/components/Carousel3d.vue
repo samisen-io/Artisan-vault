@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <b-jumbotron bg-variant="grey" text-variant="white" border-variant="grey ">
-      <!-- <div v-for="featured in featureds" :key="featured.id"> -->
       <div>
         <carousel-3d
           :controls-visible="true"
@@ -11,7 +10,7 @@
           :width="500"
           :height="350"
         >
-          <div v-for="(picture, index) in featureds[0].pictures" :key="picture">
+          <div v-for="(picture, index) in artwork.pictures" :key="picture">
             <slide :index="index">
               <img :src="picture" :width="500" :height="370" />
             </slide>
@@ -88,14 +87,13 @@ export default {
     this.url();
   },
   computed: {
-    featureds() {
+    artwork() {
       var jsonResult;
       if (this.res == "featureartworkid") {
         this.$store.dispatch("fetchFeatureds");
-        jsonResult = this.$store.state.featureds.filter(
-          (obj) => obj.Id == "1"
+        jsonResult = this.$store.state.featureds.find(
+          (obj) => obj.Id == this.ID
         );
-        console.log(jsonResult.length);
       } else if (this.res == "highestpaidId") {
         this.$store.dispatch("fetchHighestpaids");
         jsonResult = this.$store.state.highestpaids.filter(
@@ -128,7 +126,7 @@ export default {
         );
       } else if (this.res == "drawingartworkid") {
         this.$store.dispatch("fetchDrawings");
-        jsonResult = this.$store.state.drawings.filter(
+        jsonResult = this.$store.state.drawings.find(
           (obj) => obj.Id == this.ID
         );
       }
