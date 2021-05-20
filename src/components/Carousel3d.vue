@@ -1,85 +1,61 @@
 <template>
   <div id="app">
     <b-jumbotron bg-variant="grey" text-variant="white" border-variant="grey ">
-      <carousel-3d
-        :controls-visible="true"
-        :clickable="false"
-        :autoplay="true"
-        :autoplayTimeout="3500"
-        :width="500"
-        :height="350"
-      >
-        <slide :index="0">
-          <img
-            src="https://cdn.pixabay.com/index/2021/04/30/09-58-39-26_1440x480.jpg"
-            :width="500"
-            :height="450"
-          />
-        </slide>
-        <slide :index="1">
-          <img
-            src="https://www.10wallpaper.com/wallpaper/1366x768/1107/Window_pastoral-the_worlds_high-definition_nature_photography_1366x768.jpg"
-            :width="500"
-            :height="450"
-          />
-        </slide>
-        <slide :index="2">
-          <img
-            src="https://images.ctfassets.net/hrltx12pl8hq/3MbF54EhWUhsXunc5Keueb/60774fbbff86e6bf6776f1e17a8016b4/04-nature_721703848.jpg?fit=fill&w=480&h=270"
-            :width="500"
-            :height="450"
-          />
-        </slide>
-        <slide :index="3">
-          <img
-            src="https://i.pinimg.com/originals/1c/aa/c5/1caac55143e3e11461c6ae5962403deb.jpg"
-            :width="500"
-            :height="450"
-          />
-        </slide>
-        <slide :index="4">
-          <img
-            src="https://cdn.pixabay.com/photo/2018/11/10/22/57/nature-3807667_960_720.jpg"
-            :width="500"
-            :height="450"
-          />
-        </slide>
-      </carousel-3d>
-      <!-- ADD SHARE BUTTONS-->
-      <br />
-      <div id="socialbtn">
-        <a
-          href="https://api.addthis.com/oexchange/0.8/forward/facebook/offer?url=https%3A%2F%2Fwww.addthis.com%2F&pubid=ra-42fed1e187bae420&title=AddThis%20%7C%20Home&ct=1"
-          target="_blank"
-          ><img
-            src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/facebook.png"
-            border="0"
-            alt="Facebook"
-        /></a>
-        <a
-          href="https://api.addthis.com/oexchange/0.8/forward/twitter/offer?url=https%3A%2F%2Fwww.addthis.com%2F&pubid=ra-42fed1e187bae420&title=AddThis%20%7C%20Home&ct=1"
-          target="_blank"
-          ><img
-            src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/twitter.png"
-            border="0"
-            alt="Twitter"
-        /></a>
-        <a
-          href="https://api.addthis.com/oexchange/0.8/forward/whatsapp/offer?url=https%3A%2F%2Fwww.addthis.com%2F&pubid=ra-42fed1e187bae420&title=AddThis%20%7C%20Home&ct=1"
-          target="_blank"
-          ><img
-            src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/whatsapp.png"
-            border="0"
-            alt="WhatsApp"
-        /></a>
-        <a
-          href="https://api.addthis.com/oexchange/0.8/forward/gmail/offer?url=https%3A%2F%2Fwww.addthis.com%2F&pubid=ra-42fed1e187bae420&title=AddThis%20%7C%20Home&ct=1"
-          target="_blank"
-          ><img
-            src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/gmail.png"
-            border="0"
-            alt="Gmail"
-        /></a>
+      <!-- <div v-for="featured in featureds" :key="featured.id"> -->
+      <div>
+        <carousel-3d
+          :controls-visible="true"
+          :clickable="false"
+          :autoplay="true"
+          :autoplayTimeout="3500"
+          :width="500"
+          :height="350"
+        >
+          <div v-for="(picture, index) in featureds[0].pictures" :key="picture">
+            <slide :index="index">
+              <img :src="picture" :width="500" :height="370" />
+            </slide>
+          </div>
+        </carousel-3d>
+        <br />
+        <div id="socialbtn">
+          <a
+            href="https://api.addthis.com/oexchange/0.8/forward/facebook/offer?url=
+          https%3A%2F%2Fwww.addthis.com%2F&pubid=ra-42fed1e187bae420&title=AddThis%20%7C%20Home&ct=1"
+            target="_blank"
+            ><img
+              src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/facebook.png"
+              border="0"
+              alt="Facebook"
+          /></a>
+          <a
+            href="https://api.addthis.com/oexchange/0.8/forward/twitter/offer?url=https%3A%2F%2Fwww.addthis.com%2F&pubid=ra-42fed1e187bae420&title=AddThis%20%7C%20Home&ct=1"
+            target="_blank"
+            ><img
+              src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/twitter.png"
+              border="0"
+              alt="Twitter"
+          /></a>
+          <a
+            v-bind:href="
+              'https://api.addthis.com/oexchange/0.8/forward/whatsapp/offer?url=' +
+              currenturl
+            "
+            target="_blank"
+            ><img
+              src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/whatsapp.png"
+              border="0"
+              alt="WhatsApp"
+          /></a>
+          <a
+            href="https://api.addthis.com/oexchange/0.8/forward/gmail/offer?url=https%3A%2F%2Fwww.addthis.com%2F&pubid=ra-42fed1e187bae420&title=AddThis%20%7C%20Home&ct=1"
+            target="_blank"
+            ><img
+              src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/gmail.png"
+              border="0"
+              alt="Gmail"
+          /></a>
+        </div>
       </div>
     </b-jumbotron>
   </div>
@@ -96,8 +72,68 @@ export default {
   },
   data() {
     return {
-      slides: 5,
+      ID: "",
+      res: "",
     };
+  },
+  methods: {
+    url: function () {
+      var str = window.location.search;
+      var val = str.split("?").pop();
+      this.ID = str.split("=").pop();
+      this.res = val.substring(0, val.indexOf("="));
+    },
+  },
+  mounted() {
+    this.url();
+  },
+  computed: {
+    featureds() {
+      var jsonResult;
+      if (this.res == "featureartworkid") {
+        this.$store.dispatch("fetchFeatureds");
+        jsonResult = this.$store.state.featureds.filter(
+          (obj) => obj.Id == "1"
+        );
+        console.log(jsonResult.length);
+      } else if (this.res == "highestpaidId") {
+        this.$store.dispatch("fetchHighestpaids");
+        jsonResult = this.$store.state.highestpaids.filter(
+          (obj) => obj.Id == this.ID
+        );
+      } else if (this.res == "topartistsid") {
+        this.$store.dispatch("fetchTopartists");
+        jsonResult = this.$store.state.topartists.filter(
+          (obj) => obj.Id == this.ID
+        );
+      } else if (this.res == "digitalartworkid") {
+        this.$store.dispatch("fetchDigitals");
+        jsonResult = this.$store.state.digitals.filter(
+          (obj) => obj.Id == this.ID
+        );
+      } else if (this.res == "craftartworkid") {
+        this.$store.dispatch("fetchCrafts");
+        jsonResult = this.$store.state.crafts.filter(
+          (obj) => obj.Id == this.ID
+        );
+      } else if (this.res == "photographyartworkid") {
+        this.$store.dispatch("fetchPhotographys");
+        jsonResult = this.$store.state.photographys.filter(
+          (obj) => obj.Id == this.ID
+        );
+      } else if (this.res == "sculptureartworkid") {
+        this.$store.dispatch("fetchSculptures");
+        jsonResult = this.$store.state.sculptures.filter(
+          (obj) => obj.Id == this.ID
+        );
+      } else if (this.res == "drawingartworkid") {
+        this.$store.dispatch("fetchDrawings");
+        jsonResult = this.$store.state.drawings.filter(
+          (obj) => obj.Id == this.ID
+        );
+      }
+      return jsonResult;
+    },
   },
 };
 </script>
@@ -120,7 +156,6 @@ export default {
 }
 
 .jumbotron {
- 
-  height:440px;
+  height: 440px;
 }
 </style>

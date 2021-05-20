@@ -13,7 +13,7 @@
     <br />
     <!-- Highestpaidarts  -->
     <Highestpaidart />
-    <!-- Top Arts Section End -->
+    <!-- Top Artists Section  -->
     <br />
     <topartist />
     <!--Footer -->
@@ -27,34 +27,46 @@ import Navbar from "./Navbar.vue";
 import Footer from "./Footer.vue";
 import Maincard from "./Maincard.vue";
 import Featuredarts from "./Featuredarts.vue";
-
-
 import Highestpaidart from "./Highestpaidart.vue";
-import Topartist from './Topartist.vue';
+import Topartist from "./Topartist.vue";
 
 export default {
+  name: "Mainpage",
   components: {
     Navbar,
     Footer,
     Featuredarts,
-
-    
     Maincard,
     Highestpaidart,
     Topartist,
-  },
-
-  name: "Mainpage",
-  methods: {
-    say: function (message) {
-      alert(message);
-    },
   },
 };
 </script>
 
     
 <style>
+.slick-prev::before,
+.slick-next::before {
+  color: red;
+  font-size: 3rem;
+}
+
+.slick-prev {
+  width: 1px;
+  z-index: 1;
+  padding: 0;
+}
+
+.slick-next {
+  width: 3rem;
+  z-index: 1;
+  padding: 0;
+}
+
+.slick-list {
+  width: 100%;
+}
+
 .body {
   background-color: salmon;
 }
@@ -89,8 +101,6 @@ export default {
   z-index: 2;
 }
 
-
-
 .section-title h3 {
   font-size: 28px;
   color: #151618;
@@ -105,39 +115,5 @@ export default {
 *:before,
 *:after {
   box-sizing: inherit;
-}
-
-/* 
-.b-avatar {
-    border: 0.3rem solid rgba(#fff, 0.3);
-    margin-top: -21rem;
-    margin-left: -15rem;
-    margin-bottom: 1rem;
-    margin-right: 9rem;
-    max-width: 4rem;
-} */
-
-.owl-prev {
-  left: -15px;
-}
-
-.owl-next {
-  right: -15px;
-}
-
-.owl-prev,
-.owl-next {
-  position: absolute;
-  top: 40%;
-}
-
-.owl-prev span,
-.owl-next span {
-  font-size: 60px;
-  color: #787878;
-}
-
-.owl-theme .owl-nav[class*="owl-"]:hover {
-  background-color: transparent;
 }
 </style>

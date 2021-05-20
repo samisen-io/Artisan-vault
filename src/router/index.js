@@ -6,9 +6,13 @@ import Digital from '../components/Digital.vue'
 import Drawing from '../components/Drawing.vue'
 import Photography from '../components/Photography.vue'
 import Sculpture from '../components/Sculpture.vue'
+import Viewallartist from '../components/Viewallartist.vue'
 import Login from '../components/Login.vue'
-import Testjson from '../components/Testjson.vue'
 import Regiesterpage from '../components/Regiesterpage.vue'
+
+
+import Testjson from '../components/Testjson.vue'
+
 import Artwork from '../components/Artwork.vue'
 Vue.use(VueRouter)
 
@@ -18,6 +22,12 @@ const routes = [{
         component: Mainpage
     },
     {
+        path: '/Regiesterpage',
+        component: Regiesterpage
+    }, {
+        path: '/Login',
+        component: Login
+    }, {
         path: '/Artwork',
         name: 'Artwork',
         component: Artwork
@@ -53,15 +63,11 @@ const routes = [{
         component: Sculpture
     },
     {
-        path: '/Login',
-        name: 'Login',
-        component: Login
+        path: '/Viewallartist',
+        name: 'Viewallartist',
+        component: Viewallartist
     },
-    {
-        path: '/Regiesterpage',
-        name: 'Regiesterpage',
-        component: Regiesterpage
-    },
+
     {
         path: '/about',
         name: 'About',

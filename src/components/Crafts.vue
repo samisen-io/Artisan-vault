@@ -26,7 +26,7 @@
                 style="max-width: 25rem"
                 img-height="250"
               >
-                <!-- For Creator photo and name -->
+               
                 <div class="mb-1">
                   <b-avatar
                     :src="craft.Authorprofilepic"
@@ -42,16 +42,19 @@
                   </b-text>
 
                   <hr style="padding: 0" />
-                  <!-- For email -->
+                 
                   <b-card-text>
                     <b>{{ craft.email }}</b>
                   </b-card-text>
-                  <!-- For image description -->
+                 
                   <b-card-text>
                     {{ craft.Title }}
                   </b-card-text>
-                  <!-- button -->
-                  <b-button block href="/Artwork" variant="outline-primary"
+                 
+                  <b-button block 
+                 
+                   v-bind:href="'/Artwork?craftartworkid=' + craft.Id"
+                  variant="outline-primary"
                     >View</b-button
                   >
                 </div>
@@ -125,7 +128,7 @@ export default {
   },
   computed: {
     crafts() {
-      return this.$store.state.crafts;
+      return this.$store.state.crafts
     }
   },
   created(){
@@ -134,30 +137,4 @@ export default {
   }
 };
 </script>
-<style>
-.slick-prev::before,
-.slick-next::before {
-  color: rgba(0, 0, 0, 0.2);
-  font-size: 2.5rem;
-}
 
-.slick-prev,
-.slick-next {
-  width: 2.5rem;
-  height: 2.5rem;
-  z-index: 2;
-}
-
-.slick-list {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.slick-prev {
-  left: 0;
-}
-
-.slick-next {
-  right: 0;
-}
-</style>

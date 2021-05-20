@@ -1,69 +1,70 @@
 <template>
   <div>
     <b-container>
+      <div class="section-title">
+        <b-row>
+          <b-col col md="10">
+            <h3>Featured <span>Artwork</span></h3>
+          </b-col>
+          <b-col col md="2">
+            <a href="/Artwork" style="align: right">View all artworks</a>
+          </b-col>
+          <br />
+        </b-row>
+      </div>
       <b-container>
-        <div class="section-title">
-          <b-row>
-            <b-col col md="10">
-              <h3>Featured <span>Artwork</span></h3>
-            </b-col>
-            <b-col col md="2">
-              <a href="/Artwork" style="align: right">View all artworks</a>
-            </b-col>
-            <br />
-          </b-row>
-        </div>
-      </b-container>
-      <center>
-        <VueSlickCarousel v-bind="settings">
-          <b-row v-for="user in featuredart" :key="user.id">
-            <b-col>
-              <b-card
-                :img-src="user.Pic"
-                size="5rem"
-                class="text-center"
-                style="max-width: 25rem"
-              >
-                <!-- For Creator photo and name -->
-                <div class="mb-1">
-                  <b-avatar
-                    :src="user.Authorprofilepic"
-                    size="4rem"
-                    class="text-center"
-                    style="max-width: 25rem"
-                  ></b-avatar>
+        <b-row>
+          <b-col md="12" class="my-1"> </b-col>
+        </b-row>
+        <center>
+          <VueSlickCarousel v-bind="settings">
+            <b-row v-for="featured in featureds" :key="featured.id">
+              <b-col>
+                <b-card
+                  :img-src="featured.url"
+                  size="5rem"
+                  class="text-center"
+                  style="max-width: 25rem"
+                  img-height="200"
+                >
+                  <!-- For Creator photo and name -->
+                  <div class="mb-1">
+                    <b-avatar
+                      :src="featured.Authorprofilepic"
+                      size="4rem"
+                      class="text-center"
+                      style="max-width: 25rem"
+                    ></b-avatar>
 
-                  <b-card-text>
-                    <b>
-                      <h3>{{ user.Artistname }}</h3></b
+                    <b-card-text>
+                      <b>
+                        <h3>{{ featured.Authorname }}</h3></b
+                      >
+                    </b-card-text>
+                    <hr style="padding: 0" />
+
+                    <!-- For image description -->
+                    <b-card-text>
+                      {{ featured.Title }}
+                    </b-card-text>
+                    <!-- button -->
+                    <b-button
+                      block
+                      v-bind:href="'/Artwork?featureartworkid=' + featured.Id"
+                      variant="outline-primary"
+                      >View</b-button
                     >
-                  </b-card-text>
-
-                  <hr style="padding: 0" />
-                  <!-- For email -->
-                  <b-card-text>
-                    <b>{{ user.email }}</b>
-                  </b-card-text>
-                  <!-- For image description -->
-                  <b-card-text>
-                    {{ user.Title }}
-                  </b-card-text>
-                  <!-- button -->
-                  <b-button
-                    block
-                    v-bind:href="'/Artwork?featureartworkid=' + user.Id"
-                    variant="outline-primary"
-                    >View</b-button
-                  >
-                </div>
-              </b-card>
-            </b-col>
-          </b-row>
-        </VueSlickCarousel>
-      </center>
+                  </div>
+                  <br />
+                </b-card>
+              </b-col>
+            </b-row>
+          </VueSlickCarousel>
+        </center>
+      </b-container>
+      <br />
     </b-container>
   </div>
-  <!-- Featured Arts Section End -->
 </template>
 
 <script>
@@ -71,14 +72,15 @@ import VueSlickCarousel from "vue-slick-carousel";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 // optional style for arrows & dots
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
-import featuredData from "./featuredart.json";
+
 export default {
+  name: "Crafts",
   components: {
     VueSlickCarousel,
   },
   data() {
     return {
-      featuredart: featuredData,
+      loading: false,
       settings: {
         dots: true,
         infinite: false,
@@ -115,32 +117,15 @@ export default {
       },
     };
   },
+  computed: {
+    featureds() {
+      console.log(this.$store.state.featureds);
+      return this.$store.state.featureds;
+    },
+  },
+  created() {
+    this.loading = true;
+    this.$store.dispatch("fetchFeatureds");
+  },
 };
 </script>
-<style>
-.slick-prev::before,
-.slick-next::before {
-  color: rgba(0, 0, 0, 0.2);
-  font-size: 2.5rem;
-}
-
-.slick-prev,
-.slick-next {
-  width: 2.5rem;
-  height: 2.5rem;
-  z-index: 2;
-}
-
-.slick-list {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.slick-prev {
-  left: 0;
-}
-
-.slick-next {
-  right: 0;
-}
-</style>

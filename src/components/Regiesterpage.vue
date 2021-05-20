@@ -1,96 +1,109 @@
 <template>
   <div>
-    <div class="header">
-      <h1> Register your account</h1>
-    </div>
-    <br />
-    <br />
-    <div class="container">
-      <div class="row content">
-        <div class="col-md-5 mb-3">
-          <img
-            alt="Vue logo"
-            src="../assets/RG.png"
-            class="rounded-0"
-            width="400"
-            height="350"
-          />
-        </div>
-        <div class="col-md-6">
-          <form @success="onSubmit" v-if="show">
-            <div class="form-group">
-              <label for="email">Email</label>
-             <b-form-input
-                id="input-1"
-                v-model="form.email"
-                type="email"
-                placeholder="Enter  email"
-                required
-              ></b-form-input>
-            </div>
-            <div class="form-group">
-              <label for="Password">Password</label>
-             <b-form-input
-                id="input-2"
-                v-model="form.password"
-                type="password"
-                placeholder="Enter your Password"
-                required
-              ></b-form-input>
-            </div>
-            <div class="form-group">
-              <label for="Password">Confirm Password</label>
-           <b-form-input
-                id="input-3"
-                v-model="form.confirmpassword"
-                type="password"
-                placeholder="Re-enter your Password"
-                required
-              ></b-form-input>
-            </div>
-            <b-form-checkbox
-              id="checkbox-1"
-              name="checkbox-1"
-              value="accepted"
-              unchecked-value="not_accepted"
-            >
-              If you want to include yourself as an artist
-
-            </b-form-checkbox>
-            <br />
-            <b-button block type="success" variant="success">Signup</b-button>
-            <br />
-            <p>Already have an account? <a href="/Login">Sign in</a>.</p>
-          </form>
-        </div>
-      </div>
-    </div>
+    <b-button  v-b-modal.modal-2 variant="outline-secondary"
+      >Signup</b-button
+    >
+    <b-modal id="modal-2" title="Regiester u r account" hide-footer>
+      <div v-if="error" class="error">{{ error.msg }}</div>
+      <b-form @submit.prevent="signup" v-if="show">
+        <!-- for email -->
+        <b-form-group
+          id="input-group-1"
+          label="Email address:"
+          label-for="input-1"
+        >
+          <b-form-input
+            id="input-1"
+            v-model="email"
+            type="email"
+            placeholder="Enter email"
+            required
+          ></b-form-input>
+        </b-form-group>
+        <!-- for password -->
+        <b-form-group
+          id="input-group-2"
+          label="Enter password:"
+          label-for="input-2"
+        >
+          <b-form-input
+            id="input-2"
+            v-model="password"
+            type="password"
+            placeholder="Enter password"
+            required
+          ></b-form-input>
+        </b-form-group>
+        <!-- for Re-enter password -->
+        <!-- <b-form-group
+          id="input-group-3"
+          label="Re-enter password:"
+          label-for="input-2"
+        >
+          <b-form-input
+            id="input-3"
+            v-model="form.confirmpassword"
+            type="password"
+            placeholder="Re-enter password"
+            required
+          ></b-form-input>
+        </b-form-group> -->
+        <!-- checkbox -->
+        <b-form-checkbox-group>
+          <b-form-checkbox
+            id="checkbox-1"
+            name="checkbox-1"
+            value="accepted"
+            unchecked-value="not_accepted"
+          >
+            If you want to include yourself as an artist
+          </b-form-checkbox>
+        </b-form-checkbox-group>
+        <br />
+        <b-button block type="submit" variant="primary">Signup</b-button>
+        <br />
+        <p>already have an account <a href="Login">Login</a></p>
+      </b-form>
+    </b-modal>
   </div>
 </template>
-
 <script>
+import firebase from "firebase/app";
+import "firebase/auth";
 export default {
-  name: "Regiesterpage",
-  data(){
-    return{
-      form:{
-        email:"",
-        password:"",
-        confirmpassword:""
+  data() {
+    return {
+      form: {
+        email: "",
+        password: "",
+        // confirmpassword: "",
       },
-      show:true,
+      show: true,
     };
   },
-        methods: {
-    onsubmit(event) {
-      event.preventDefault();
-      alert(JSON.stringify(this.form));
+  methods: {
+    signup() {
+      try {
+        const user = firebase
+          .auth()
+          .createUserWithEmailAndPassword(this.email, this.password)
+          .then((user) => {
+            this.$router.replace("/");
+            console.log(user);
+          })
+          .then(() => {
+            alert("register successfully");
+          });
+        console.log(user);
+      } catch (err) {
+        console.log(err);
+      }
     },
-  
-    
-  }
+  },
 };
 </script>
-
 <style>
+div.a {
+  text-align: right;
+}
 </style>
