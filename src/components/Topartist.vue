@@ -6,11 +6,11 @@
           <div class="section-title">
             <b-row>
               <b-col col md="10">
-                <h3>Top <span>Artist</span></h3>
+                <h3>Top <span>Artists</span></h3>
               </b-col>
               <b-col col md="2">
-                <a v-bind:href="'/viewallartist'" style="align: right"
-                  >View all artists</a
+                <a v-bind:href="'/ViewAllArtists'" style="align: right"
+                  >View all Artists</a
                 >
               </b-col>
               <br />
@@ -19,10 +19,10 @@
         </b-container>
         <center>
           <VueSlickCarousel v-bind="settings">
-            <b-row v-for="topartist in topartists" :key="topartist.id">
+            <b-row v-for="topArtist in topArtists" :key="topArtist.id">
               <b-col>
                 <b-card
-                  :img-src="topartist.artistProfilePicUrl"
+                  :img-src="topArtist.authorProfilePicUrl"
                   size="5rem"
                   class="text-center"
                   style="max-width: 30rem"
@@ -31,14 +31,14 @@
                   <div class="mb-1">
                     <b-card-text>
                       <b>
-                        <h3>{{ topartist.artistName }}</h3></b
+                        <h3>{{ topArtist.artistName }}</h3></b
                       >
                     </b-card-text>
                     <a
                       class="link"
                       href="https://www.google.com"
                       target="_blank"
-                      ><h5>@{{ topartist.artistName }}</h5></a
+                      ><h5>@{{ topArtist.artistName }}</h5></a
                     >
                     <b-button
                       block
@@ -105,13 +105,13 @@ export default {
     };
   },
   computed: {
-    topartists() {
-      return this.$store.state.topartists;
+    topArtists() {
+      return this.$store.state.topArtists;
     },
   },
   created() {
     this.loading = true;
-    this.$store.dispatch("fetchTopArtists");
+    this.$store.dispatch("fetchtopArtists");
   },
 };
 </script>

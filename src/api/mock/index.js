@@ -5,7 +5,7 @@ import photographys from './data/photography.json'
 import sculptures from './data/sculpture.json'
 import highestpaids from './data/highestpaid.json'
 import featureds from './data/featured.json'
-import topartists from './data/topartist.json'
+import topArtists from './data/topartist.json'
 
 const fetch = (mockData, time = 0) => {
     return new Promise((resolve) => {
@@ -37,7 +37,7 @@ export default {
     fetchHighestPaids() {
         return fetch(highestpaids, 1000)
     },
-    fetchTopArtists() {
-        return fetch(topartists, 1000)
+    fetchtopArtists() {
+        return fetch(topArtists, 1000)
     }
 }

@@ -6,7 +6,7 @@ import Digital from '../components/Digital.vue'
 import Drawing from '../components/Drawing.vue'
 import Photography from '../components/Photography.vue'
 import Sculpture from '../components/Sculpture.vue'
-import Viewallartist from '../components/Viewallartist.vue'
+import viewAllArtists from '../components/ViewAllArtists.vue'
 import Login from '../components/Login.vue'
 import Regiesterpage from '../components/Regiesterpage.vue'
 import Artistdetails from '../components/Artistdetails.vue'
@@ -63,9 +63,9 @@ const routes = [{
         component: Sculpture
     },
     {
-        path: '/Viewallartist',
-        name: 'Viewallartist',
-        component: Viewallartist
+        path: '/viewAllArtists',
+        name: 'viewAllArtists',
+        component: viewAllArtists
     },
 
     {
