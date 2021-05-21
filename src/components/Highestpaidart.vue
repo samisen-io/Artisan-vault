@@ -49,7 +49,7 @@
                     <!-- button -->
                     <b-button
                       block
-                      v-bind:href="'/Artwork?highestpaidId=' + highestpaid.Id"
+                      v-bind:href="'/Artwork?highestPaidId=' + highestpaid.Id"
                       variant="outline-primary"
                       >View</b-button
                     >
@@ -122,7 +122,7 @@ export default {
   },
   created() {
     this.loading = true;
-    this.$store.dispatch("fetchHighestpaids");
+    this.$store.dispatch("fetchHighestPaids");
   },
 };
 </script>

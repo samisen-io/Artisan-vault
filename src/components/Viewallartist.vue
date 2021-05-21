@@ -83,7 +83,7 @@ export default {
   },
   created() {
     this.loading = true;
-    this.$store.dispatch("fetchTopartists");
+    this.$store.dispatch("fetchTopArtists");
   },
 };
 </script>

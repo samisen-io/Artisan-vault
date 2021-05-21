@@ -62,11 +62,11 @@ export default new Vuex.Store({
         fetchFeatureds({ commit }) {
             return client.fetchFeatureds().then(featureds => commit('setFeatureds', featureds))
         },
-        fetchHighestpaids({ commit }) {
-            return client.fetchHighestpaids().then(highestpaids => commit('setHighestpaids', highestpaids))
+        fetchHighestPaids({ commit }) {
+            return client.fetchHighestPaids().then(highestpaids => commit('setHighestpaids', highestpaids))
         },
-        fetchTopartists({ commit }) {
-            return client.fetchTopartists().then(topartists => commit('setTopartists', topartists))
+        fetchTopArtists({ commit }) {
+            return client.fetchTopArtists().then(topartists => commit('setTopartists', topartists))
         },
     }
 })

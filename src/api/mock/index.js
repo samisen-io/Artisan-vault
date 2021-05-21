@@ -34,10 +34,10 @@ export default {
     fetchFeatureds() {
         return fetch(featureds, 0)
     },
-    fetchHighestpaids() {
+    fetchHighestPaids() {
         return fetch(highestpaids, 1000)
     },
-    fetchTopartists() {
+    fetchTopArtists() {
         return fetch(topartists, 1000)
     }
 }

@@ -51,7 +51,7 @@
                   <!-- button -->
                   <b-button block 
                  
-                  v-bind:href="'/Artwork?photographyartworkid=' + photography.Id"
+                  v-bind:href="'/Artwork?photographyArtworkId=' + photography.Id"
                   variant="outline-primary"
                     >View</b-button
                   >

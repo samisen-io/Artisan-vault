@@ -49,7 +49,7 @@
                     <!-- button -->
                     <b-button
                       block
-                      v-bind:href="'/Artwork?featureartworkid=' + featured.Id"
+                      v-bind:href="'/Artwork?featureArtworkId=' + featured.Id"
                       variant="outline-primary"
                       >View</b-button
                     >

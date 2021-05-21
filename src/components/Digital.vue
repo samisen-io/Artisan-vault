@@ -52,7 +52,7 @@
                   </b-card-text>
                   <!-- button -->
                   <b-button block 
-                   v-bind:href="'/Artwork?digitalartworkid=' + digital.Id"
+                   v-bind:href="'/Artwork?digitalArtworkId=' + digital.Id"
                  
                   variant="outline-primary"
                     >View</b-button

@@ -52,7 +52,7 @@
                   </b-card-text>
                   <!-- button -->
                   <b-button block 
-                   v-bind:href="'/Artwork?sculptureartworkid=' + sculpture.Id"
+                   v-bind:href="'/Artwork?sculptureArtworkId=' + sculpture.Id"
                   variant="outline-primary"
                     >View</b-button
                   >

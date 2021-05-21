@@ -53,7 +53,7 @@
                  
                   <b-button block 
                  
-                   v-bind:href="'/Artwork?craftartworkid=' + craft.Id"
+                   v-bind:href="'/Artwork?craftArtworkId=' + craft.Id"
                   variant="outline-primary"
                     >View</b-button
                   >
