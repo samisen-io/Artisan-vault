@@ -25,7 +25,8 @@
                   :img-src="topartist.Authorprofilepic"
                   size="5rem"
                   class="text-center"
-                  style="max-width: 25rem"
+                  style="max-width: 30rem"
+                  img-height="250"
                 >
                   <div class="mb-1">
                     <b-card-text>
@@ -39,12 +40,7 @@
                       target="_blank"
                       ><h5>@{{ topartist.Authorname }}</h5></a
                     >
-                    <b-button
-                      block
-                      v-bind:href="'/Artwork?topartistsid=' + topartist.Id"
-                      variant="outline-primary"
-                      >View</b-button
-                    >
+                    <b-button block  href="/Artistdeatils" variant="outline-primary">View</b-button>
                   </div>
                 </b-card>
               </b-col>

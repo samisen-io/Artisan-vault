@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <b-jumbotron bg-variant="grey" text-variant="white" border-variant="grey ">
+    <b-jumbotron bg-variant="dark" text-variant="white" border-variant="grey ">
       <div>
         <carousel-3d
           :controls-visible="true"
@@ -62,77 +62,14 @@
 
 <script>
 import { Carousel3d, Slide } from "vue-carousel-3d";
-
+import artwork from "../mixins/artwork.js";
 export default {
   name: "App",
   components: {
     Carousel3d,
     Slide,
   },
-  data() {
-    return {
-      ID: "",
-      res: "",
-    };
-  },
-  methods: {
-    url: function () {
-      var str = window.location.search;
-      var val = str.split("?").pop();
-      this.ID = str.split("=").pop();
-      this.res = val.substring(0, val.indexOf("="));
-    },
-  },
-  mounted() {
-    this.url();
-  },
-  computed: {
-    artwork() {
-      var jsonResult;
-      if (this.res == "featureartworkid") {
-        this.$store.dispatch("fetchFeatureds");
-        jsonResult = this.$store.state.featureds.find(
-          (obj) => obj.Id == this.ID
-        );
-      } else if (this.res == "highestpaidId") {
-        this.$store.dispatch("fetchHighestpaids");
-        jsonResult = this.$store.state.highestpaids.filter(
-          (obj) => obj.Id == this.ID
-        );
-      } else if (this.res == "topartistsid") {
-        this.$store.dispatch("fetchTopartists");
-        jsonResult = this.$store.state.topartists.filter(
-          (obj) => obj.Id == this.ID
-        );
-      } else if (this.res == "digitalartworkid") {
-        this.$store.dispatch("fetchDigitals");
-        jsonResult = this.$store.state.digitals.filter(
-          (obj) => obj.Id == this.ID
-        );
-      } else if (this.res == "craftartworkid") {
-        this.$store.dispatch("fetchCrafts");
-        jsonResult = this.$store.state.crafts.filter(
-          (obj) => obj.Id == this.ID
-        );
-      } else if (this.res == "photographyartworkid") {
-        this.$store.dispatch("fetchPhotographys");
-        jsonResult = this.$store.state.photographys.filter(
-          (obj) => obj.Id == this.ID
-        );
-      } else if (this.res == "sculptureartworkid") {
-        this.$store.dispatch("fetchSculptures");
-        jsonResult = this.$store.state.sculptures.filter(
-          (obj) => obj.Id == this.ID
-        );
-      } else if (this.res == "drawingartworkid") {
-        this.$store.dispatch("fetchDrawings");
-        jsonResult = this.$store.state.drawings.find(
-          (obj) => obj.Id == this.ID
-        );
-      }
-      return jsonResult;
-    },
-  },
+  mixins: [artwork],
 };
 </script>
 

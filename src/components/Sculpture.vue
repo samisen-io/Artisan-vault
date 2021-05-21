@@ -20,7 +20,7 @@
           <b-row v-for="sculpture in sculptures" :key="sculpture.id">
             <b-col>
               <b-card
-                :img-src="sculpture.Pic"
+                :img-src="sculpture.artworkUrl"
                 size="5rem"
                 class="text-center"
                 style="max-width: 25rem"
@@ -29,7 +29,7 @@
                 <!-- For Creator photo and name -->
                 <div class="mb-1">
                   <b-avatar
-                    :src="sculpture.Authorprofilepic"
+                    :src="sculpture.authorProfilePicUrl"
                     size="4rem"
                     class="text-center"
                     style="max-width: 25rem"
@@ -37,7 +37,7 @@
 
                   <b-text>
                     <b>
-                      <h3>{{ sculpture.Artistname }}</h3></b
+                      <h3>{{ sculpture.authorName }}</h3></b
                     >
                   </b-text>
 
@@ -48,7 +48,7 @@
                   </b-card-text>
                   <!-- For image description -->
                   <b-card-text>
-                    {{ sculpture.Title }}
+                    {{ sculpture.artworkTitle }}
                   </b-card-text>
                   <!-- button -->
                   <b-button block 

@@ -21,16 +21,15 @@
             <b-row v-for="featured in featureds" :key="featured.id">
               <b-col>
                 <b-card
-                  :img-src="featured.url"
+                  :img-src="featured.artworkUrl"
                   size="5rem"
                   class="text-center"
                   style="max-width: 25rem"
                   img-height="200"
                 >
-                  <!-- For Creator photo and name -->
                   <div class="mb-1">
                     <b-avatar
-                      :src="featured.Authorprofilepic"
+                      :src="featured.artistProfilePicUrl"
                       size="4rem"
                       class="text-center"
                       style="max-width: 25rem"
@@ -38,14 +37,14 @@
 
                     <b-card-text>
                       <b>
-                        <h3>{{ featured.Authorname }}</h3></b
+                        <h3>{{ featured.artistName }}</h3></b
                       >
                     </b-card-text>
                     <hr style="padding: 0" />
 
                     <!-- For image description -->
                     <b-card-text>
-                      {{ featured.Title }}
+                      {{ featured.artworktitle }}
                     </b-card-text>
                     <!-- button -->
                     <b-button

@@ -1,46 +1,83 @@
 [{
-        "Id": 1,
-        "Authorname": "venkat1",
-        "Authorprofilepic": "https://media.istockphoto.com/photos/mature-mixed-race-business-man-picture-id1059661424?k=6&m=1059661424&s=612x612&w=0&h=Wkp3Rs2F_90PtZu07-fR1YmzGjsw5qj73D42doCo1Gc=",
-        "Authortdescription": "hi how are you1",
-        "Title": "a",
+        "Id": "1",
+        "artistName": "ravi ",
+        "artistProfilePicUrl": "https://media.istockphoto.com/photos/mature-mixed-race-business-man-picture-Id1059661424?k=6&m=1059661424&s=612x612&w=0&h=Wkp3Rs2F_90PtZu07-fR1YmzGjsw5qj73D42doCo1Gc=",
+        "artworkTitle": "sculpture1",
         "email": "venkat1@gmail.com",
-        "Pic": "https://images.unsplash.com/photo-1588571590924-433cc2020a12?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3RhdHVlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
-    }, {
-        "Id": 2,
-        "Title": "b",
-        "Pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Lens_-_Inauguration_du_Louvre-Lens_le_4_d%C3%A9cembre_2012%2C_la_Galerie_du_Temps%2C_n%C2%B0_057.JPG/1200px-Lens_-_Inauguration_du_Louvre-Lens_le_4_d%C3%A9cembre_2012%2C_la_Galerie_du_Temps%2C_n%C2%B0_057.JPG",
-        "Authorname": "maya",
-        "Authorprofilepic": "https://i.pinimg.com/originals/62/87/44/628744f876e7c7008a612b42fa8d9c5c.jpg",
-        "Authortdescription": "hi how are you2",
-        "email": "maya2@gmail.com"
-
+        "artworkdDescription": "Sculpture, an artistic form in which hard or plastic materials are worked into three-dimensional art objects. The designs may be embodied in freestanding objects, in reliefs on surfaces, or in environments ranging from tableaux to contexts that envelop the spectator.",
+        "price": "300",
+        "artworkUrl": "https://images.unsplash.com/photo-1588571590924-433cc2020a12?ixId=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3RhdHVlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
+        "slogan": "iron-man",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": [
+            "https: //images.unsplash.com/photo-1588571590924-433cc2020a12?ixId=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3RhdHVlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
+        ]
     },
     {
-        "Id": 3,
-        "Authorname": "lakshmi",
-        "Authorprofilepic": "https://i.pinimg.com/originals/38/87/74/38877439081908bb80017cd95732d243.jpg",
-        "Authortdescription": "hi how are you3",
-        "Title": "c",
-        "email": "lakshmi@gmail.com",
-        "Pic": "https://m.media-amazon.com/images/I/71RzM9vymBL._AC_SS450_.jpg"
+        "Id": "2",
+        "artistName": "maya ",
+        "artistProfilePicUrl": "https://i.pinimg.com/originals/62/87/44/628744f876e7c7008a612b42fa8d9c5c.jpg",
+        "artworkTitle": "sculpture2",
+        "artworkdDescription": "Sculpture, an artistic form in which hard or plastic materials are worked into three-dimensional art objects. The designs may be embodied in freestanding objects, in reliefs on surfaces, or in environments ranging from tableaux to contexts that envelop the spectator.",
+        "email": "venkat2@gmail.com",
+        "price": "350",
+        "artworkUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Lens_-_Inauguration_du_Louvre-Lens_le_4_d%C3%A9cembre_2012%2C_la_Galerie_du_Temps%2C_n%C2%B0_057.JPG/1200px-Lens_-_Inauguration_du_Louvre-Lens_le_4_d%C3%A9cembre_2012%2C_la_Galerie_du_Temps%2C_n%C2%B0_057.JPG",
+        "slogan": "Bat-man",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Lens_-_Inauguration_du_Louvre-Lens_le_4_d%C3%A9cembre_2012%2C_la_Galerie_du_Temps%2C_n%C2%B0_057.JPG/1200px-Lens_-_Inauguration_du_Louvre-Lens_le_4_d%C3%A9cembre_2012%2C_la_Galerie_du_Temps%2C_n%C2%B0_057.JPG",
+            "https://i.pinimg.com/236x/81/cf/bc/81cfbc76c79925e8e992d240bb462dd3.jpg"
+        ]
     },
     {
-        "Id": 4,
-        "Authorname": "Raju",
-        "Authorprofilepic": "https://thumbs.dreamstime.com/b/handsome-man-hair-style-beard-beauty-face-portrait-fashion-male-model-black-hair-high-resolution-handsome-man-125031765.jpg",
-        "Authortdescription": "hi how are you4",
-        "Title": "d",
-        "email": "Raju@gmail.com",
-        "Pic": "https://i.pinimg.com/236x/38/8f/b6/388fb6b938ddecee2be75a896df55b06.jpg"
+        "Id": "3",
+        "artistName": "lakshmi",
+        "artistProfilePicUrl": "https://i.pinimg.com/originals/38/87/74/38877439081908bb80017cd95732d243.jpg",
+        "artworkTitle": "sculpture3",
+        "artworkdDescription": "Sculpture, an artistic form in which hard or plastic materials are worked into three-dimensional art objects. The designs may be embodied in freestanding objects, in reliefs on surfaces, or in environments ranging from tableaux to contexts that envelop the spectator.",
+        "email": "venkat3@gmail.com",
+        "price": "250",
+        "artworkUrl": "https://m.media-amazon.com/images/I/71RzM9vymBL._AC_SS450_.jpg",
+        "slogan": "Wonder women",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": [
+            "https://m.media-amazon.com/images/I/71RzM9vymBL._AC_SS450_.jpg",
+            "https://lh3.googleusercontent.com/proxy/JXT9dpWrGIf-faPO_0nnBNHFAdYZNM1Got2wfTjYCs2zt_y3YRZxRAVXoaR9SAvrDlK1GaH8gQM8ZbHRHD4PnKeLxeWNO9iilm25IGk9weMYQJGJmUpKQVt5",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx7qYNFW9UMabXko5vmXzHzC7eTzQh19Iqgg&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-oZ74W7CKeqUL5EZu_iOGeVx0tlQ9UhIWZGr91RohWjuUNE7YPafv__1yxGPQzalDBHg&usqp=CAU",
+            "https://visitvatican.info/wp-content/uploads/2020/09/la_Resurrezione_@museivatican.va-min.jpeg"
+        ]
     },
     {
-        "Id": 5,
-        "Authorname": "Ravi",
-        "Authorprofilepic": "https://s3.ap-southeast-1.amazonaws.com/images.asianage.com/images/aa-Cover-5neknqovdb6hesko5h0c8jbr36-20180130131031.Medi.jpeg",
-        "Authortdescription": "hi how are you5",
-        "Title": "e",
-        "email": "Ravi@gmail.com",
-        "Pic": "https://cdn.britannica.com/93/2093-004-21AB275C/Hagar-marble-sculpture-Edmonia-Lewis-Washington-DC-1875.jpg"
+        "Id": "4",
+        "artistName": "Raju",
+        "artistProfilePicUrl": "https://thumbs.dreamstime.com/b/handsome-man-hair-style-beard-beauty-face-portrait-fashion-male-model-black-hair-high-resolution-handsome-man-125031765.jpg",
+        "artworkTitle": "sculpture4",
+        "artworkdDescription": "Sculpture, an artistic form in which hard or plastic materials are worked into three-dimensional art objects. The designs may be embodied in freestanding objects, in reliefs on surfaces, or in environments ranging from tableaux to contexts that envelop the spectator.",
+        "email": "venkat4@gmail.com",
+        "price": "100",
+        "artworkUrl": "https://i.pinimg.com/236x/38/8f/b6/388fb6b938ddecee2be75a896df55b06.jpg",
+        "slogan": "Hulk",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": [
+            "https://i.pinimg.com/236x/38/8f/b6/388fb6b938ddecee2be75a896df55b06.jpg"
+        ]
+    },
+    {
+        "Id": "5",
+        "artistName": "Ravi",
+        "artistProfilePicUrl": "https://s3.ap-southeast-1.amazonaws.com/images.asianage.com/images/aa-Cover-5neknqovdb6hesko5h0c8jbr36-20180130131031.Medi.jpeg",
+        "artworkTitle": "sculpture5",
+        "email": "venkat5@gmail.com",
+        "price": "3001",
+        "artworkUrl": "https://cdn.britannica.com/93/2093-004-21AB275C/Hagar-marble-sculpture-Edmonia-Lewis-Washington-DC-1875.jpg",
+        "artworkdDescription": "",
+        "slogan": "captain america",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": [
+            "https://5.imimg.com/data5/QL/AR/LW/SELLER-58661806/a309192c7487ef8d32db79d98cd8caf2-wall-sculptures-art-sculpture-500x500.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqxMOnyF4bHkwcK_HQsyoPWOqwgJz3pg96uD4ryegIXSk9CK_neIfKbpSlqAFjnS1XU_o&usqp=CAU",
+            "https://cdn.britannica.com/93/2093-004-21AB275C/Hagar-marble-sculpture-Edmonia-Lewis-Washington-DC-1875.jpg"
+        ]
     }
 ]

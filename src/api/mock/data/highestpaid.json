@@ -1,84 +1,87 @@
 [{
-        "Id": 1,
-        "Authorname": "Malkiel",
-        "Authorprofilepic": "https://images2.minutemediacdn.com/image/upload/c_crop,h_1333,w_1981,x_9,y_0/v1554926162/shape/mentalfloss/kiyoshiota-gettyimages-129941726.jpg?itok=BowRHC68",
-        "Authortdescription": "hi how are you",
-        "Title": "ddddddddddddddd",
-        "email": "malkiel@gmail.com",
-        "Pic": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
-
+        "Id": "1",
+        "artistName": "venkat1",
+        "artistProfilePicUrl": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "artworktitle": "artwork1",
+        "email": "venkat1@gmail.com",
+        "price": "120",
+        "artworkUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuPA5TR0BczAgWcFj6AT_-49lncFqS_DbRzg&usqp=CAU",
+        "artworkdDescription": "As you know, the visual characteristics of artwork are lines, colors, values, shapes, textures, space, and movement. To describe them, you must think beyond straight or curved, red or orange, light or dark, round or square, striped or polka dot, shallow or deep, and small or large.",
+        "slogan": "Iron-Man",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuPA5TR0BczAgWcFj6AT_-49lncFqS_DbRzg&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ6NWouQFQrbZbLEv9RDYLOSPC5oYSYUDr776JRxG8LMMhsq6XuU4OMSVWgWkv6x3xUUM&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH9fPm_9f5jkWnxV7L9ITdgJfU_UaTt6X9-O1Y5Ql3zT0v46LxTOs_EiemYtgUeRaaAfE&usqp=CAU",
+            "https://apicms.mstar.com.my/uploads/images/2020/08/31/840803.JPG",
+            "https://1.bp.blogspot.com/-_GLvt6_ZjPQ/Xuefs6e8YiI/AAAAAAAAG60/VFRznGqj9nE_Vur7otW3I4yGEbmvTRMgwCK4BGAsYHg/d/Lukisan%2BPotret%2BMuhammad%2BEzzwan%2B%25287%2529.jpg"
+        ]
     },
-
     {
-
-        "Id": 2,
-        "Authorname": "venkat2",
-        "Authorprofilepic": "https://images2.minutemediacdn.com/image/upload/c_crop,h_1333,w_1981,x_9,y_0/v1554926162/shape/mentalfloss/kiyoshiota-gettyimages-129941726.jpg?itok=BowRHC68",
+        "Id": "2",
+        "artistName": "Venkat2",
+        "artistProfilePicUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaiXlAdqhRCaCwFdjkUzR2Ap7jAsEfLLpED7A2TTlEntNVkVQF0hEcesfNppQRwB26JVQ&usqp=CAU",
+        "artworktitle": "artwork2",
         "email": "venkat2@gmail.com",
-        "Authortdescription": "hi how are you2",
-        "Title": "ddddddddddddddd",
-        "Pic": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
-
-    }, {
-        "Id": 3,
-        "Authorname": "Malkiel3",
-        "Authorprofilepic": "https://images2.minutemediacdn.com/image/upload/c_crop,h_1333,w_1981,x_9,y_0/v1554926162/shape/mentalfloss/kiyoshiota-gettyimages-129941726.jpg?itok=BowRHC68",
-        "email": "malkiel3@gmail.com",
-        "Authortdescription": "hi how are you3",
-        "Title": "ddddddddddddddd",
-        "Pic": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
-
-    }, {
-        "Id": 4,
-        "Authorname": "venkat4",
-        "Authorprofilepic": "https://images2.minutemediacdn.com/image/upload/c_crop,h_1333,w_1981,x_9,y_0/v1554926162/shape/mentalfloss/kiyoshiota-gettyimages-129941726.jpg?itok=BowRHC68",
+        "price": "111",
+        "artworkUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX47B0yQAEbi6QYzz3UvomAP4oCC0qrZl6BQ&usqp=CAU",
+        "artworkdDescription": "As you know, the visual characteristics of artwork are lines, colors, values, shapes, textures, space, and movement. To describe them, you must think beyond straight or curved, red or orange, light or dark, round or square, striped or polka dot, shallow or deep, and small or large.",
+        "slogan": "Hulk",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": [
+            "https://i.pinimg.com/236x/23/df/46/23df460044254a7ebd01d032af68d58c--ink-paintings-colorful-paintings.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCDCMNVJ4jEf6SywY2yhkVx6V3xmWzodOTq8JwXVoygOml_wRwenVe6_7OedmPqkbjoNU&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX47B0yQAEbi6QYzz3UvomAP4oCC0qrZl6BQ&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDun1vWbPWp1dLxVUVTMtsVRBpWbDgkCMmaeyDm_5A7qu-zlAgbabgcvoCVob8nZ3SR1Y&usqp=CAU"
+        ]
+    },
+    {
+        "Id": "3",
+        "artistName": "Venkat3",
+        "artistProfilePicUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBStr6Y8sTAB2bSeWHH6avVtiG7_cjlfbWydgF3XovZrUFXKAvj7tvy0r5b4CoBm718dM&usqp=CAU",
+        "artworktitle": "artwork3",
+        "email": "venkat3@gmail.com",
+        "price": "200",
+        "artworkUrl": "https://3.imimg.com/data3/BC/LV/MY-6149668/acrylic-paintings-250x250.jpg",
+        "artworkdDescription": "As you know, the visual characteristics of artwork are lines, colors, values, shapes, textures, space, and movement. To describe them, you must think beyond straight or curved, red or orange, light or dark, round or square, striped or polka dot, shallow or deep, and small or large.",
+        "slogan": "SpIder-Man",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": [
+            "https://3.imimg.com/data3/BC/LV/MY-6149668/acrylic-paintings-250x250.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL_UOkDwxyb7joI6JoJXlZ2lUc79yc9XdfGtr6fw4c0CZwmtlMT1HxqYF0K1RGasXAtWk&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY8XBSavmEmzHh4BgtLbTn9LpmAap9yrmtSBhXtSx4JA762xpg4JQmvlkjRXRh5Ak7GWw&usqp=CAU",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/014bed74444571.5c2fddecb638d.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj2D5InmP3hsRp3_RgVK7zyDVnueEvgYF73OYQSFvGQehfUM6MVaXuJWHJz9TR4M5ANCY&usqp=CAU"
+        ]
+    },
+    {
+        "Id": "4",
+        "artistName": "venkat4",
+        "artistProfilePicUrl": "https://i.pinimg.com/originals/dd/c0/b5/ddc0b5606f1e631b883b1d50509731fd.jpg",
+        "artworktitle": "artwork4",
         "email": "venkat4@gmail.com",
-        "Authortdescription": "hi how are you4",
-        "Title": "ddddddddddddddd",
-        "Pic": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
-
-    }, {
-
-        "Id": 5,
-        "Authorname": "malkiel5",
-        "Authorprofilepic": "https://images2.minutemediacdn.com/image/upload/c_crop,h_1333,w_1981,x_9,y_0/v1554926162/shape/mentalfloss/kiyoshiota-gettyimages-129941726.jpg?itok=BowRHC68",
-        "email": "malkiel5@gmail.com",
-        "Authortdescription": "hi how are you5",
-        "Title": "ddddddddddddddd",
-        "Pic": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
-    }, {
-        "Id": 6,
-        "Authorname": "venkat6",
-        "Authorprofilepic": "https://images2.minutemediacdn.com/image/upload/c_crop,h_1333,w_1981,x_9,y_0/v1554926162/shape/mentalfloss/kiyoshiota-gettyimages-129941726.jpg?itok=BowRHC68",
-        "email": "venkat6@gmail.com",
-        "Authortdescription": "hi how are you6",
-        "Title": "ddddddddddddddd",
-        "Pic": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
-    }, {
-        "Id": 7,
-        "Authorname": "malkiel7",
-        "Authorprofilepic": "https://images2.minutemediacdn.com/image/upload/c_crop,h_1333,w_1981,x_9,y_0/v1554926162/shape/mentalfloss/kiyoshiota-gettyimages-129941726.jpg?itok=BowRHC68",
-        "email": "malkiel7@gmail.com",
-        "Authortdescription": "hi how are you7",
-        "Title": "ddddddddddddddd",
-        "Pic": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
-    }, {
-        "Id": 8,
-        "Authorname": "venkat8",
-        "Authorprofilepic": "https://images2.minutemediacdn.com/image/upload/c_crop,h_1333,w_1981,x_9,y_0/v1554926162/shape/mentalfloss/kiyoshiota-gettyimages-129941726.jpg?itok=BowRHC68",
-        "email": "venkat8@gmail.com",
-        "Authortdescription": "hi how are you8",
-        "Title": "ddddddddddddddd",
-        "Pic": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
-    }, {
-
-        "Id": 9,
-        "Authorname": "malkiel9",
-        "Authorprofilepic": "https://images2.minutemediacdn.com/image/upload/c_crop,h_1333,w_1981,x_9,y_0/v1554926162/shape/mentalfloss/kiyoshiota-gettyimages-129941726.jpg?itok=BowRHC68",
-        "email": "malkiel@gmail.com",
-        "Authortdescription": "hi how are you9",
-        "Title": "ddddddddddddddd",
-        "Pic": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
+        "price": "200",
+        "artworkUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzRJ8I10D9V75LUZ7B9EZGtPGPZAVAcaJBDg&usqp=CAU",
+        "artworkdDescription": "As you know, the visual characteristics of artwork are lines, colors, values, shapes, textures, space, and movement. To describe them, you must think beyond straight or curved, red or orange, light or dark, round or square, striped or polka dot, shallow or deep, and small or large.",
+        "slogan": "Black-Panter",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwX6qNLVWBt4QdomWRcgY23jr7b7WiRhSqNssRI1wvqTvzT2ej7dAgn9tT5pAa-R5vAEc&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzRJ8I10D9V75LUZ7B9EZGtPGPZAVAcaJBDg&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJYiOnNSjomDz0WlnMJHhOYHh8B7EEWx6DMp4HIJdDuMEcpYe40ja3N6ZEwwMvKryhfwE&usqp=CAU"
+        ]
+    },
+    {
+        "Id": "5",
+        "artistName": "venkat5",
+        "artistProfilePicUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOTxj1L5J64I_-gs_u-l3-d5PKg_wManLB0w&usqp=CAU",
+        "artworktitle": "artwork5",
+        "email": "venkat5@gmail.com",
+        "price": "900",
+        "artworkUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTLsZ8I96dyZakBy2koJev0zJmfAlEXQnEeA&usqp=CAU",
+        "artworkdDescription": "As you know, the visual characteristics of artwork are lines, colors, values, shapes, textures, space, and movement. To describe them, you must think beyond straight or curved, red or orange, light or dark, round or square, striped or polka dot, shallow or deep, and small or large.",
+        "slogan": "Captain-America",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTLsZ8I96dyZakBy2koJev0zJmfAlEXQnEeA&usqp=CAU"]
     }
-
 ]

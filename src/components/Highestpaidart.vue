@@ -21,7 +21,7 @@
             <b-row v-for="highestpaid in highestpaids" :key="highestpaid.id">
               <b-col>
                 <b-card
-                  :img-src="highestpaid.Pic"
+                  :img-src="highestpaid.artworkUrl"
                   size="5rem"
                   class="text-center"
                   style="max-width: 25rem"
@@ -30,7 +30,7 @@
                   <!-- For Creator photo and name -->
                   <div class="mb-1">
                     <b-avatar
-                      :src="highestpaid.Authorprofilepic"
+                      :src="highestpaid.artistProfilePicUrl"
                       size="4rem"
                       class="text-center"
                       style="max-width: 25rem"
@@ -38,13 +38,13 @@
 
                     <b-text>
                       <b>
-                        <h3>{{ highestpaid.Artistname }}</h3></b
+                        <h3>{{ highestpaid.artistName }}</h3></b
                       >
                     </b-text>
                     <hr style="padding: 0" />
                     <!-- For image description -->
                     <b-card-text>
-                      {{ highestpaid.Title }}
+                      {{ highestpaid.artworktitle }}
                     </b-card-text>
                     <!-- button -->
                     <b-button

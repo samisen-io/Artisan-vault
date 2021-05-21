@@ -36,6 +36,7 @@
             size="5rem"
             class="text-center"
             style="max-width: 25rem"
+            img-height="200"
           >
             <div class="mb-1">
               <b-card-text>
@@ -46,7 +47,7 @@
               <a class="link" href="https://www.google.com" target="_blank"
                 ><h5>@{{ topartist.Authorname }}</h5></a
               >
-              <b-button block href="" variant="outline-primary">View</b-button>
+              <b-button block href="/Artistdeatils" variant="outline-primary">View</b-button>
             </div>
           </b-card>
           <br />
@@ -63,10 +64,22 @@ import Footer from "./Footer.vue";
 import Navbar from "./Navbar.vue";
 export default {
   components: { Navbar, Footer },
+  data() {
+    return {
+     
+    };
+  },
   computed: {
     topartists() {
       return this.$store.state.topartists;
     },
+    // search() {
+    //   return this.$store.state.topartists.filter((topartist) => {
+    //     return topartist.Authorname.toLowerCase().includes(
+    //       this.search.toLowerCase()
+    //     );
+    //   });
+    // },
   },
   created() {
     this.loading = true;

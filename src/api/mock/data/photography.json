@@ -1,47 +1,88 @@
 [{
-        "Id": 1,
-        "Authorname": "venkat1",
-        "Authorprofilepic": "https://media.istockphoto.com/photos/mature-mixed-race-business-man-picture-id1059661424?k=6&m=1059661424&s=612x612&w=0&h=Wkp3Rs2F_90PtZu07-fR1YmzGjsw5qj73D42doCo1Gc=",
-        "Authortdescription": "hi how are you1",
-        "Title": "a",
+        "id": "1",
+        "artistName": "venkat1",
+        "artistProfilePicUrl": "https://media.istockphoto.com/photos/mature-mixed-race-business-man-picture-id1059661424?k=6&m=1059661424&s=612x612&w=0&h=Wkp3Rs2F_90PtZu07-fR1YmzGjsw5qj73D42doCo1Gc=",
+        "artworktitle": "photography1",
         "email": "venkat1@gmail.com",
-        "Pic": "https://wallpapercave.com/wp/u9AVLry.jpg"
-    }, {
-        "Id": 2,
-        "Authorname": "venkat2",
-        "Authorprofilepic": "https://media.istockphoto.com/photos/portrait-of-smiling-handsome-man-in-blue-tshirt-standing-with-crossed-picture-id1045886560?k=6&m=1045886560&s=612x612&w=0&h=hXrxai1QKrfdqWdORI4TZ-M0ceCVakt4o6532vHaS3I=",
-        "Authortdescription": "hi how are you2",
-        "Title": "b",
+        "price": "200",
+        "artworkUrl": "https://wallpapercave.com/wp/u9AVLry.jpg",
+        "artworkdDescription": "Fine-art photography is photography created in line with the vision of the photographer as artist, using photography as a medium for creative expression. The goal of fine-art photography is to express an idea, a message, or an emotion. This stands in contrast to representational photography, such as photojournalism, which provides a documentary visual account of specific subjects and events, literally representing objective reality rather than the subjective intent of the photographer; and commercial photography, the primary focus of which is to advertise products, or services.",
+        "slogan": "Iron-man",
+        "facebookPageUrl": "https://www.facebook.com/professionalphotographersclub/",
+        "pictures": [
+            "https://wallpapercave.com/wp/u9AVLry.jpg",
+            "https://iso.500px.com/wp-content/uploads/2016/05/stock-photo-136664977.jpg",
+            "https://mymodernmet.com/wp/wp-content/uploads/2020/06/kylli-sparre-photography-13.jpg",
+            "https://www.thephotoargus.com/wp-content/uploads/2019/08/fineartphotography07.jpg",
+            "https://i.pinimg.com/originals/86/82/4d/86824dc9a5eadbf9f3133331658d0d56.jpg"
+        ]
+    },
+    {
+        "id": "2",
+        "artistName": "venkat2",
+        "artistProfilePicUrl": "https://media.istockphoto.com/photos/portrait-of-smiling-handsome-man-in-blue-tshirt-standing-with-crossed-picture-id1045886560?k=6&m=1045886560&s=612x612&w=0&h=hXrxai1QKrfdqWdORI4TZ-M0ceCVakt4o6532vHaS3I=",
+        "artworktitle": "photograpy2",
         "email": "venkat2@gmail.com",
-        "Pic": "https://blogs.sap.com/wp-content/uploads/2014/09/weather2_sky_539196.jpg"
+        "price": "100",
+        "artworkUrl": "https://blogs.sap.com/wp-content/uploads/2014/09/weather2_sky_539196.jpg",
+        "artworkdDescription": "Fine-art photography is photography created in line with the vision of the photographer as artist, using photography as a medium for creative expression. The goal of fine-art photography is to express an idea, a message, or an emotion. This stands in contrast to representational photography, such as photojournalism, which provides a documentary visual account of specific subjects and events, literally representing objective reality rather than the subjective intent of the photographer; and commercial photography, the primary focus of which is to advertise products, or services.",
+        "slogan": "Spider-Man",
+        "facebookPageUrl": "https://www.facebook.com/professionalphotographersclub/",
+        "pictures": [
+            "https://blogs.sap.com/wp-content/uploads/2014/09/weather2_sky_539196.jpg",
+            "https://i.pinimg.com/originals/20/62/bf/2062bfd2bd82c9001b7d5671edd4dfbd.jpg"
+        ]
     },
     {
-        "Id": 3,
-        "Authorname": "venkat3",
-        "Authorprofilepic": "https://media.istockphoto.com/photos/portrait-of-smiling-handsome-man-in-blue-tshirt-standing-with-crossed-picture-id1045886560?k=6&m=1045886560&s=612x612&w=0&h=hXrxai1QKrfdqWdORI4TZ-M0ceCVakt4o6532vHaS3I=",
-        "Authortdescription": "hi how are you3",
-        "Title": "c",
+        "id": "3",
+        "artistName": "venkat3",
+        "artistProfilePicUrl": "https://media.istockphoto.com/photos/portrait-of-smiling-handsome-man-in-blue-tshirt-standing-with-crossed-picture-id1045886560?k=6&m=1045886560&s=612x612&w=0&h=hXrxai1QKrfdqWdORI4TZ-M0ceCVakt4o6532vHaS3I=",
+        "artworktitle": "photography3",
         "email": "venkat3@gmail.com",
-        "Pic": "https://wallpapercave.com/wp/kjh8eTP.jpg"
+        "price": "800",
+        "artworkUrl": "https://wallpapercave.com/wp/kjh8eTP.jpg",
+        "artworkdDescription": "Fine-art photography is photography created in line with the vision of the photographer as artist, using photography as a medium for creative expression. The goal of fine-art photography is to express an idea, a message, or an emotion. This stands in contrast to representational photography, such as photojournalism, which provides a documentary visual account of specific subjects and events, literally representing objective reality rather than the subjective intent of the photographer; and commercial photography, the primary focus of which is to advertise products, or services.",
+        "slogan": "Hulk",
+        "facebookPageUrl": "https://www.facebook.com/professionalphotographersclub/",
+        "pictures": [
+            "https://www.facebook.com/professionalphotographersclub/",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRumY2QFn4HnXx1hUQkHst63M7jd2ZV-htYyw&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvw_Q81xobaJrVahrnqobcN6b9ycbND370H6AERo5PQss0RYHhIfDbe9gKMs0XBAZn-co&usqp=CAU"
+        ]
     },
     {
-
-        "Id": 4,
-        "Authorname": "venkat4",
-        "Authorprofilepic": "https://media.istockphoto.com/photos/portrait-of-smiling-handsome-man-in-blue-tshirt-standing-with-crossed-picture-id1045886560?k=6&m=1045886560&s=612x612&w=0&h=hXrxai1QKrfdqWdORI4TZ-M0ceCVakt4o6532vHaS3I=",
-        "Authortdescription": "hi how are you4",
-        "Title": "d",
+        "id": "4",
+        "artistName": "venkat4",
+        "artistProfilePicUrl": "https://media.istockphoto.com/photos/portrait-of-smiling-handsome-man-in-blue-tshirt-standing-with-crossed-picture-id1045886560?k=6&m=1045886560&s=612x612&w=0&h=hXrxai1QKrfdqWdORI4TZ-M0ceCVakt4o6532vHaS3I=",
+        "artworktitle": "photography4",
         "email": "venkat4@gmail.com",
-        "Pic": "https://hdwallpaperim.com/wp-content/uploads/2017/08/23/471343-artwork-illustration-sky-mountains-clouds-water-nature-748x501.jpg"
+        "price": "120",
+        "artworkUrl": "https://hdwallpaperim.com/wp-content/uploads/2017/08/23/471343-artwork-illustration-sky-mountains-clouds-water-nature-748x501.jpg",
+        "artworkdDescription": "Fine-art photography is photography created in line with the vision of the photographer as artist, using photography as a medium for creative expression. The goal of fine-art photography is to express an idea, a message, or an emotion. This stands in contrast to representational photography, such as photojournalism, which provides a documentary visual account of specific subjects and events, literally representing objective reality rather than the subjective intent of the photographer; and commercial photography, the primary focus of which is to advertise products, or services.",
+        "slogan": "Thor",
+        "facebookPageUrl": "https://www.facebook.com/professionalphotographersclub/",
+        "pictures": [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPJr4yijt1jG35ULG-cP2bXuKUUqvWU1340gdpHQdVIOEyUrNskXP5OFA8bEV3WNvR5KQ&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSYmGU2GYy1yLNapVQAA-C4SCJHZX-qzDOYmsGqGDaesMUo9MhoEC4H1VjlIfPJF6nmK4&usqp=CAU",
+            "https://hdwallpaperim.com/wp-content/uploads/2017/08/23/471343-artwork-illustration-sky-mountains-clouds-water-nature-748x501.jpg"
+        ]
     },
     {
-        "Id": 5,
-        "Authorname": "venkat5",
-        "Authorprofilepic": "https://media.istockphoto.com/photos/portrait-of-smiling-handsome-man-in-blue-tshirt-standing-with-crossed-picture-id1045886560?k=6&m=1045886560&s=612x612&w=0&h=hXrxai1QKrfdqWdORI4TZ-M0ceCVakt4o6532vHaS3I=",
-        "Authortdescription": "hi how are you5",
-        "Title": "e",
+        "id": "5",
+        "artistName": "venkat5",
+        "artistProfilePicUrl": "https://media.istockphoto.com/photos/portrait-of-smiling-handsome-man-in-blue-tshirt-standing-with-crossed-picture-id1045886560?k=6&m=1045886560&s=612x612&w=0&h=hXrxai1QKrfdqWdORI4TZ-M0ceCVakt4o6532vHaS3I=",
+        "artworktitle": "photography5",
         "email": "venkat5@gmail.com",
-        "Pic": "https://c4.wallpaperflare.com/wallpaper/430/885/201/digital-digital-art-artwork-drawing-digital-painting-hd-wallpaper-preview.jpg"
+        "price": "980",
+        "artworkUrl": "https://c4.wallpaperflare.com/wallpaper/430/885/201/digital-digital-art-artwork-drawing-digital-painting-hd-wallpaper-preview.jpg",
+        "artworkdDescription": "Fine-art photography is photography created in line with the vision of the photographer as artist, using photography as a medium for creative expression. The goal of fine-art photography is to express an idea, a message, or an emotion. This stands in contrast to representational photography, such as photojournalism, which provides a documentary visual account of specific subjects and events, literally representing objective reality rather than the subjective intent of the photographer; and commercial photography, the primary focus of which is to advertise products, or services.",
+        "slogan": "Black-Panter",
+        "facebookPageUrl": "https://www.facebook.com/professionalphotographersclub/",
+        "pictures": [
+            "https://c4.wallpaperflare.com/wallpaper/430/885/201/digital-digital-art-artwork-drawing-digital-painting-hd-wallpaper-preview.jpg",
+            "https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/the-grace-of-wild-things-dustin-lefevre.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkfWBkiRWT0iMGHf1EzRQS-b0M8qdERCQGTldw09_bfp5sAYmb_g7pYGJ14Uen6sob44M&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSYmGU2GYy1yLNapVQAA-C4SCJHZX-qzDOYmsGqGDaesMUo9MhoEC4H1VjlIfPJF6nmK4&usqp=CAU"
+        ]
     }
-
 ]
