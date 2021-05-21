@@ -9,10 +9,8 @@ import Sculpture from '../components/Sculpture.vue'
 import Viewallartist from '../components/Viewallartist.vue'
 import Login from '../components/Login.vue'
 import Regiesterpage from '../components/Regiesterpage.vue'
-
-
+import Artistdetails from '../components/Artistdetails.vue'
 import Testjson from '../components/Testjson.vue'
-
 import Artwork from '../components/Artwork.vue'
 Vue.use(VueRouter)
 
@@ -20,8 +18,10 @@ const routes = [{
         path: '/',
         name: 'Mainpage',
         component: Mainpage
-    },
-    {
+    }, {
+        path: '/Artistdetails',
+        component: Artistdetails
+    }, {
         path: '/Regiesterpage',
         component: Regiesterpage
     }, {

@@ -44,7 +44,7 @@
 
                     <!-- For image description -->
                     <b-card-text>
-                      {{ featured.artworktitle }}
+                      {{ featured.artworkTitle }}
                     </b-card-text>
                     <!-- button -->
                     <b-button

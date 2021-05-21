@@ -30,7 +30,7 @@
       <b-row cols-md="4">
         <b-col v-for="topartist in filter" :key="topartist.id">
           <b-card
-            :img-src="topartist.artistProfilePicUrl"
+            :img-src="topartist.authorProfilePicUrl"
             size="5rem"
             class="text-center"
             style="max-width: 25rem"

@@ -9,7 +9,7 @@
                 <h3>Top <span>Artist</span></h3>
               </b-col>
               <b-col col md="2">
-                <a href="/Viewallartist" style="align: right"
+                <a v-bind:href="'/viewallartist'" style="align: right"
                   >View all artists</a
                 >
               </b-col>
@@ -40,7 +40,12 @@
                       target="_blank"
                       ><h5>@{{ topartist.artistName }}</h5></a
                     >
-                    <b-button block  href="/Artistdeatils" variant="outline-primary">View</b-button>
+                    <b-button
+                      block
+                      href="/Artistdetails"
+                      variant="outline-primary"
+                      >View</b-button
+                    >
                   </div>
                 </b-card>
               </b-col>
