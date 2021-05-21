@@ -22,7 +22,7 @@
             <b-row v-for="topartist in topartists" :key="topartist.id">
               <b-col>
                 <b-card
-                  :img-src="topartist.Authorprofilepic"
+                  :img-src="topartist.authorProfilePicUrl"
                   size="5rem"
                   class="text-center"
                   style="max-width: 30rem"
@@ -31,14 +31,14 @@
                   <div class="mb-1">
                     <b-card-text>
                       <b>
-                        <h3>{{ topartist.Authorname }}</h3></b
+                        <h3>{{ topartist.artistName }}</h3></b
                       >
                     </b-card-text>
                     <a
                       class="link"
                       href="https://www.google.com"
                       target="_blank"
-                      ><h5>@{{ topartist.Authorname }}</h5></a
+                      ><h5>@{{ topartist.artistName }}</h5></a
                     >
                     <b-button block  href="/Artistdeatils" variant="outline-primary">View</b-button>
                   </div>

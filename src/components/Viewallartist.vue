@@ -15,12 +15,10 @@
           <b-col col md="4">
             <b-input-group>
               <b-form-input
+                v-model="search"
                 type="text"
                 placeholder="search for artists by name"
               ></b-form-input>
-              <b-input-group-append>
-                <b-button variant="outline-secondary">search</b-button>
-              </b-input-group-append>
             </b-input-group>
           </b-col>
 
@@ -29,10 +27,10 @@
       </div>
     </b-container>
     <b-container>
-      <b-row cols-md="5">
-        <b-col v-for="topartist in topartists" :key="topartist.id">
+      <b-row cols-md="4">
+        <b-col v-for="topartist in filter" :key="topartist.id">
           <b-card
-            :img-src="topartist.Authorprofilepic"
+            :img-src="topartist.artistProfilePicUrl"
             size="5rem"
             class="text-center"
             style="max-width: 25rem"
@@ -41,13 +39,15 @@
             <div class="mb-1">
               <b-card-text>
                 <b>
-                  <h3>{{ topartist.Authorname }}</h3></b
+                  <h3>{{ topartist.artistName }}</h3></b
                 >
               </b-card-text>
               <a class="link" href="https://www.google.com" target="_blank"
-                ><h5>@{{ topartist.Authorname }}</h5></a
+                ><h5>@{{ topartist.artistName }}</h5></a
               >
-              <b-button block href="/Artistdeatils" variant="outline-primary">View</b-button>
+              <b-button block href="/Artistdeatils" variant="outline-primary"
+                >View</b-button
+              >
             </div>
           </b-card>
           <br />
@@ -66,20 +66,20 @@ export default {
   components: { Navbar, Footer },
   data() {
     return {
-     
+      search: "",
     };
   },
   computed: {
     topartists() {
       return this.$store.state.topartists;
     },
-    // search() {
-    //   return this.$store.state.topartists.filter((topartist) => {
-    //     return topartist.Authorname.toLowerCase().includes(
-    //       this.search.toLowerCase()
-    //     );
-    //   });
-    // },
+    filter() {
+      return this.$store.state.topartists.filter((topartist) => {
+        return topartist.artistName
+          .toLowerCase()
+          .includes(this.search.toLowerCase());
+      });
+    },
   },
   created() {
     this.loading = true;

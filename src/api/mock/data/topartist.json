@@ -1,50 +1,34 @@
 [{
         "Id": 1,
-        "Authorname": "Malkiel",
-        "Authorprofilepic": "https://media.istockphoto.com/photos/portrait-of-smiling-handsome-man-in-blue-tshirt-standing-with-crossed-picture-id1045886560?k=6&m=1045886560&s=612x612&w=0&h=hXrxai1QKrfdqWdORI4TZ-M0ceCVakt4o6532vHaS3I=",
-        "Authortdescription": "hi how are you",
-        "Title": "ddddddddddddddd",
-        "email": "malkiel@gmail.com",
-        "Pic": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
+        "artistName": "Malkiel",
+        "authorProfilePicUrl": "https://media.istockphoto.com/photos/portrait-of-smiling-handsome-man-in-blue-tshirt-standing-with-crossed-picture-id1045886560?k=6&m=1045886560&s=612x612&w=0&h=hXrxai1QKrfdqWdORI4TZ-M0ceCVakt4o6532vHaS3I="
+
+
 
     },
 
     {
 
         "Id": 2,
-        "Authorname": "venkat2",
-        "Authorprofilepic": "https://images.unsplash.com/photo-1552642986-ccb41e7059e7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fG1lbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
-        "email": "venkat2@gmail.com",
-        "Authortdescription": "hi how are you2",
-        "Title": "ddddddddddddddd",
-        "Pic": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
+        "artistName": "venkat2",
+        "authorProfilePicUrl": "https://images.unsplash.com/photo-1552642986-ccb41e7059e7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fG1lbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
+
 
     }, {
         "Id": 3,
-        "Authorname": "Malkiel3",
-        "Authorprofilepic": "https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?size=626&ext=jpg",
-        "email": "malkiel3@gmail.com",
-        "Authortdescription": "hi how are you3",
-        "Title": "ddddddddddddddd",
-        "Pic": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
+        "artistName": "Malkiel3",
+        "authorProfilePicUrl": "https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?size=626&ext=jpg"
 
     }, {
         "Id": 4,
-        "Authorname": "venkat4",
-        "Authorprofilepic": "https://image.freepik.com/free-photo/handsome-good-looking-indian-man-sitting-chair-relaxing-isolated-white-wall_231208-2649.jpg",
-        "email": "venkat4@gmail.com",
-        "Authortdescription": "hi how are you4",
-        "Title": "ddddddddddddddd",
-        "Pic": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
+        "artistName": "venkat4",
+        "authorProfilePicUrl": "https://image.freepik.com/free-photo/handsome-good-looking-indian-man-sitting-chair-relaxing-isolated-white-wall_231208-2649.jpg"
 
     }, {
 
         "Id": 5,
-        "Authorname": "malkiel5",
-        "Authorprofilepic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyUR9yR-oN8xgTEKxnWv3jfuWoghMx4JUnAdJiCc2qZFGoHSomq0tYlTQgefp9wUUTZRY&usqp=CAU",
-        "email": "malkiel5@gmail.com",
-        "Authortdescription": "hi how are you5",
-        "Title": "ddddddddddddddd",
-        "Pic": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
+        "artistName": "malkiel5",
+        "authorProfilePicUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyUR9yR-oN8xgTEKxnWv3jfuWoghMx4JUnAdJiCc2qZFGoHSomq0tYlTQgefp9wUUTZRY&usqp=CAU"
+
     }
 ]
