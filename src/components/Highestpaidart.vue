@@ -44,7 +44,7 @@
                     <hr style="padding: 0" />
                     <!-- For image description -->
                     <b-card-text>
-                      {{ highestpaid.artworktitle }}
+                      {{ highestpaid.artworkTitle }}
                     </b-card-text>
                     <!-- button -->
                     <b-button
