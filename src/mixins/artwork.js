@@ -30,8 +30,8 @@ export default {
                     (obj) => obj.Id == this.id
                 );
             } else if (this.queryType == "topArtistsId") {
-                this.$store.dispatch("fetchTopArtists");
-                artworkObj = this.$store.state.topartists.find(
+                this.$store.dispatch("fetchtopArtists");
+                artworkObj = this.$store.state.topArtists.find(
                     (obj) => obj.Id == this.id
                 );
             } else if (this.queryType == "digitalArtworkId") {

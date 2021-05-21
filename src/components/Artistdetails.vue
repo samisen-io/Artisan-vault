@@ -59,7 +59,7 @@
       </div>
       <b-container>
         <b-row cols-md="4">
-          <b-col v-for="topartist in topartists" :key="topartist.id">
+          <b-col v-for="topartist in topArtists" :key="topartist.id">
             <b-card
               :img-src="topartist.authorProfilePicUrl"
               size="5rem"
@@ -98,13 +98,13 @@ export default {
     Footer,
   },
   computed: {
-    topartists() {
-      return this.$store.state.topartists;
+    topArtists() {
+      return this.$store.state.topArtists;
     },
   },
   created() {
     this.loading = true;
-    this.$store.dispatch("fetchTopArtists");
+    this.$store.dispatch("fetchtopArtists");
   },
 };
 </script>

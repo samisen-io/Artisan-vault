@@ -70,11 +70,11 @@ export default {
     };
   },
   computed: {
-    topartists() {
-      return this.$store.state.topartists;
+    topArtists() {
+      return this.$store.state.topArtists;
     },
     filter() {
-      return this.$store.state.topartists.filter((topartist) => {
+      return this.$store.state.topArtists.filter((topartist) => {
         return topartist.artistName
           .toLowerCase()
           .includes(this.search.toLowerCase());
@@ -83,7 +83,7 @@ export default {
   },
   created() {
     this.loading = true;
-    this.$store.dispatch("fetchTopArtists");
+    this.$store.dispatch("fetchtopArtists");
   },
 };
 </script>
