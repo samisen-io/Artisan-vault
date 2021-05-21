@@ -8,7 +8,7 @@
         <b-row style="margin: 50px">
           <b-col md="6">
             <b-card-img
-              src="https://cdn.kinsights.com/cache/ba/0b/ba0b91b435ddd6f3d829524869cfb943.png"
+              :src="artist.artistProfilePicUrl"
               alt="Image"
               class="rounded-0"
               img-alt="image"
@@ -21,10 +21,7 @@
               <br />
               <b-row>
                 <b-col>
-                  <b-avatar
-                    size="6rem"
-                    src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mh-chris-hemsworth-attends-the-tag-heuer-museum-in-motion-news-photo-968210608-1554829603.jpg"
-                  >
+                  <b-avatar size="6rem" :src="artist.artistProfilePicUrl">
                   </b-avatar>
                 </b-col>
                 <b-col sm="8">
@@ -32,18 +29,18 @@
                   <a
                     href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man"
                   >
-                    <h3>@venkat</h3></a
+                    <h3>@{{ artist.artistName }}</h3></a
                   >
                 </b-col>
               </b-row>
               <b-row style="margin: 30px">
-                <h3 class="font-weight-bold">venkat</h3>
+                <h3 class="font-weight-bold">{{ artist.artistName }}</h3>
               </b-row>
               <b-row style="margin: 30px">
-                <h3 class="font-weight-bold">Iron_Man</h3>
+                <h3 class="font-weight-bold">{{ artist.slogan }}</h3>
               </b-row>
               <b-row style="margin: 30px">
-                <h3 class="font-weight-bold">venkat@gmail.com</h3>
+                <h3 class="font-weight-bold">{{ artist.email }}</h3>
               </b-row>
             </b-card-body>
           </b-col>
@@ -92,20 +89,13 @@
 <script>
 import Footer from "./Footer.vue";
 import Navbar from "./Navbar.vue";
+import artist from "../mixins/artist.js";
 export default {
   components: {
     Navbar,
     Footer,
   },
-  computed: {
-    topartists() {
-      return this.$store.state.topartists;
-    },
-  },
-  created() {
-    this.loading = true;
-    this.$store.dispatch("fetchTopArtists");
-  },
+  mixins: [artist],
 };
 </script>
 

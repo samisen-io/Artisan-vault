@@ -30,7 +30,7 @@
       <b-row cols-md="4">
         <b-col v-for="topartist in filter" :key="topartist.id">
           <b-card
-            :img-src="topartist.authorProfilePicUrl"
+            :img-src="topartist.artistProfilePicUrl"
             size="5rem"
             class="text-center"
             style="max-width: 25rem"
@@ -45,9 +45,11 @@
               <a class="link" href="https://www.google.com" target="_blank"
                 ><h5>@{{ topartist.artistName }}</h5></a
               >
-              <b-button block href="/Artistdeatils" variant="outline-primary"
-                >View</b-button
-              >
+               <b-button
+                      block
+                      v-bind:href="'/Artistdetails?ArtistId=' + topartist.Id"
+                      variant="outline-primary"
+                      >View</b-button>
             </div>
           </b-card>
           <br />
@@ -60,10 +62,12 @@
 </template>
 
 <script>
+
 import Footer from "./Footer.vue";
 import Navbar from "./Navbar.vue";
 export default {
   components: { Navbar, Footer },
+ 
   data() {
     return {
       search: "",

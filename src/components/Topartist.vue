@@ -22,7 +22,7 @@
             <b-row v-for="topartist in topartists" :key="topartist.id">
               <b-col>
                 <b-card
-                  :img-src="topartist.authorProfilePicUrl"
+                  :img-src="topartist.artistProfilePicUrl"
                   size="5rem"
                   class="text-center"
                   style="max-width: 30rem"
@@ -42,7 +42,7 @@
                     >
                     <b-button
                       block
-                      href="/Artistdetails"
+                      v-bind:href="'/Artistdetails?ArtistId=' + topartist.Id"
                       variant="outline-primary"
                       >View</b-button
                     >
