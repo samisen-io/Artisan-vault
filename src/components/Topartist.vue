@@ -9,7 +9,10 @@
                 <h3>Top <span>Artists</span></h3>
               </b-col>
               <b-col col md="2">
-                <a v-bind:href="'/Topartists?Viewallartists'" style="align: right"
+                <a
+                  v-bind:href="'/Topartists?Viewallartists'"
+                  target="_blank"
+                  style="align: right"
                   >View all Artists</a
                 >
               </b-col>
@@ -34,9 +37,10 @@
                         <h3>{{ topArtist.artistName }}</h3></b
                       >
                     </b-card-text>
+
                     <a
                       class="link"
-                      href="https://www.google.com"
+                      v-bind:href="topArtist.facebookPageUrl"
                       target="_blank"
                       ><h5>@{{ topArtist.artistName }}</h5></a
                     >

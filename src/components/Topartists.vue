@@ -42,9 +42,10 @@
                   <h3>{{ topArtist.artistName }}</h3></b
                 >
               </b-card-text>
-              <a class="link" href="https://www.google.com" target="_blank"
-                ><h5>@{{ topArtist.artistName }}</h5></a
-              >
+              <a v-bind:href="topArtist.facebookPageUrl" target="_blank"
+                ><h5>@{{ topArtist.artistName }}</h5>
+              </a>
+
               <b-button
                 block
                 v-bind:href="'/Artist?TopArtistId=' + topArtist.Id"

@@ -1,6 +1,7 @@
 [{
         "Id": 1,
         "artistName": "Malkiel",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
         "slogan": "iron-man",
         "email": "venkatg@gmail.com",
         "artistProfilePicUrl": "https://media.istockphoto.com/photos/portrait-of-smiling-handsome-man-in-blue-tshirt-standing-with-crossed-picture-id1045886560?k=6&m=1045886560&s=612x612&w=0&h=hXrxai1QKrfdqWdORI4TZ-M0ceCVakt4o6532vHaS3I="
@@ -11,6 +12,7 @@
         "Id": 2,
         "artistName": "venkat2",
         "email": "venkat2@gmail.com",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
         "slogan": "iron-man",
         "artistProfilePicUrl": "https://images.unsplash.com/photo-1552642986-ccb41e7059e7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fG1lbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
 
@@ -19,6 +21,7 @@
         "Id": 3,
         "artistName": "Malkiel3",
         "slogan": "iron-man",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
         "email": "venkat3@gmail.com",
         "artistProfilePicUrl": "https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?size=626&ext=jpg"
 
@@ -27,6 +30,7 @@
         "artistName": "venkat4",
         "slogan": "iron-man",
         "email": "venkat4@gmail.com",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
         "artistProfilePicUrl": "https://image.freepik.com/free-photo/handsome-good-looking-indian-man-sitting-chair-relaxing-isolated-white-wall_231208-2649.jpg"
 
     }, {
@@ -35,6 +39,7 @@
         "artistName": "malkiel5",
         "slogan": "iron-man",
         "email": "venkat5@gmail.com",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
         "artistProfilePicUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyUR9yR-oN8xgTEKxnWv3jfuWoghMx4JUnAdJiCc2qZFGoHSomq0tYlTQgefp9wUUTZRY&usqp=CAU"
 
     }
