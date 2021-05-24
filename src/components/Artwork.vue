@@ -52,7 +52,7 @@
 
               <b-row>
                 <b-col col md="8">
-                  <b-button block href="/Artwork" variant="outline-dark"
+                  <b-button block href="/Artwork" class="btn btn-dark"
                     >Place a bid</b-button
                   >
                 </b-col>
