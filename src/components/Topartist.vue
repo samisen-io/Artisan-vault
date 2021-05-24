@@ -9,7 +9,7 @@
                 <h3>Top <span>Artists</span></h3>
               </b-col>
               <b-col col md="2">
-                <a v-bind:href="'/ViewAllArtists'" style="align: right"
+                <a v-bind:href="'/Topartists?Viewallartists'" style="align: right"
                   >View all Artists</a
                 >
               </b-col>
@@ -22,7 +22,7 @@
             <b-row v-for="topArtist in topArtists" :key="topArtist.id">
               <b-col>
                 <b-card
-                  :img-src="topArtist.authorProfilePicUrl"
+                  :img-src="topArtist.artistProfilePicUrl"
                   size="5rem"
                   class="text-center"
                   style="max-width: 30rem"
@@ -42,7 +42,7 @@
                     >
                     <b-button
                       block
-                      v-bind:href="'/Artistdetails?ArtistId=' + topartist.Id"
+                      v-bind:href="'/Artist?TopArtistId=' + topArtist.Id"
                       variant="outline-primary"
                       >View</b-button
                     >
