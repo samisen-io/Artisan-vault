@@ -6,7 +6,7 @@
           <b-row no-gutters>
             <b-col md="7">
               <b-card-img
-                src="https://i.pinimg.com/originals/2b/eb/e7/2bebe777545adc0f2795a160687e7d7e.jpg"
+                src="https://cdn.diys.com/wp-content/uploads/2020/07/Girl.png"
                 alt="Image"
                 class="rounded-0"
                 style="max-width: 35rem"

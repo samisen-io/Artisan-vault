@@ -5,7 +5,8 @@
     <br />
     <br />
     <br />
-    <craftcard />
+  
+    <drawingcard />
   
     <br />
     <br />
@@ -71,11 +72,12 @@
 <script>
 import Navbar from "./Navbar.vue";
 import Footer from "./Footer.vue";
-import Craftcard from "./Craftcard.vue";
+
 import VueSlickCarousel from "vue-slick-carousel";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 // optional style for arrows & dots
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
+import Drawingcard from './Drawingcard.vue';
 
 export default {
   name: "Drawings",
@@ -83,7 +85,8 @@ export default {
     VueSlickCarousel,
     Navbar,
     Footer,
-    Craftcard,
+  
+    Drawingcard,
   },
   data() {
     return {
