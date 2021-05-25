@@ -12,7 +12,7 @@ export default new Vuex.Store({
         photographys: [],
         sculptures: [],
         featureds: [],
-        highestpaids: [],
+        highestPaids: [],
         topArtists: []
     },
 
@@ -35,8 +35,8 @@ export default new Vuex.Store({
         setFeatureds(state, featureds) {
             state.featureds = featureds;
         },
-        setHighestpaids(state, highestpaids) {
-            state.highestpaids = highestpaids;
+        sethighestPaids(state, highestPaids) {
+            state.highestPaids = highestPaids;
         },
         settopArtists(state, topArtists) {
             state.topArtists = topArtists;
@@ -62,8 +62,8 @@ export default new Vuex.Store({
         fetchFeatureds({ commit }) {
             return client.fetchFeatureds().then(featureds => commit('setFeatureds', featureds))
         },
-        fetchHighestPaids({ commit }) {
-            return client.fetchHighestPaids().then(highestpaids => commit('setHighestpaids', highestpaids))
+        fetchhighestPaids({ commit }) {
+            return client.fetchhighestPaids().then(highestPaids => commit('sethighestPaids', highestPaids))
         },
         fetchtopArtists({ commit }) {
             return client.fetchtopArtists().then(topArtists => commit('settopArtists', topArtists))

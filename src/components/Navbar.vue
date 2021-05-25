@@ -65,33 +65,18 @@
             ></b-nav-item
           >
         </b-navbar-nav>
-        <b-navbar-nav class="ml-auto">
-          <b-nav-item>
-            <login />
-          </b-nav-item>
-          <b-nav-item >
-            <regiesterpage />
-          </b-nav-item>
-        </b-navbar-nav>
       </b-collapse>
     </b-navbar>
   </div>
 </template>
 
 <script>
-import Login from "./Login.vue";
-import Regiesterpage from "./Regiesterpage.vue";
-
 export default {
   name: "Navbar",
-  components: {
-    Login,
-    Regiesterpage,
-  },
 };
 </script>
 
-    Regiesterpage
+   
 <style>
 .nav-item {
   padding: 5px;
@@ -109,15 +94,13 @@ export default {
   font-size: 18px;
 }
 
-/* Style the active class, and buttons on mouse-over */
 .active,
-.btn:hover {
+.btn {
   background-color: #666;
   color: white;
 }
-nav li:hover,
-nav li.router-link-active,
-nav li.router-link-exact-active {
+
+nav li.router-link-active {
   color: red;
   cursor: pointer;
   list-style-type: none;

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="footer-dark" fixed="bottom">
+    <div class="footer-dark">
       <footer>
         <div class="container">
           <div class="row">

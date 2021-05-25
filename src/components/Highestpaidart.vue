@@ -1,13 +1,16 @@
 <template>
   <div>
+  
     <b-container>
       <div class="section-title">
         <b-row>
-          <b-col col md="10">
+          <b-col col md="11">
             <h3>Top paid <span>Artwork</span></h3>
           </b-col>
-          <b-col col md="2">
-            <a href="/Artwork" style="align: right">View all artworks</a>
+          <b-col col md="1">
+            <a href="/Highestpaidartworks?viewall" style="align: right"
+              >View all</a
+            >
           </b-col>
           <br />
         </b-row>
@@ -18,38 +21,38 @@
         </b-row>
         <center>
           <VueSlickCarousel v-bind="settings">
-            <b-row v-for="highestpaid in highestpaids" :key="highestpaid.id">
+            <b-row v-for="highestPaid in highestPaids" :key="highestPaid.id">
               <b-col>
                 <b-card
-                  :img-src="highestpaid.artworkUrl"
+                  :img-src="highestPaid.artworkUrl"
                   size="5rem"
                   class="text-center"
                   style="max-width: 25rem"
                   img-height="200"
                 >
-                  <!-- For Creator photo and name -->
+                 
                   <div class="mb-1">
                     <b-avatar
-                      :src="highestpaid.artistProfilePicUrl"
+                      :src="highestPaid.artistProfilePicUrl"
                       size="4rem"
                       class="text-center"
                       style="max-width: 25rem"
                     ></b-avatar>
 
-                    <b-text>
-                      <b>
-                        <h3>{{ highestpaid.artistName }}</h3></b
-                      >
-                    </b-text>
-                    <hr style="padding: 0" />
-                    <!-- For image description -->
                     <b-card-text>
-                      {{ highestpaid.artworkTitle }}
+                      <b>
+                        <h3>{{ highestPaid.artistName }}</h3></b
+                      >
                     </b-card-text>
-                    <!-- button -->
+                    <hr style="padding: 0" />
+                   
+                    <b-card-text>
+                      {{ highestPaid.artworkTitle }}
+                    </b-card-text>
+                   
                     <b-button
                       block
-                      v-bind:href="'/Artwork?highestPaidId=' + highestpaid.Id"
+                      v-bind:href="'/Artwork?highestPaidId=' + highestPaid.Id"
                       variant="outline-primary"
                       >View</b-button
                     >
@@ -66,63 +69,19 @@
 </template>
 
 <script>
-import VueSlickCarousel from "vue-slick-carousel";
-import "vue-slick-carousel/dist/vue-slick-carousel.css";
-// optional style for arrows & dots
-import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
-
+import VueSlickCarousel from "../mixins/VueSlickCarousel.js";
 export default {
-  name: "Crafts",
-  components: {
-    VueSlickCarousel,
-  },
-  data() {
-    return {
-      loading: false,
-      settings: {
-        dots: true,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        initialSlide: 0,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true,
-            },
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              initialSlide: 2,
-            },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            },
-          },
-        ],
-      },
-    };
-  },
+  name: "Highestpaid arts",
+  mixins: [VueSlickCarousel],
+
   computed: {
-    highestpaids() {
-      return this.$store.state.highestpaids;
+    highestPaids() {
+      return this.$store.state.highestPaids;
     },
   },
   created() {
     this.loading = true;
-    this.$store.dispatch("fetchHighestPaids");
+    this.$store.dispatch("fetchhighestPaids");
   },
 };
 </script>

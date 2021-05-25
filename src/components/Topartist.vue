@@ -5,15 +5,12 @@
         <b-container>
           <div class="section-title">
             <b-row>
-              <b-col col md="10">
+              <b-col col md="11">
                 <h3>Top <span>Artists</span></h3>
               </b-col>
-              <b-col col md="2">
-                <a
-                  v-bind:href="'/Topartists?Viewallartists'"
-                  target="_blank"
-                  style="align: right"
-                  >View all Artists</a
+              <b-col col md="1">
+                <a v-bind:href="'/Topartists?Viewall'" style="align: right"
+                  >View all</a
                 >
               </b-col>
               <br />
@@ -61,53 +58,11 @@
   </div>
 </template>
 <script>
-import VueSlickCarousel from "vue-slick-carousel";
-import "vue-slick-carousel/dist/vue-slick-carousel.css";
-// optional style for arrows & dots
-import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
-
+import VueSlickCarousel from "../mixins/VueSlickCarousel.js"
 export default {
-  components: {
-    VueSlickCarousel,
-  },
-  data() {
-    return {
-      settings: {
-        dots: true,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        initialSlide: 0,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true,
-            },
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              initialSlide: 2,
-            },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            },
-          },
-        ],
-      },
-    };
-  },
+  name: "Featured arts",
+  mixins: [VueSlickCarousel],
+
   computed: {
     topArtists() {
       return this.$store.state.topArtists;

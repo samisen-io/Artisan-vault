@@ -6,12 +6,15 @@ import Digital from '../components/Digital.vue'
 import Drawing from '../components/Drawing.vue'
 import Photography from '../components/Photography.vue'
 import Sculpture from '../components/Sculpture.vue'
-import viewAllArtists from '../components/ViewAllArtists.vue'
+import Topartists from '../components/Topartists.vue'
 import Login from '../components/Login.vue'
 import Regiesterpage from '../components/Regiesterpage.vue'
-import Artistdetails from '../components/Artistdetails.vue'
+import Artist from '../components/Artist.vue'
 import Testjson from '../components/Testjson.vue'
 import Artwork from '../components/Artwork.vue'
+import Patronhomepage from '../components/Patron/Patronhomepage.vue'
+import Featuredartworks from '../components/Featuredartworks.vue'
+import Highestpaidartworks from '../components/Highestpaidartworks.vue'
 Vue.use(VueRouter)
 
 const routes = [{
@@ -19,19 +22,34 @@ const routes = [{
         name: 'Mainpage',
         component: Mainpage
     }, {
-        path: '/Artistdetails',
-        component: Artistdetails
+        path: '/Highestpaidartworks',
+        component: Highestpaidartworks
     }, {
+        path: '/Featuredartworks',
+        component: Featuredartworks
+    },
+    {
+        path: '/Patronhomepage',
+        component: Patronhomepage
+    },
+    {
+        path: '/Artist',
+        component: Artist
+    },
+    {
         path: '/Regiesterpage',
         component: Regiesterpage
-    }, {
+    },
+    {
         path: '/Login',
         component: Login
-    }, {
+    },
+    {
         path: '/Artwork',
         name: 'Artwork',
         component: Artwork
-    }, {
+    },
+    {
         path: '/Testjson',
         name: 'Testjson',
         component: Testjson
@@ -63,9 +81,9 @@ const routes = [{
         component: Sculpture
     },
     {
-        path: '/viewAllArtists',
-        name: 'viewAllArtists',
-        component: viewAllArtists
+        path: '/Topartists',
+        name: 'Topartists',
+        component: Topartists
     },
 
     {

@@ -3,7 +3,7 @@ import digitals from './data/digital.json'
 import drawings from './data/drawing.json'
 import photographys from './data/photography.json'
 import sculptures from './data/sculpture.json'
-import highestpaids from './data/highestpaid.json'
+import highestPaids from './data/highestpaid.json'
 import featureds from './data/featured.json'
 import topArtists from './data/topartist.json'
 
@@ -34,8 +34,8 @@ export default {
     fetchFeatureds() {
         return fetch(featureds, 0)
     },
-    fetchHighestPaids() {
-        return fetch(highestpaids, 1000)
+    fetchhighestPaids() {
+        return fetch(highestPaids, 1000)
     },
     fetchtopArtists() {
         return fetch(topArtists, 1000)

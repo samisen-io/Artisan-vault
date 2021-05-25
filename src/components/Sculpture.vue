@@ -5,7 +5,7 @@
     <br />
     <br />
     <br />
-<sculpturecard />
+    <sculpturecard />
     <!-- sculpture slider -->
     <br />
     <br />
@@ -26,10 +26,9 @@
                 style="max-width: 25rem"
                 img-height="250"
               >
-                <!-- For Creator photo and name -->
                 <div class="mb-1">
                   <b-avatar
-                    :src="sculpture.authorProfilePicUrl"
+                    :src="sculpture.artistProfilePicUrl"
                     size="4rem"
                     class="text-center"
                     style="max-width: 25rem"
@@ -42,18 +41,15 @@
                   </b-text>
 
                   <hr style="padding: 0" />
-                  <!-- For email -->
-                  <b-card-text>
-                    <b>{{ sculpture.email }}</b>
-                  </b-card-text>
-                  <!-- For image description -->
+
                   <b-card-text>
                     {{ sculpture.artworkTitle }}
                   </b-card-text>
-                  <!-- button -->
-                  <b-button block 
-                   v-bind:href="'/Artwork?sculptureArtworkId=' + sculpture.Id"
-                  variant="outline-primary"
+
+                  <b-button
+                    block
+                    v-bind:href="'/Artwork?sculptureArtworkId=' + sculpture.Id"
+                    variant="outline-primary"
                     >View</b-button
                   >
                 </div>
@@ -64,7 +60,7 @@
       </center>
     </b-container>
     <br />
-    <!--footer -->
+   
     <Footer />
   </div>
 </template>
@@ -77,7 +73,7 @@ import VueSlickCarousel from "vue-slick-carousel";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 // optional style for arrows & dots
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
-import Sculpturecard from './Sculpturecard.vue';
+import Sculpturecard from "./Sculpturecard.vue";
 
 export default {
   name: "Sculpture",
@@ -86,11 +82,10 @@ export default {
     Navbar,
     Footer,
     Sculpturecard,
-   
   },
   data() {
     return {
-      loading:false,
+      loading: false,
       settings: {
         dots: true,
         infinite: false,
@@ -129,13 +124,13 @@ export default {
   },
   computed: {
     sculptures() {
-      return this.$store.state.sculptures
-    }
+      return this.$store.state.sculptures;
+    },
   },
-  created(){
+  created() {
     this.loading = true;
-    this.$store.dispatch('fetchSculptures');
-  }
+    this.$store.dispatch("fetchSculptures");
+  },
 };
 </script>
 

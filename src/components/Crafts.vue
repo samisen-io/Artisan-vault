@@ -1,12 +1,11 @@
 <template>
   <div>
-    <!--navbar-->
     <Navbar />
     <br />
     <br />
     <br />
     <craftcard />
-    <!-- carfts slider -->
+
     <br />
     <br />
     <br />
@@ -26,7 +25,6 @@
                 style="max-width: 25rem"
                 img-height="250"
               >
-               
                 <div class="mb-1">
                   <b-avatar
                     :src="craft.Authorprofilepic"
@@ -42,19 +40,19 @@
                   </b-text>
 
                   <hr style="padding: 0" />
-                 
+
                   <b-card-text>
                     <b>{{ craft.email }}</b>
                   </b-card-text>
-                 
+
                   <b-card-text>
                     {{ craft.Title }}
                   </b-card-text>
-                 
-                  <b-button block 
-                 
-                   v-bind:href="'/Artwork?craftArtworkId=' + craft.Id"
-                  variant="outline-primary"
+
+                  <b-button
+                    block
+                    v-bind:href="'/Artwork?craftArtworkId=' + craft.Id"
+                    variant="outline-primary"
                     >View</b-button
                   >
                 </div>
@@ -65,7 +63,7 @@
       </center>
     </b-container>
     <br />
-    <!--footer -->
+
     <Footer />
   </div>
 </template>
@@ -89,7 +87,7 @@ export default {
   },
   data() {
     return {
-      loading:false,
+      loading: false,
       settings: {
         dots: true,
         infinite: false,
@@ -128,13 +126,13 @@ export default {
   },
   computed: {
     crafts() {
-      return this.$store.state.crafts
-    }
+      return this.$store.state.crafts;
+    },
   },
-  created(){
+  created() {
     this.loading = true;
-    this.$store.dispatch('fetchCrafts');
-  }
+    this.$store.dispatch("fetchCrafts");
+  },
 };
 </script>
 

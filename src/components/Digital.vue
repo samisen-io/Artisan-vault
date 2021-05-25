@@ -1,12 +1,11 @@
 <template>
   <div>
-    <!--navbar-->
     <Navbar />
     <br />
     <br />
     <br />
-     <Digitalcard />
-    <!-- carfts slider -->
+    <Digitalcard />
+
     <br />
     <br />
     <br />
@@ -26,7 +25,6 @@
                 style="max-width: 25rem"
                 img-height="250"
               >
-                <!-- For Creator photo and name -->
                 <div class="mb-1">
                   <b-avatar
                     :src="digital.Authorprofilepic"
@@ -42,19 +40,19 @@
                   </b-text>
 
                   <hr style="padding: 0" />
-                  <!-- For email -->
+
                   <b-card-text>
                     <b>{{ digital.email }}</b>
                   </b-card-text>
-                  <!-- For image description -->
+
                   <b-card-text>
                     {{ digital.Title }}
                   </b-card-text>
-                  <!-- button -->
-                  <b-button block 
-                   v-bind:href="'/Artwork?digitalArtworkId=' + digital.Id"
-                 
-                  variant="outline-primary"
+
+                  <b-button
+                    block
+                    v-bind:href="'/Artwork?digitalArtworkId=' + digital.Id"
+                    variant="outline-primary"
                     >View</b-button
                   >
                 </div>
@@ -65,7 +63,7 @@
       </center>
     </b-container>
     <br />
-    <!--footer -->
+
     <Footer />
   </div>
 </template>
@@ -78,7 +76,7 @@ import Digitalcard from "./Digitalcard.vue";
 import Footer from "./Footer.vue";
 import Navbar from "./Navbar.vue";
 export default {
-  components: { Navbar, Footer, Digitalcard,VueSlickCarousel },
+  components: { Navbar, Footer, Digitalcard, VueSlickCarousel },
   data() {
     return {
       loading: false,
@@ -121,12 +119,12 @@ export default {
   computed: {
     digitals() {
       return this.$store.state.digitals;
-    }
+    },
   },
-  created(){
+  created() {
     this.loading = true;
-    this.$store.dispatch('fetchDigitals');
-  }
+    this.$store.dispatch("fetchDigitals");
+  },
 };
 </script>
 

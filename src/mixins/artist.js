@@ -19,17 +19,14 @@ export default {
     computed: {
         artist() {
             var artistobj;
-            if (this.queryType == "ArtistId") {
-                this.$store.dispatch("fetchTopArtists");
-                artistobj = this.$store.state.topartists.find(
+            if (this.queryType == "TopArtistId") {
+                this.$store.dispatch("fetchtopArtists");
+                artistobj = this.$store.state.topArtists.find(
                     (obj) => obj.Id == this.id
                 );
                 return artistobj;
             }
         },
     },
-    created() {
-        this.loading = true;
-        this.$store.dispatch("fetchTopArtists");
-    },
+
 }

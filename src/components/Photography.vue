@@ -1,12 +1,11 @@
 <template>
   <div>
-   
     <Navbar />
     <br />
     <br />
     <br />
     <photographycard />
-   
+
     <br />
     <br />
     <br />
@@ -40,19 +39,17 @@
                     >
                   </b-text-area>
                   <hr />
-                  <!-- For email -->
-                  <b-card-text>
-                    <b>{{ photography.email }}</b>
-                  </b-card-text>
-                  <!-- For image description -->
+
                   <b-card-text>
                     {{ photography.Title }}
                   </b-card-text>
-                  <!-- button -->
-                  <b-button block 
-                 
-                  v-bind:href="'/Artwork?photographyArtworkId=' + photography.Id"
-                  variant="outline-primary"
+
+                  <b-button
+                    block
+                    v-bind:href="
+                      '/Artwork?photographyArtworkId=' + photography.Id
+                    "
+                    variant="outline-primary"
                     >View</b-button
                   >
                 </div>
@@ -63,7 +60,7 @@
       </center>
     </b-container>
     <br />
-    <!--footer -->
+
     <Footer />
   </div>
 </template>

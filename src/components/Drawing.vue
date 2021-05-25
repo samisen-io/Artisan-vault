@@ -1,12 +1,12 @@
 <template>
   <div>
-    <!--navbar-->
+ 
     <Navbar />
     <br />
     <br />
     <br />
     <craftcard />
-    <!-- drawing slider -->
+  
     <br />
     <br />
     <br />
@@ -40,15 +40,15 @@
                     >
                   </b-text-area>
                   <hr />
-                  <!-- For email -->
+                 
                   <b-card-text>
                     <b>{{ drawing.email }}</b>
                   </b-card-text>
-                  <!-- For image description -->
+                 
                   <b-card-text>
                     {{ drawing.Title }}
                   </b-card-text>
-                  <!-- button -->
+                
                   <b-button
                     block
                     v-bind:href="'/Artwork?drawingArtworkId=' + drawing.Id"
@@ -63,7 +63,7 @@
       </center>
     </b-container>
     <br />
-    <!--footer -->
+  
     <Footer />
   </div>
 </template>
