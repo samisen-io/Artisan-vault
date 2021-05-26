@@ -1,6 +1,5 @@
 import VueSlickCarousel from "vue-slick-carousel";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
-// optional style for arrows & dots
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 
 export default {
@@ -10,7 +9,6 @@ export default {
     },
     data() {
         return {
-            loading: false,
             settings: {
                 infinite: false,
                 speed: 500,
@@ -44,4 +42,5 @@ export default {
             },
         };
     },
+
 }

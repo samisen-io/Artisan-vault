@@ -9,7 +9,7 @@
                 <h3>Top <span>Artists</span></h3>
               </b-col>
               <b-col col md="1">
-                <a v-bind:href="'/Topartists?Viewall'" style="align: right"
+                <a v-bind:href="'/TopArtistsList?Viewall'" style="align: right"
                   >View all</a
                 >
               </b-col>
@@ -43,7 +43,9 @@
                     >
                     <b-button
                       block
-                      v-bind:href="'/Artist?TopArtistId=' + topArtist.Id"
+                      v-bind:href="
+                        '/TopArtistDetail?TopArtistId=' + topArtist.Id
+                      "
                       variant="outline-primary"
                       >View</b-button
                     >
@@ -58,7 +60,7 @@
   </div>
 </template>
 <script>
-import VueSlickCarousel from "../mixins/VueSlickCarousel.js"
+import VueSlickCarousel from "../mixins/VueSlickCarousel";
 export default {
   name: "Featured arts",
   mixins: [VueSlickCarousel],
@@ -74,4 +76,27 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 18px;
+}
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 15px;
+}
+a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+</style>

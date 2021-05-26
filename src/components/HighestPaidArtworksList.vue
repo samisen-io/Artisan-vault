@@ -27,9 +27,12 @@
       <b-container>
         <center>
           <b-row cols-md="4">
-            <b-col v-for="highestPaid in filter" :key="highestPaid.id">
+            <b-col
+              v-for="highestPaidArt in filterhighestPaidArtsByTitle"
+              :key="highestPaidArt.id"
+            >
               <b-card
-                :img-src="highestPaid.artworkUrl"
+                :img-src="highestPaidArt.artworkUrl"
                 size="5rem"
                 class="text-center"
                 style="max-width: 25rem"
@@ -37,7 +40,7 @@
               >
                 <div class="mb-1">
                   <b-avatar
-                    :src="highestPaid.artistProfilePicUrl"
+                    :src="highestPaidArt.artistProfilePicUrl"
                     size="4rem"
                     class="text-center"
                     style="max-width: 25rem"
@@ -45,18 +48,21 @@
 
                   <b-card-text>
                     <b>
-                      <h3>{{ highestPaid.artistName }}</h3></b
+                      <h3>{{ highestPaidArt.artistName }}</h3></b
                     >
                   </b-card-text>
                   <hr style="padding: 0" />
 
                   <b-card-text>
-                    {{ highestPaid.artworkTitle }}
+                    {{ highestPaidArt.artworkTitle }}
                   </b-card-text>
 
                   <b-button
                     block
-                    v-bind:href="'/Artwork?highestPaidId=' + highestPaid.Id"
+                    v-bind:href="
+                      '/ArtworkDetails?highestPaidArtWorkId=' +
+                      highestPaidArt.Id
+                    "
                     variant="outline-primary"
                     >View</b-button
                   >
@@ -88,10 +94,10 @@ export default {
   },
 
   computed: {
-    highestPaids() {
+    highestPaidArts() {
       return this.$store.state.highestPaids;
     },
-    filter() {
+    filterhighestPaidArtsByTitle() {
       return this.$store.state.highestPaids.filter((highestPaid) => {
         return highestPaid.artworkTitle
           .toLowerCase()

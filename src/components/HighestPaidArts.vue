@@ -1,13 +1,14 @@
 <template>
   <div>
+  
     <b-container>
       <div class="section-title">
         <b-row>
           <b-col col md="11">
-            <h3>Featured <span>Artwork</span></h3>
+            <h3>Top paid <span>Artwork</span></h3>
           </b-col>
           <b-col col md="1">
-            <a href="/FeaturedArtworksList?viewall" style="align: right"
+            <a href="/HighestPaidArtworksList?viewall" style="align: right"
               >View all</a
             >
           </b-col>
@@ -20,18 +21,19 @@
         </b-row>
         <center>
           <VueSlickCarousel v-bind="settings">
-            <b-row v-for="featuredArt in getAllFeaturedArts" :key="featuredArt.id">
+            <b-row v-for="highestPaidArt in highestPaidArts" :key="highestPaidArt.id">
               <b-col>
                 <b-card
-                  :img-src="featuredArt.artworkUrl"
+                  :img-src="highestPaidArt.artworkUrl"
                   size="5rem"
                   class="text-center"
                   style="max-width: 25rem"
                   img-height="200"
                 >
+                 
                   <div class="mb-1">
                     <b-avatar
-                      :src="featuredArt.artistProfilePicUrl"
+                      :src="highestPaidArt.artistProfilePicUrl"
                       size="4rem"
                       class="text-center"
                       style="max-width: 25rem"
@@ -39,26 +41,22 @@
 
                     <b-card-text>
                       <b>
-                        <h3>{{ featuredArt.artistName }}</h3></b
+                        <h3>{{ highestPaidArt.artistName }}</h3></b
                       >
                     </b-card-text>
                     <hr style="padding: 0" />
-
-                    <!-- For image description -->
+                   
                     <b-card-text>
-                      {{ featuredArt.artworkTitle }}
+                      {{ highestPaidArt.artworkTitle }}
                     </b-card-text>
-                    <!-- button -->
+                   
                     <b-button
                       block
-                      v-bind:href="
-                        '/ArtworkDetails?featuredArtWorkId=' + featuredArt.Id
-                      "
+                      v-bind:href="'/ArtworkDetails?highestPaidArtWorkId=' + highestPaidArt.Id"
                       variant="outline-primary"
                       >View</b-button
                     >
                   </div>
-                  <br />
                 </b-card>
               </b-col>
             </b-row>
@@ -73,17 +71,18 @@
 <script>
 import VueSlickCarousel from "../mixins/VueSlickCarousel.js";
 export default {
-  name: "Featured arts",
+  name: "Highestpaid arts",
   mixins: [VueSlickCarousel],
+
   computed: {
-    getAllFeaturedArts() {
-      this.$store.state.featureds;
-      return this.$store.state.featureds;
+    highestPaidArts() {
+      return this.$store.state.highestPaids;
     },
   },
   created() {
     this.loading = true;
-    this.$store.dispatch("fetchFeatureds");
+    this.$store.dispatch("fetchhighestPaids");
   },
 };
 </script>
+

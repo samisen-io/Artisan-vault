@@ -19,14 +19,14 @@ export default {
     computed: {
         artwork() {
             var artworkObj;
-            if (this.queryType == "featureArtworkId") {
+            if (this.queryType == "featuredArtWorkId") {
                 this.$store.dispatch("fetchFeatureds");
                 artworkObj = this.$store.state.featureds.find(
                     (obj) => obj.Id == this.id
                 );
-            } else if (this.queryType == "highestPaidId") {
-                this.$store.dispatch("fetchHighestPaids");
-                artworkObj = this.$store.state.highestpaids.find(
+            } else if (this.queryType == "highestPaidArtWorkId") {
+                this.$store.dispatch("fetchhighestPaids");
+                artworkObj = this.$store.state.highestPaids.find(
                     (obj) => obj.Id == this.id
                 );
             } else if (this.queryType == "topArtistsId") {

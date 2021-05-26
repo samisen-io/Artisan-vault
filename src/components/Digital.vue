@@ -72,7 +72,7 @@ import VueSlickCarousel from "vue-slick-carousel";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 // optional style for arrows & dots
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
-import Digitalcard from "./Digitalcard.vue";
+import Digitalcard from "./DigitalCard.vue";
 import Footer from "./Footer.vue";
 import Navbar from "./Navbar.vue";
 export default {

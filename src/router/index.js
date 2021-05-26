@@ -1,41 +1,46 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Mainpage from '../components/Mainpage.vue'
+import MainPage from '../components/MainPage.vue'
 import Crafts from '../components/Crafts.vue'
 import Digital from '../components/Digital.vue'
 import Drawing from '../components/Drawing.vue'
 import Photography from '../components/Photography.vue'
 import Sculpture from '../components/Sculpture.vue'
-import Topartists from '../components/Topartists.vue'
+import TopArtist from "../components/TopArtist.vue"
 import Login from '../components/Login.vue'
 import Regiesterpage from '../components/Regiesterpage.vue'
-import Artist from '../components/Artist.vue'
-import Testjson from '../components/Testjson.vue'
-import Artwork from '../components/Artwork.vue'
+import TopArtistsList from '../components/TopArtistsList.vue'
+import TopArtistDetail from '../components/TopArtistDetail.vue'
+import Testingfile from '../components/Testingfile.vue'
+import ArtworkDetails from '../components/ArtworkDetails.vue'
 import Patronhomepage from '../components/Patron/Patronhomepage.vue'
-import Featuredartworks from '../components/Featuredartworks.vue'
-import Highestpaidartworks from '../components/Highestpaidartworks.vue'
+import FeaturedArtworksList from '../components/FeaturedArtworksList.vue'
+import HighestPaidArtworksList from '../components/HighestPaidArtworksList.vue'
 Vue.use(VueRouter)
 
 const routes = [{
         path: '/',
-        name: 'Mainpage',
-        component: Mainpage
+        name: 'MainPage',
+        component: MainPage
+    },
+    {
+        path: '/TopArtistDetail',
+        component: TopArtistDetail
     }, {
-        path: '/Highestpaidartworks',
-        component: Highestpaidartworks
+        path: '/TopArtistsList',
+        component: TopArtistsList
     }, {
-        path: '/Featuredartworks',
-        component: Featuredartworks
+        path: '/HighestPaidArtworksList',
+        component: HighestPaidArtworksList
+    }, {
+        path: '/FeaturedArtworksList',
+        component: FeaturedArtworksList
     },
     {
         path: '/Patronhomepage',
         component: Patronhomepage
     },
-    {
-        path: '/Artist',
-        component: Artist
-    },
+
     {
         path: '/Regiesterpage',
         component: Regiesterpage
@@ -45,14 +50,14 @@ const routes = [{
         component: Login
     },
     {
-        path: '/Artwork',
-        name: 'Artwork',
-        component: Artwork
+        path: '/ArtworkDetails',
+        name: 'ArtworkDetails',
+        component: ArtworkDetails
     },
     {
-        path: '/Testjson',
-        name: 'Testjson',
-        component: Testjson
+        path: '/Testingfile',
+        name: 'Testingfile',
+        component: Testingfile
 
     },
     {
@@ -81,9 +86,9 @@ const routes = [{
         component: Sculpture
     },
     {
-        path: '/Topartists',
-        name: 'Topartists',
-        component: Topartists
+        path: '/TopArtist',
+        name: 'Topartist',
+        component: TopArtist
     },
 
     {

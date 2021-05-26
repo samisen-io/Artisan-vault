@@ -10,7 +10,6 @@
               >All Arts</router-link
             ></b-nav-item
           >
-
           <b-nav-item>
             <router-link
               tag="li"

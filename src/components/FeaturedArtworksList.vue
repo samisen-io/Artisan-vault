@@ -21,16 +21,15 @@
               ></b-form-input>
             </b-input-group>
           </b-col>
-
           <br />
         </b-row>
       </div>
 
       <b-container>
         <b-row cols-md="4">
-          <b-col v-for="featured in filter" :key="featured.id">
+          <b-col v-for="featuredArt in filterFeaturedArtsByTitle" :key="featuredArt.id">
             <b-card
-              :img-src="featured.artworkUrl"
+              :img-src="featuredArt.artworkUrl"
               size="5rem"
               class="text-center"
               style="max-width: 25rem"
@@ -38,7 +37,7 @@
             >
               <div class="mb-1">
                 <b-avatar
-                  :src="featured.artistProfilePicUrl"
+                  :src="featuredArt.artistProfilePicUrl"
                   size="4rem"
                   class="text-center"
                   style="max-width: 25rem"
@@ -46,19 +45,18 @@
 
                 <b-card-text>
                   <b>
-                    <h3>{{ featured.artistName }}</h3></b
+                    <h3>{{ featuredArt.artistName }}</h3></b
                   >
                 </b-card-text>
                 <hr style="padding: 0" />
 
-               
                 <b-card-text>
-                  {{ featured.artworkTitle }}
+                  {{ featuredArt.artworkTitle }}
                 </b-card-text>
-              
+
                 <b-button
                   block
-                  v-bind:href="'/Artwork?featureArtworkId=' + featured.Id"
+                  v-bind:href="'/ArtworkDetails?featuredArtWorkId=' + featuredArt.Id"
                   variant="outline-primary"
                   >View</b-button
                 >
@@ -86,11 +84,11 @@ export default {
     };
   },
   computed: {
-    featureds() {
-      console.log(this.$store.state.featureds);
+    getAllFeaturedArts() {
+      this.$store.state.featureds;
       return this.$store.state.featureds;
     },
-    filter() {
+    filterFeaturedArtsByTitle() {
       return this.$store.state.featureds.filter((featured) => {
         return featured.artworkTitle
           .toLowerCase()

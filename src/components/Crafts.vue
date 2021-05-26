@@ -71,7 +71,7 @@
 <script>
 import Navbar from "./Navbar.vue";
 import Footer from "./Footer.vue";
-import Craftcard from "./Craftcard.vue";
+import Craftcard from "./CraftCard.vue";
 import VueSlickCarousel from "vue-slick-carousel";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 // optional style for arrows & dots

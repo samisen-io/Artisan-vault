@@ -13,6 +13,13 @@ import Carousel3d from 'vue-carousel-3d';
 import VueSlickCarousel from 'vue-slick-carousel'
 // optional style for arrows & dots
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+// import style
+
+
+Vue.use(VueAwesomeSwiper, /* { default options with global component } */ );
+
 Vue.use(VueSlickCarousel);
 Vue.use(Carousel3d);
 Vue.prototype.$axios = axios;
@@ -33,17 +40,8 @@ const firebaseConfig = {
     measurementId: "G-6K3ZB6CGZB"
 };
 firebase.initializeApp(firebaseConfig);
-Vue.component("Navbar", require('./components/Navbar.vue'))
-Vue.component("Footer", require('./components/Footer.vue'))
-Vue.component("Featuredarts", require('./components/Featuredarts.vue'))
-Vue.component("Carousel3d", require('./components/Carousel3d.vue'))
-Vue.component("Maincard", require('./components/Maincard.vue'))
-Vue.component("Highestpaidart", require('./components/Highestpaidart.vue'))
-Vue.component("Craftcard", require('./components/Craftcard.vue'))
-Vue.component("Photographycard", require('./components/Photographycard.vue'))
-Vue.component("Digitalcard", require('./components/Digitalcard.vue'))
-Vue.component("Sculpturecard", require('./components/Sculpturecard.vue'))
-Vue.component("Drawingcard", require('./components/Drawingcard.vue'))
+
+
 
 new Vue({
     router,

@@ -72,7 +72,7 @@ import VueSlickCarousel from "vue-slick-carousel";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 // optional style for arrows & dots
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
-import Photographycard from "./Photographycard.vue";
+import Photographycard from "./PhotographyCard.vue";
 
 export default {
   name: "Drawings",

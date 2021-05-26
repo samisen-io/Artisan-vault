@@ -28,7 +28,7 @@
     </b-container>
     <b-container>
       <b-row cols-md="4">
-        <b-col v-for="topArtist in filter" :key="topArtist.id">
+        <b-col v-for="topArtist in filterArtistByName" :key="topArtist.id">
           <b-card
             :img-src="topArtist.artistProfilePicUrl"
             size="5rem"
@@ -48,7 +48,7 @@
 
               <b-button
                 block
-                v-bind:href="'/Artist?TopArtistId=' + topArtist.Id"
+                v-bind:href="'/TopArtistDetail?TopArtistId=' + topArtist.Id"
                 variant="outline-primary"
                 >View</b-button
               >
@@ -78,7 +78,8 @@ export default {
     topArtists() {
       return this.$store.state.topArtists;
     },
-    filter() {
+   
+    filterArtistByName() {
       return this.$store.state.topArtists.filter((topArtist) => {
         return topArtist.artistName
           .toLowerCase()

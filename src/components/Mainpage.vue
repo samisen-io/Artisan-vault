@@ -5,17 +5,17 @@
     <br />
     <br />
     <br />
-    <Maincard />
+    <main-page-card />
     <!-- Featured Arts Section Begin -->
     <br />
     <br />
-    <Featuredarts />
+    <featured-arts />
     <br />
     <!-- Highestpaidarts  -->
-    <Highestpaidart />
+    <highest-paid-arts />
     <!-- Top Artists Section  -->
     <br />
-    <topartist />
+    <top-artist />
     <!--Footer -->
     <Footer />
     <br />
@@ -25,20 +25,20 @@
 <script>
 import Navbar from "./Navbar.vue";
 import Footer from "./Footer.vue";
-import Maincard from "./Maincard.vue";
-import Featuredarts from "./Featuredarts.vue";
-import Highestpaidart from "./Highestpaidart.vue";
-import Topartist from "./Topartist.vue";
+import MainPageCard from "./MainPageCard";
+import TopArtist from "../components/TopArtist";
+import FeaturedArts from "../components/FeaturedArts";
+import HighestPaidArts from "../components/HighestPaidArts"
 
 export default {
   name: "Mainpage",
   components: {
     Navbar,
     Footer,
-    Featuredarts,
-    Maincard,
-    Highestpaidart,
-    Topartist,
+    MainPageCard,
+    TopArtist,
+    FeaturedArts,
+    HighestPaidArts,
   },
 };
 </script>
