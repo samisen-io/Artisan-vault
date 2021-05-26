@@ -75,7 +75,8 @@ export default {
   mixins: [VueSlickCarousel],
 
   computed: {
-    highestPaidArts() {
+   
+    getAllhighestPaidArts() {
       return this.$store.state.highestPaids;
     },
   },

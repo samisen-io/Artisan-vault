@@ -66,7 +66,7 @@ export default {
   mixins: [VueSlickCarousel],
 
   computed: {
-    topArtists() {
+   getAlltopArtists() {
       return this.$store.state.topArtists;
     },
   },

@@ -94,7 +94,7 @@ export default {
   },
 
   computed: {
-    highestPaidArts() {
+    getAllhighestPaidArts() {
       return this.$store.state.highestPaids;
     },
     filterhighestPaidArtsByTitle() {

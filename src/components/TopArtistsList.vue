@@ -75,7 +75,7 @@ export default {
     };
   },
   computed: {
-    topArtists() {
+   getAlltopArtists() {
       return this.$store.state.topArtists;
     },
    
