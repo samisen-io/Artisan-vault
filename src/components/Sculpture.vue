@@ -48,7 +48,7 @@
 
                   <b-button
                     block
-                    v-bind:href="'/Artwork?sculptureArtworkId=' + sculpture.Id"
+                    v-bind:href="'/ArtworkDetails?sculptureArtworkId=' + sculpture.Id"
                     variant="outline-primary"
                     >View</b-button
                   >

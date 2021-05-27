@@ -1,0 +1,78 @@
+[{
+        "ArtistId": "1",
+        "artistName": "Malkiel",
+        "artistProfilePicUrl": "https://images.unsplash.com/photo-1552642986-ccb41e7059e7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fG1lbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+        "pictures": [{
+                "id": 1,
+                "type": "featuredArtWorkId",
+                "artworkTitle": "featuredarts",
+                "artworkUrl": "https://qph.fs.quoracdn.net/main-qimg-578eeb4e28b389b2cdf1024b5dba73e0"
+            },
+            {
+                "id": 1,
+                "type": "highestPaidArtWorkId",
+                "artworkTitle": "highestpaid",
+                "artworkUrl": "https://i.pinimg.com/236x/23/df/46/23df460044254a7ebd01d032af68d58c--ink-paintings-colorful-paintings.jpg"
+            },
+            {
+                "id": 1,
+                "type": "Digital",
+                "artworkTitle": "Digital",
+                "artworkUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH9fPm_9f5jkWnxV7L9ITdgJfU_UaTt6X9-O1Y5Ql3zT0v46LxTOs_EiemYtgUeRaaAfE&usqp=CAU"
+            },
+            {
+                "id": 1,
+                "type": "Photography",
+                "artworkTitle": "Photography",
+                "artworkUrl": "https://apicms.mstar.com.my/uploads/images/2020/08/31/840803.JPG"
+            },
+            {
+                "id": 1,
+                "type": "sculptureArtworkId",
+                "artworkTitle": "Sculpture",
+                "artworkUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Lens_-_Inauguration_du_Louvre-Lens_le_4_d%C3%A9cembre_2012%2C_la_Galerie_du_Temps%2C_n%C2%B0_057.JPG/1200px-Lens_-_Inauguration_du_Louvre-Lens_le_4_d%C3%A9cembre_2012%2C_la_Galerie_du_Temps%2C_n%C2%B0_057.JPG"
+            }
+        ]
+    },
+
+
+
+
+    {
+        "ArtistId": "2",
+        "artistName": "venkat2",
+        "artistProfilePicUrl": "https://images.unsplash.com/photo-1552642986-ccb41e7059e7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fG1lbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+        "pictures": [{
+                "id": 2,
+                "type": "featuredArtWorkId",
+                "artworkTitle": "featuredarts",
+                "artworkUrl": "https://qph.fs.quoracdn.net/main-qimg-578eeb4e28b389b2cdf1024b5dba73e0"
+            },
+            {
+                "id": 2,
+                "type": "highestPaidArtWorkId",
+                "artworkTitle": "highestpaid",
+                "artworkUrl": "https://i.pinimg.com/236x/23/df/46/23df460044254a7ebd01d032af68d58c--ink-paintings-colorful-paintings.jpg"
+            },
+            {
+                "id": 2,
+                "type": "Digital",
+                "artworkTitle": "Digital",
+                "artworkUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH9fPm_9f5jkWnxV7L9ITdgJfU_UaTt6X9-O1Y5Ql3zT0v46LxTOs_EiemYtgUeRaaAfE&usqp=CAU"
+            },
+            {
+                "id": 2,
+                "type": "Photography",
+                "artworkTitle": "Photography",
+                "artworkUrl": "https://apicms.mstar.com.my/uploads/images/2020/08/31/840803.JPG"
+            },
+            {
+                "id": 2,
+                "type": "sculptureArtworkId",
+                "artworkTitle": "Sculpture",
+                "artworkUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Lens_-_Inauguration_du_Louvre-Lens_le_4_d%C3%A9cembre_2012%2C_la_Galerie_du_Temps%2C_n%C2%B0_057.JPG/1200px-Lens_-_Inauguration_du_Louvre-Lens_le_4_d%C3%A9cembre_2012%2C_la_Galerie_du_Temps%2C_n%C2%B0_057.JPG"
+            }
+        ]
+    }
+
+]

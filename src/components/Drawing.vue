@@ -1,13 +1,12 @@
 <template>
   <div>
- 
     <Navbar />
     <br />
     <br />
     <br />
-  
+
     <drawingcard />
-  
+
     <br />
     <br />
     <br />
@@ -41,15 +40,15 @@
                     >
                   </b-text-area>
                   <hr />
-                 
+
                   <b-card-text>
                     <b>{{ drawing.email }}</b>
                   </b-card-text>
-                 
+
                   <b-card-text>
                     {{ drawing.Title }}
                   </b-card-text>
-                
+
                   <b-button
                     block
                     v-bind:href="'/Artwork?drawingArtworkId=' + drawing.Id"
@@ -64,7 +63,7 @@
       </center>
     </b-container>
     <br />
-  
+
     <Footer />
   </div>
 </template>
@@ -72,12 +71,11 @@
 <script>
 import Navbar from "./Navbar.vue";
 import Footer from "./Footer.vue";
-
 import VueSlickCarousel from "vue-slick-carousel";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 // optional style for arrows & dots
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
-import Drawingcard from './DrawingCard.vue';
+import Drawingcard from "./DrawingCard.vue";
 
 export default {
   name: "Drawings",
@@ -85,7 +83,7 @@ export default {
     VueSlickCarousel,
     Navbar,
     Footer,
-  
+
     Drawingcard,
   },
   data() {

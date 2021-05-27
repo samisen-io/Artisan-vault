@@ -55,9 +55,13 @@
     </b-card>
     <b-container>
       <b-row cols-md="4">
-        <b-col v-for="featured in featureds" :key="featured.id">
+        <b-col
+          v-for="(relatedArtwork, index) in displayRelatedArtwork[0].pictures"
+          :key="relatedArtwork.id"
+        >
           <b-card
-            :img-src="featured.artworkUrl"
+            :img-src="relatedArtwork.artworkUrl"
+            :index="index"
             size="5rem"
             class="text-center"
             style="max-width: 25rem"
@@ -65,7 +69,7 @@
           >
             <div class="mb-1">
               <b-avatar
-                :src="featured.artistProfilePicUrl"
+                :src="displayRelatedArtwork[0].artistProfilePicUrl"
                 size="4rem"
                 class="text-center"
                 style="max-width: 25rem"
@@ -73,18 +77,21 @@
 
               <b-card-text>
                 <b>
-                  <h3>{{ featured.artistName }}</h3></b
+                  <h3>{{ displayRelatedArtwork[0].artistName }}</h3></b
                 >
               </b-card-text>
               <hr style="padding: 0" />
 
               <b-card-text>
-                {{ featured.artworkTitle }}
+                {{ relatedArtwork.artworkTitle }}
               </b-card-text>
+
               <b-button
                 block
-                v-bind:href="'/Artwork?featureArtworkId=' + featured.Id"
                 variant="outline-primary"
+                v-bind:href="
+                  '/ArtworkDetails?' + relatedArtwork.type + '=' + relatedArtwork.id
+                "
                 >View</b-button
               >
             </div>
@@ -111,14 +118,22 @@ export default {
 
   mixins: [artist],
   computed: {
-    featureds() {
-      console.log(this.$store.state.featureds);
-      return this.$store.state.featureds;
+    relatedArtwork() {
+      this.$store.state.relatedArtwork;
+      return this.$store.state.relatedArtwork;
+    },
+   
+    displayRelatedArtwork() {
+      var artworkObj;
+      artworkObj = this.$store.state.relatedArtwork.filter((obj) =>
+        obj.ArtistId.toLowerCase().includes(this.id.toLowerCase())
+      );
+      return artworkObj;
     },
   },
   created() {
     this.loading = true;
-    this.$store.dispatch("fetchFeatureds");
+    this.$store.dispatch("fetchrelatedArtwork");
   },
 };
 </script>

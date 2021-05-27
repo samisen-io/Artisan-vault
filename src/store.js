@@ -13,10 +13,15 @@ export default new Vuex.Store({
         sculptures: [],
         featureds: [],
         highestPaids: [],
-        topArtists: []
+        topArtists: [],
+        example: [],
+        relatedArtwork: []
     },
-
     mutations: {
+        setrelatedArtwork(state, relatedArtwork) {
+            state.relatedArtwork = relatedArtwork;
+        },
+
         setCrafts(state, crafts) {
             state.crafts = crafts;
         },
@@ -41,9 +46,14 @@ export default new Vuex.Store({
         settopArtists(state, topArtists) {
             state.topArtists = topArtists;
         },
+
     },
 
     actions: {
+        fetchrelatedArtwork({ commit }) {
+            return client.fetchrelatedArtwork().then(relatedArtwork => commit('setrelatedArtwork', relatedArtwork))
+        },
+
         fetchCrafts({ commit }) {
             return client.fetchCrafts().then(crafts => commit('setCrafts', crafts))
         },

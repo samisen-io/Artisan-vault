@@ -7,6 +7,8 @@ import highestPaids from './data/highestpaid.json'
 import featureds from './data/featured.json'
 import topArtists from './data/topartist.json'
 
+import relatedArtwork from './data/RelatedArtwork.json'
+
 const fetch = (mockData, time = 0) => {
     return new Promise((resolve) => {
         setTimeout(() => {
@@ -16,6 +18,10 @@ const fetch = (mockData, time = 0) => {
 }
 
 export default {
+
+    fetchrelatedArtwork() {
+        return fetch(relatedArtwork, 1000)
+    },
     fetchCrafts() {
         return fetch(crafts, 1000) // wait 1s before returning crafts
     },
