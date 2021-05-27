@@ -19,7 +19,7 @@
         </b-container>
         <center>
           <VueSlickCarousel v-bind="settings">
-            <b-row v-for="topArtist in topArtists" :key="topArtist.id">
+            <b-row v-for="topArtist in getAlltopArtists" :key="topArtist.id">
               <b-col>
                 <b-card
                   :img-src="topArtist.artistProfilePicUrl"

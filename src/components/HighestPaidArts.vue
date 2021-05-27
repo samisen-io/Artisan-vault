@@ -21,7 +21,7 @@
         </b-row>
         <center>
           <VueSlickCarousel v-bind="settings">
-            <b-row v-for="highestPaidArt in highestPaidArts" :key="highestPaidArt.id">
+            <b-row v-for="highestPaidArt in getAllhighestPaidArts" :key="highestPaidArt.id">
               <b-col>
                 <b-card
                   :img-src="highestPaidArt.artworkUrl"
