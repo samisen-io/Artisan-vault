@@ -13,13 +13,6 @@ import Carousel3d from 'vue-carousel-3d';
 import VueSlickCarousel from 'vue-slick-carousel'
 // optional style for arrows & dots
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
-
-import VueAwesomeSwiper from 'vue-awesome-swiper'
-// import style
-
-
-Vue.use(VueAwesomeSwiper, /* { default options with global component } */ );
-
 Vue.use(VueSlickCarousel);
 Vue.use(Carousel3d);
 Vue.prototype.$axios = axios;
