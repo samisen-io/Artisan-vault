@@ -1,18 +1,17 @@
 [{
         "Id": "1",
-        "artistName": "venkat1",
+        "artistName": "Malkiel",
         "artistProfilePicUrl": "https://images.unsplash.com/photo-1523913507744-1970fd11e9ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
         "artworkTitle": "artwork1",
-        "email": "venkat1@gmail.com",
+        "email": "Malkiel@gmail.com",
         "price": "100",
         "artworkUrl": "https://qph.fs.quoracdn.net/main-qimg-578eeb4e28b389b2cdf1024b5dba73e0",
         "artworkdDescription": "As you know, the visual characteristics of artwork are lines, colors, values, shapes, textures, space, and movement. To describe them, you must think beyond straight or curved, red or orange, light or dark, round or square, striped or polka dot, shallow or deep, and small or large.",
         "slogan": "Iron-man",
         "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
         "pictures": [
-            "https://qph.fs.quoracdn.net/main-qimg-578eeb4e28b389b2cdf1024b5dba73e0",
-            "https://lh3.googleusercontent.com/proxy/SyEtJZLvNUt0J9C9NG8zMhU9ya8q3WhGi7joffJ7FYyQDKxfdj9tLkM6b9kaZIG6UR2jRnV6Jm2x73i_SOryKLELdpx0gqhSOmfyqLAblbsAd4YTupsy2R6OTeuagtfaSMPtT7yUtijamKcWRC99G0wD68fdkw7qOYE",
-            "https://lh3.googleusercontent.com/proxy/9vttJtWpPXU2LbZosmCnMfcr6NUs3_EGTpVKn1nL51j2DyKyIUQ0kBch3SDWEUMqj171aN6d0reAxOa3ADeAHj-o_0uYwfOW-vPxEabyJ5QCl_qSrSG2Vf0ePHZYjcfJe8dUqcH202LD0V_8OepTRHHi7uBr--EsnD4"
+            "https://qph.fs.quoracdn.net/main-qimg-578eeb4e28b389b2cdf1024b5dba73e0", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH2ABJEXHEf0OoKz4aEfMDfri9bOLa9wtTsUOI4pHpPRPtl7RqrfqlIs8cft67n2TXg_c&usqp=CAU", "https://i.pinimg.com/originals/bc/4d/c8/bc4dc8f45bd46d4950a5c08a6aa9bccb.jpg"
+
         ]
     },
     {
@@ -34,10 +33,10 @@
     },
     {
         "Id": "3",
-        "artistName": "venkat3",
-        "artistProfilePicUrl": "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "artistName": "Malkiel3",
+        "artistProfilePicUrl": "https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?size=626&ext=jpg",
         "artworkTitle": "drawing",
-        "email": "venkat3@gmail.com",
+        "email": "Malkiel3@gmail.com",
         "price": "200",
         "artworkUrl": "https://i.pinimg.com/236x/07/a0/ce/07a0ceb0a99ad561e100aaba2a492b7c--modern-artwork-modern-art-paintings.jpg",
         "artworkdDescription": "Davide Cambria (b. 1986, Messina, Italy) is a self-taught painter. His work has become part of private collections across Europe, United States, Asia and Australia. He lives and works in Rome.",
@@ -54,7 +53,7 @@
     {
         "Id": "4",
         "artistName": "venkat4",
-        "artistProfilePicUrl": "https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?k=6&m=1179420343&s=612x612&w=0&h=y7GrwxrbixTWvJfaeiu55rWXMGYr6oP583uzJJ4-Kis=",
+        "artistProfilePicUrl": "https://image.freepik.com/free-photo/handsome-good-looking-indian-man-sitting-chair-relaxing-isolated-white-wall_231208-2649.jpg",
         "artworkTitle": "Lion",
         "email": "venkat4@gmail.com",
         "price": "100",
@@ -72,8 +71,8 @@
     },
     {
         "Id": "5",
-        "artistName": "venkat5",
-        "artistProfilePicUrl": "https://images.squarespace-cdn.com/content/v1/571114d145bf21108e6acc6f/1598559762695-NBTY0TCW2GPCINKXAY6T/ke17ZwdGBToddI8pDm48kK60W-ob1oA2Fm-j4E_9NQB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0kD6Ec8Uq9YczfrzwR7e2Mh5VMMOxnTbph8FXiclivDQnof69TlCeE0rAhj6HUpXkw/aveda+men.jpg?format=2500w",
+        "artistName": "malkiel5",
+        "artistProfilePicUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyUR9yR-oN8xgTEKxnWv3jfuWoghMx4JUnAdJiCc2qZFGoHSomq0tYlTQgefp9wUUTZRY&usqp=CAU",
         "artworkTitle": "photography",
         "email": "venkat5@gmail.com",
         "price": "1000",

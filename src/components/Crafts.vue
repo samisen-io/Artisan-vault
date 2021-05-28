@@ -18,7 +18,7 @@
           <b-row v-for="craft in crafts" :key="craft.id">
             <b-col>
               <b-card
-                :img-src="craft.Pic"
+                :img-src="craft.artworkUrl"
                 size="5rem"
                 class="text-center"
                 style="max-width: 25rem"
@@ -26,31 +26,19 @@
               >
                 <div class="mb-1">
                   <b-avatar
-                    :src="craft.Authorprofilepic"
+                    :src="craft.artistProfilePicUrl"
                     size="4rem"
                     class="text-center"
                     style="max-width: 25rem"
                   ></b-avatar>
 
-                  <b-text>
-                    <b>
-                      <h3>{{ craft.Artistname }}</h3></b
-                    >
-                  </b-text>
-
+                  <b-card-text>
+                    {{ craft.artworkTitle }}
+                  </b-card-text>
                   <hr style="padding: 0" />
-
-                  <b-card-text>
-                    <b>{{ craft.email }}</b>
-                  </b-card-text>
-
-                  <b-card-text>
-                    {{ craft.Title }}
-                  </b-card-text>
-
                   <b-button
                     block
-                    v-bind:href="'/Artwork?craftArtworkId=' + craft.Id"
+                    v-bind:href="'/ArtworkDetails?craftArtworkId=' + craft.Id"
                     variant="outline-primary"
                     >View</b-button
                   >

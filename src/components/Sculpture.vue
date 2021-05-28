@@ -34,11 +34,7 @@
                     style="max-width: 25rem"
                   ></b-avatar>
 
-                  <b-text>
-                    <b>
-                      <h3>{{ sculpture.authorName }}</h3></b
-                    >
-                  </b-text>
+                  
 
                   <hr style="padding: 0" />
 

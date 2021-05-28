@@ -1,8 +1,8 @@
 [{
         "ArtistId": "1",
         "artistName": "Malkiel",
-        "artistProfilePicUrl": "https://images.unsplash.com/photo-1552642986-ccb41e7059e7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fG1lbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
-        "pictures": [{
+        "artistProfilePicUrl": "https://images.unsplash.com/photo-1523913507744-1970fd11e9ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+        "artwork": [{
                 "id": 1,
                 "type": "featuredArtWorkId",
                 "artworkTitle": "featuredarts",
@@ -12,67 +12,230 @@
                 "id": 1,
                 "type": "highestPaidArtWorkId",
                 "artworkTitle": "highestpaid",
-                "artworkUrl": "https://i.pinimg.com/236x/23/df/46/23df460044254a7ebd01d032af68d58c--ink-paintings-colorful-paintings.jpg"
+                "artworkUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuPA5TR0BczAgWcFj6AT_-49lncFqS_DbRzg&usqp=CAU"
             },
             {
                 "id": 1,
-                "type": "Digital",
+                "type": "craftArtworkId",
+                "artworkTitle": "crafts",
+                "artworkUrl": "https://i.ytimg.com/vi/0jDCK_RHQuI/maxresdefault.jpg"
+            },
+            {
+                "id": 1,
+                "type": "digitalArtworkId",
                 "artworkTitle": "Digital",
-                "artworkUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH9fPm_9f5jkWnxV7L9ITdgJfU_UaTt6X9-O1Y5Ql3zT0v46LxTOs_EiemYtgUeRaaAfE&usqp=CAU"
+                "artworkUrl": "https://i.pinimg.com/originals/e1/d2/71/e1d27144d29bc6a58683fe34167ecb2d.jpg"
             },
             {
                 "id": 1,
-                "type": "Photography",
+                "type": "drawingArtworkId",
+                "artworkTitle": "drwaing art work",
+                "artworkUrl": "https://i.pinimg.com/736x/10/a3/6b/10a36b03bb050580d235cc4926d0cd54.jpg"
+            },
+            {
+                "id": 1,
+                "type": "photographyArtworkId",
                 "artworkTitle": "Photography",
-                "artworkUrl": "https://apicms.mstar.com.my/uploads/images/2020/08/31/840803.JPG"
+                "artworkUrl": "https://wallpapercave.com/wp/u9AVLry.jpg"
             },
             {
                 "id": 1,
+                "type": "sculptureArtworkId",
+                "artworkTitle": "Sculpture",
+                "artworkUrl": "https://images.unsplash.com/photo-1588571590924-433cc2020a12?ixId=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3RhdHVlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
+            }
+        ]
+    },
+    {
+        "ArtistId": "2",
+        "artistName": "venkat2",
+        "artistProfilePicUrl": "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "artwork": [{
+                "id": 2,
+                "type": "featuredArtWorkId",
+                "artworkTitle": "featuredarts",
+                "artworkUrl": "https://images.saatchiart.com/saatchi/746017/art/4116740/additional_97b9ff617e2c60336af3d48e95718d53847e0ebd-8.jpg"
+            },
+            {
+                "id": 2,
+                "type": "highestPaidArtWorkId",
+                "artworkTitle": "highestpaid",
+                "artworkUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX47B0yQAEbi6QYzz3UvomAP4oCC0qrZl6BQ&usqp=CAU"
+            },
+            {
+                "id": 2,
+                "type": "craftArtworkId",
+                "artworkTitle": "crafts",
+                "artworkUrl": "https://i.pinimg.com/originals/cb/2d/df/cb2ddfbc1e9feb512c4f4a70f64b18b1.jpg"
+            },
+            {
+                "id": 2,
+                "type": "digitalArtworkId",
+                "artworkTitle": "Digital",
+                "artworkUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtpHj4v7RnlPxn1VWa2deECKw0b3Y_JOBjg08EiUuKv7g7RRcSx9jCfMxrrNkPOCdo6gA&usqp=CAU"
+            },
+            {
+                "id": 2,
+                "type": "photographyArtworkId",
+                "artworkTitle": "Photography",
+                "artworkUrl": "https://i.pinimg.com/236x/34/d2/9d/34d29d0ea27853c66ea4a30b503f63ce.jpg"
+            },
+            {
+                "id": 2,
+                "type": "drawingArtworkId",
+                "artworkTitle": "Drawing",
+                "artworkUrl": "https://render.fineartamerica.com/images/images-profile-flow/400/images-medium-large-5/queen-of-butterflies-olga-shvartsur.jpg"
+            },
+            {
+                "id": 2,
                 "type": "sculptureArtworkId",
                 "artworkTitle": "Sculpture",
                 "artworkUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Lens_-_Inauguration_du_Louvre-Lens_le_4_d%C3%A9cembre_2012%2C_la_Galerie_du_Temps%2C_n%C2%B0_057.JPG/1200px-Lens_-_Inauguration_du_Louvre-Lens_le_4_d%C3%A9cembre_2012%2C_la_Galerie_du_Temps%2C_n%C2%B0_057.JPG"
             }
         ]
     },
-
-
-
-
     {
-        "ArtistId": "2",
-        "artistName": "venkat2",
-        "artistProfilePicUrl": "https://images.unsplash.com/photo-1552642986-ccb41e7059e7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fG1lbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
-        "pictures": [{
-                "id": 2,
+        "ArtistId": "3",
+        "artistName": "Malkiel3",
+        "artistProfilePicUrl": "https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?size=626&ext=jpg",
+        "artwork": [{
+                "id": 3,
                 "type": "featuredArtWorkId",
                 "artworkTitle": "featuredarts",
-                "artworkUrl": "https://qph.fs.quoracdn.net/main-qimg-578eeb4e28b389b2cdf1024b5dba73e0"
+                "artworkUrl": "https://i.pinimg.com/236x/07/a0/ce/07a0ceb0a99ad561e100aaba2a492b7c--modern-artwork-modern-art-paintings.jpg"
             },
             {
-                "id": 2,
+                "id": 3,
                 "type": "highestPaidArtWorkId",
                 "artworkTitle": "highestpaid",
-                "artworkUrl": "https://i.pinimg.com/236x/23/df/46/23df460044254a7ebd01d032af68d58c--ink-paintings-colorful-paintings.jpg"
+                "artworkUrl": "https://3.imimg.com/data3/BC/LV/MY-6149668/acrylic-paintings-250x250.jpg"
             },
             {
-                "id": 2,
-                "type": "Digital",
+                "id": 3,
+                "type": "craftArtworkId",
+                "artworkTitle": "crafts",
+                "artworkUrl": "https://www.arabnews.com/sites/default/files/styles/n_670_395/public/2020/09/04/2256441-1489572748.jpg?itok=3tkKaYOQ"
+            },
+            {
+                "id": 3,
+                "type": "digitalArtworkId",
                 "artworkTitle": "Digital",
-                "artworkUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH9fPm_9f5jkWnxV7L9ITdgJfU_UaTt6X9-O1Y5Ql3zT0v46LxTOs_EiemYtgUeRaaAfE&usqp=CAU"
+                "artworkUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzcE5mD5Sb450LVBKgPxlvMQmdwa8JdRNFuaYbCf1mjeYjkDQeBAP2S6Zj3zYqiOk6jCk&usqp=CAU"
             },
             {
-                "id": 2,
-                "type": "Photography",
+                "id": 3,
+                "type": "photographyArtworkId",
                 "artworkTitle": "Photography",
-                "artworkUrl": "https://apicms.mstar.com.my/uploads/images/2020/08/31/840803.JPG"
+                "artworkUrl": "https://wallpapercave.com/wp/kjh8eTP.jpg"
             },
             {
-                "id": 2,
+                "id": 3,
+                "type": "drawingArtworkId",
+                "artworkTitle": "Drawing",
+                "artworkUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjK5ofEswDPFnBpKtViqAq3XvS3HJf8MVXQ9wn5TMKCgoOIZ-WnNDfpZoOBZIdVgIZwqE&usqp=CAU"
+            },
+            {
+                "id": 3,
                 "type": "sculptureArtworkId",
                 "artworkTitle": "Sculpture",
-                "artworkUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Lens_-_Inauguration_du_Louvre-Lens_le_4_d%C3%A9cembre_2012%2C_la_Galerie_du_Temps%2C_n%C2%B0_057.JPG/1200px-Lens_-_Inauguration_du_Louvre-Lens_le_4_d%C3%A9cembre_2012%2C_la_Galerie_du_Temps%2C_n%C2%B0_057.JPG"
+                "artworkUrl": "https://m.media-amazon.com/images/I/71RzM9vymBL._AC_SS450_.jpg"
+            }
+        ]
+    },
+    {
+        "ArtistId": "4",
+        "artistName": "venkat4",
+        "artistProfilePicUrl": "https://image.freepik.com/free-photo/handsome-good-looking-indian-man-sitting-chair-relaxing-isolated-white-wall_231208-2649.jpg",
+        "artwork": [{
+                "id": 4,
+                "type": "featuredArtWorkId",
+                "artworkTitle": "featuredarts",
+                "artworkUrl": "https://images.all-free-download.com/images/graphicthumb/lion_africa_sleepy_lion_215036.jpg"
+            },
+            {
+                "id": 4,
+                "type": "highestPaidArtWorkId",
+                "artworkTitle": "highestpaid",
+                "artworkUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzRJ8I10D9V75LUZ7B9EZGtPGPZAVAcaJBDg&usqp=CAU"
+            },
+            {
+                "id": 4,
+                "type": "craftArtworkId",
+                "artworkTitle": "crafts",
+                "artworkUrl": "https://www.goodnewsnetwork.org/wp-content/uploads/2021/01/leaf-art-feature-photo-swns.jpg"
+            },
+            {
+                "id": 4,
+                "type": "digitalArtworkId",
+                "artworkTitle": "Digital",
+                "artworkUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaeuHPEOTtJFmhObK1kDSHard-VkCbmzwLcQ&usqp=CAU"
+            },
+            {
+                "id": 4,
+                "type": "photographyArtworkId",
+                "artworkTitle": "Photography",
+                "artworkUrl": "https://hdwallpaperim.com/wp-content/uploads/2017/08/23/471343-artwork-illustration-sky-mountains-clouds-water-nature-748x501.jpg"
+            },
+            {
+                "id": 4,
+                "type": "drawingArtworkId",
+                "artworkTitle": "Drawing",
+                "artworkUrl": "https://image.shutterstock.com/z/stock-photo-stock-realistic-raster-headphones-music-sketch-illustration-171709016.jpg"
+            },
+            {
+                "id": 4,
+                "type": "sculptureArtworkId",
+                "artworkTitle": "Sculpture",
+                "artworkUrl": "https://i.pinimg.com/236x/38/8f/b6/388fb6b938ddecee2be75a896df55b06.jpg"
+            }
+        ]
+    },
+    {
+        "ArtistId": "5",
+        "artistName": "malkiel5",
+        "artistProfilePicUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyUR9yR-oN8xgTEKxnWv3jfuWoghMx4JUnAdJiCc2qZFGoHSomq0tYlTQgefp9wUUTZRY&usqp=CAU",
+        "artwork": [{
+                "id": 5,
+                "type": "featuredArtWorkId",
+                "artworkTitle": "featuredarts",
+                "artworkUrl": "https://www.designmantic.com/blog/wp-content/uploads/2020/01/Photography-Logos-1280x720.png"
+            },
+            {
+                "id": 5,
+                "type": "highestPaidArtWorkId",
+                "artworkTitle": "highestpaid",
+                "artworkUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTLsZ8I96dyZakBy2koJev0zJmfAlEXQnEeA&usqp=CAU"
+            },
+            {
+                "id": 5,
+                "type": "craftArtworkId",
+                "artworkTitle": "crafts",
+                "artworkUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7v2gTVlvgTf-lstrE7Uxgo_-VPDHA1zKTBuL9l903GSqgh1x7BsiO0QcU74BmDa7zoOk&usqp=CAU"
+            },
+            {
+                "id": 5,
+                "type": "digitalArtworkId",
+                "artworkTitle": "Digital",
+                "artworkUrl": "https://cdn.mos.cms.futurecdn.net/sAU9XvGBeJL2GZZLrXKtZn-1200-80.jpg"
+            },
+            {
+                "id": 5,
+                "type": "photographyArtworkId",
+                "artworkTitle": "Photography",
+                "artworkUrl": "https://c4.wallpaperflare.com/wallpaper/430/885/201/digital-digital-art-artwork-drawing-digital-painting-hd-wallpaper-preview.jpg"
+            },
+            {
+                "id": 5,
+                "type": "drawingArtworkId",
+                "artworkTitle": "Drawing",
+                "artworkUrl": "https://www.artzolo.com/sites/default/files/uploads/multi/10544/largest/final_004.jpg"
+            },
+            {
+                "id": 5,
+                "type": "sculptureArtworkId",
+                "artworkTitle": "Sculpture",
+                "artworkUrl": "https://cdn.britannica.com/93/2093-004-21AB275C/Hagar-marble-sculpture-Edmonia-Lewis-Washington-DC-1875.jpg"
             }
         ]
     }
-
 ]

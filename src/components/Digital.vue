@@ -19,7 +19,7 @@
           <b-row v-for="digital in digitals" :key="digital.id">
             <b-col>
               <b-card
-                :img-src="digital.Pic"
+                :img-src="digital.artworkUrl"
                 size="5rem"
                 class="text-center"
                 style="max-width: 25rem"
@@ -27,23 +27,17 @@
               >
                 <div class="mb-1">
                   <b-avatar
-                    :src="digital.Authorprofilepic"
+                    :src="digital.artistProfilePicUrl"
                     size="4rem"
                     class="text-center"
                     style="max-width: 25rem"
                   ></b-avatar>
 
-                  <b-text>
-                    <b>
-                      <h3>{{ digital.Artistname }}</h3></b
-                    >
-                  </b-text>
+                  <b-card-text>
+                    {{ digital.artworkTitle }}
+                  </b-card-text>
 
                   <hr style="padding: 0" />
-
-                  <b-card-text>
-                    <b>{{ digital.email }}</b>
-                  </b-card-text>
 
                   <b-card-text>
                     {{ digital.Title }}
@@ -51,7 +45,9 @@
 
                   <b-button
                     block
-                    v-bind:href="'/Artwork?digitalArtworkId=' + digital.Id"
+                    v-bind:href="
+                      '/ArtworkDetails?digitalArtworkId=' + digital.Id
+                    "
                     variant="outline-primary"
                     >View</b-button
                   >

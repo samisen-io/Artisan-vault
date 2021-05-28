@@ -56,7 +56,8 @@ export default {
                 );
             } else if (this.queryType == "drawingArtworkId") {
                 this.$store.dispatch("fetchDrawings");
-                artworkObj = this.$store.state.drawings
+                artworkObj = this.$store.state.drawings.find(
+                    (obj) => obj.Id == this.id);
             }
             return artworkObj;
         },

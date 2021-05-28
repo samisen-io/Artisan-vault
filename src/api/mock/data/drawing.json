@@ -1,61 +1,69 @@
 [{
-    "id": "",
-    "authorName": "",
-    "authorProfilePicUrl": "",
-    "artworkTitle": "",
-    "email": "",
-    "price": "",
-    "artworkUrl": "",
-    "artworkdDescription": "",
-    "slogan": "",
-    "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
-    "pictures": []
-}, {
-    "id": "",
-    "authorName": "",
-    "authorProfilePicUrl": "",
-    "artworkTitle": "",
-    "email": "",
-    "price": "",
-    "artworkUrl": "",
-    "artworkdDescription": "",
-    "slogan": "",
-    "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
-    "pictures": []
-}, {
-    "id": "",
-    "authorName": "",
-    "authorProfilePicUrl": "",
-    "artworkTitle": "",
-    "email": "",
-    "price": "",
-    "artworkUrl": "",
-    "artworkdDescription": "",
-    "slogan": "",
-    "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
-    "pictures": []
-}, {
-    "id": "",
-    "authorName": "",
-    "authorProfilePicUrl": "",
-    "artworkTitle": "",
-    "email": "",
-    "price": "",
-    "artworkUrl": "",
-    "artworkdDescription": "",
-    "slogan": "",
-    "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
-    "pictures": []
-}, {
-    "id": "",
-    "authorName": "",
-    "authorProfilePicUrl": "",
-    "artworkTitle": "",
-    "email": "",
-    "price": "",
-    "artworkUrl": "",
-    "artworkdDescription": "",
-    "slogan": "",
-    "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
-    "pictures": []
-}]
+        "Id": "1",
+        "artistName": "Malkiel",
+        "artistProfilePicUrl": "https://images.unsplash.com/photo-1523913507744-1970fd11e9ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+        "artworkTitle": "digitalartwork",
+        "email": "malkiel@gmail.com",
+        "price": "10",
+        "artworkUrl": "https://i.pinimg.com/736x/10/a3/6b/10a36b03bb050580d235cc4926d0cd54.jpg",
+        "artworkdDescription": "Drawing is a form of visual art in which an artist uses instruments to mark paper or other two-dimensional surface. Drawing instruments include graphite pencils, pen and ink, various kinds of paints, inked brushes, colored pencils, crayons, charcoal, chalk, pastels, erasers, markers, styluses, and metals (such as silverpoint). Digital drawing is the act of using a computer to draw. Common methods of digital drawing include a stylus or finger on a touchscreen device, stylus- or finger-to-touchpad, or in some cases, a mouse. There are many digital art programs and devices.",
+        "slogan": "ironman",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": ["https://i.pinimg.com/736x/10/a3/6b/10a36b03bb050580d235cc4926d0cd54.jpg", "https://i.pinimg.com/originals/a8/65/b6/a865b66026ddb9b82809090204d5aa58.jpg", "https://i.pinimg.com/originals/25/8c/a5/258ca5083212465c5f32efc2002ec73c.jpg"]
+    }, {
+        "Id": "2",
+        "artistName": "venkat2",
+        "artistProfilePicUrl": "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+
+        "artworkTitle": "digitalartwork",
+        "email": "venkat2@gmail.com",
+        "price": "100",
+        "artworkUrl": "https://render.fineartamerica.com/images/images-profile-flow/400/images-medium-large-5/queen-of-butterflies-olga-shvartsur.jpg",
+        "artworkdDescription": "Drawing is a form of visual art in which an artist uses instruments to mark paper or other two-dimensional surface. Drawing instruments include graphite pencils, pen and ink, various kinds of paints, inked brushes, colored pencils, crayons, charcoal, chalk, pastels, erasers, markers, styluses, and metals (such as silverpoint). Digital drawing is the act of using a computer to draw. Common methods of digital drawing include a stylus or finger on a touchscreen device, stylus- or finger-to-touchpad, or in some cases, a mouse. There are many digital art programs and devices.",
+        "slogan": "hulk",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": ["https://render.fineartamerica.com/images/images-profile-flow/400/images-medium-large-5/queen-of-butterflies-olga-shvartsur.jpg"]
+    },
+    {
+        "Id": "3",
+        "artistName": "Malkiel3",
+        "artistProfilePicUrl": "https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?size=626&ext=jpg",
+
+        "artworkTitle": "digitalartwork",
+        "email": "Malkiel3@gmail.com",
+        "price": "180",
+        "artworkUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjK5ofEswDPFnBpKtViqAq3XvS3HJf8MVXQ9wn5TMKCgoOIZ-WnNDfpZoOBZIdVgIZwqE&usqp=CAU",
+        "artworkdDescription": "Drawing is a form of visual art in which an artist uses instruments to mark paper or other two-dimensional surface. Drawing instruments include graphite pencils, pen and ink, various kinds of paints, inked brushes, colored pencils, crayons, charcoal, chalk, pastels, erasers, markers, styluses, and metals (such as silverpoint). Digital drawing is the act of using a computer to draw. Common methods of digital drawing include a stylus or finger on a touchscreen device, stylus- or finger-to-touchpad, or in some cases, a mouse. There are many digital art programs and devices.",
+        "slogan": "bat-man",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjK5ofEswDPFnBpKtViqAq3XvS3HJf8MVXQ9wn5TMKCgoOIZ-WnNDfpZoOBZIdVgIZwqE&usqp=CAU"]
+    },
+
+    {
+        "Id": "4",
+        "artistName": "venkat4",
+        "artistProfilePicUrl": "https://image.freepik.com/free-photo/handsome-good-looking-indian-man-sitting-chair-relaxing-isolated-white-wall_231208-2649.jpg",
+        "artworkTitle": "digitalartwork",
+        "email": "venkat4@gmail.com",
+        "price": "290",
+        "artworkUrl": "https://image.shutterstock.com/z/stock-photo-stock-realistic-raster-headphones-music-sketch-illustration-171709016.jpg",
+        "artworkdDescription": "Drawing is a form of visual art in which an artist uses instruments to mark paper or other two-dimensional surface. Drawing instruments include graphite pencils, pen and ink, various kinds of paints, inked brushes, colored pencils, crayons, charcoal, chalk, pastels, erasers, markers, styluses, and metals (such as silverpoint). Digital drawing is the act of using a computer to draw. Common methods of digital drawing include a stylus or finger on a touchscreen device, stylus- or finger-to-touchpad, or in some cases, a mouse. There are many digital art programs and devices.",
+        "slogan": "bat-man",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": ["https://image.shutterstock.com/z/stock-photo-stock-realistic-raster-headphones-music-sketch-illustration-171709016.jpg"]
+    },
+    {
+        "Id": "5",
+        "artistName": "Malkiel5",
+        "artistProfilePicUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyUR9yR-oN8xgTEKxnWv3jfuWoghMx4JUnAdJiCc2qZFGoHSomq0tYlTQgefp9wUUTZRY&usqp=CAU",
+        "artworkTitle": "digitalartwork",
+        "email": "Malkiel5@gmail.com",
+        "price": "390",
+        "artworkUrl": "https://www.artzolo.com/sites/default/files/uploads/multi/10544/largest/final_004.jpg",
+        "artworkdDescription": "Drawing is a form of visual art in which an artist uses instruments to mark paper or other two-dimensional surface. Drawing instruments include graphite pencils, pen and ink, various kinds of paints, inked brushes, colored pencils, crayons, charcoal, chalk, pastels, erasers, markers, styluses, and metals (such as silverpoint). Digital drawing is the act of using a computer to draw. Common methods of digital drawing include a stylus or finger on a touchscreen device, stylus- or finger-to-touchpad, or in some cases, a mouse. There are many digital art programs and devices.",
+        "slogan": "bat-man",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": ["https://www.artzolo.com/sites/default/files/uploads/multi/10544/largest/final_004.jpg", "https://s3.amazonaws.com/gallerist-live/products/28107/large/tribal-lady-inked-in-marker-pen.jpeg?1567770633", "https://i.etsystatic.com/27376060/d/il/2ede25/2919864731/il_340x270.2919864731_1294.jpg?version=0", "https://s3.amazonaws.com/gallerist-live/products/7046/large/the-girl-in-this-art.jpg?1550646408", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYF89qRu4wWXp1vlVXPDfSCXPZzbUl_VrI7EaoYCgYHnYaX2xHaYo478waz-xndT4sAZM&usqp=CAU"]
+    }
+
+]

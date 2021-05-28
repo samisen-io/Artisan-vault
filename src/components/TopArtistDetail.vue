@@ -56,7 +56,7 @@
     <b-container>
       <b-row cols-md="4">
         <b-col
-          v-for="(relatedArtwork, index) in displayRelatedArtwork[0].pictures"
+          v-for="(relatedArtwork, index) in displayRelatedArtworkByArtist.artwork"
           :key="relatedArtwork.id"
         >
           <b-card
@@ -69,7 +69,7 @@
           >
             <div class="mb-1">
               <b-avatar
-                :src="displayRelatedArtwork[0].artistProfilePicUrl"
+                :src="displayRelatedArtworkByArtist.artistProfilePicUrl"
                 size="4rem"
                 class="text-center"
                 style="max-width: 25rem"
@@ -77,7 +77,7 @@
 
               <b-card-text>
                 <b>
-                  <h3>{{ displayRelatedArtwork[0].artistName }}</h3></b
+                  <h3>{{ relatedArtwork.artistName }}</h3></b
                 >
               </b-card-text>
               <hr style="padding: 0" />
@@ -123,9 +123,9 @@ export default {
       return this.$store.state.relatedArtwork;
     },
    
-    displayRelatedArtwork() {
+    displayRelatedArtworkByArtist() {
       var artworkObj;
-      artworkObj = this.$store.state.relatedArtwork.filter((obj) =>
+      artworkObj = this.$store.state.relatedArtwork.find((obj) =>
         obj.ArtistId.toLowerCase().includes(this.id.toLowerCase())
       );
       return artworkObj;

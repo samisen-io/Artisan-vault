@@ -19,7 +19,7 @@
           <b-row v-for="photography in photographys" :key="photography.id">
             <b-col>
               <b-card
-                :img-src="photography.Pic"
+                :img-src="photography.artworkUrl"
                 size="5rem"
                 class="text-center"
                 style="max-width: 25rem"
@@ -28,26 +28,22 @@
                 <!-- For Creator photo and name -->
                 <div class="mb-1">
                   <b-avatar
-                    :src="photography.Authorprofilepic"
+                    :src="photography.artistProfilePicUrl"
                     size="4rem"
                     class="text-center"
                     style="max-width: 25rem"
                   ></b-avatar>
-                  <b-text-area>
-                    <b>
-                      <h3>{{ photography.Artistname }}</h3></b
-                    >
-                  </b-text-area>
+
                   <hr />
 
                   <b-card-text>
-                    {{ photography.Title }}
+                    {{ photography.artworkTitle }}
                   </b-card-text>
-
+                  <hr style="padding: 0" />
                   <b-button
                     block
                     v-bind:href="
-                      '/Artwork?photographyArtworkId=' + photography.Id
+                      '/ArtworkDetails?photographyArtworkId=' + photography.Id
                     "
                     variant="outline-primary"
                     >View</b-button

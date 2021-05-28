@@ -20,7 +20,10 @@
         </b-row>
         <center>
           <VueSlickCarousel v-bind="settings">
-            <b-row v-for="featuredArt in getAllFeaturedArts" :key="featuredArt.id">
+            <b-row
+              v-for="featuredArt in getAllFeaturedArts"
+              :key="featuredArt.id"
+            >
               <b-col>
                 <b-card
                   :img-src="featuredArt.artworkUrl"
@@ -43,12 +46,9 @@
                       >
                     </b-card-text>
                     <hr style="padding: 0" />
-
-                    <!-- For image description -->
                     <b-card-text>
                       {{ featuredArt.artworkTitle }}
                     </b-card-text>
-                    <!-- button -->
                     <b-button
                       block
                       v-bind:href="

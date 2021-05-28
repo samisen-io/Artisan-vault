@@ -20,7 +20,7 @@
           <b-row v-for="drawing in drawings" :key="drawing.id">
             <b-col>
               <b-card
-                :img-src="drawing.Pic"
+                :img-src="drawing.artworkUrl"
                 size="5rem"
                 class="text-center"
                 style="max-width: 25rem"
@@ -29,29 +29,23 @@
                 <!-- For Creator photo and name -->
                 <div class="mb-1">
                   <b-avatar
-                    :src="drawing.Authorprofilepic"
+                    :src="drawing.artistProfilePicUrl"
                     size="4rem"
                     class="text-center"
                     style="max-width: 25rem"
                   ></b-avatar>
-                  <b-text-area>
-                    <b>
-                      <h3>{{ drawing.Artistname }}</h3></b
-                    >
-                  </b-text-area>
+
                   <hr />
 
-                  <b-card-text>
-                    <b>{{ drawing.email }}</b>
-                  </b-card-text>
-
-                  <b-card-text>
-                    {{ drawing.Title }}
-                  </b-card-text>
-
+                  <b-text-area>
+                    {{ drawing.artworkTitle }}
+                  </b-text-area>
+                  <hr style="padding: 0" />
                   <b-button
                     block
-                    v-bind:href="'/Artwork?drawingArtworkId=' + drawing.Id"
+                    v-bind:href="
+                      '/ArtworkDetails?drawingArtworkId=' + drawing.Id
+                    "
                     variant="outline-primary"
                     >View</b-button
                   >
@@ -127,6 +121,7 @@ export default {
   },
   computed: {
     drawings() {
+      this.$store.state.drawings;
       return this.$store.state.drawings;
     },
   },

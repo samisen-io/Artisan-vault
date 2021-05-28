@@ -1,7 +1,7 @@
 [{
         "Id": "1",
-        "artistName": "ravi ",
-        "artistProfilePicUrl": "https://media.istockphoto.com/photos/mature-mixed-race-business-man-picture-Id1059661424?k=6&m=1059661424&s=612x612&w=0&h=Wkp3Rs2F_90PtZu07-fR1YmzGjsw5qj73D42doCo1Gc=",
+        "artistName": "Malkiel ",
+        "artistProfilePicUrl": "https://images.unsplash.com/photo-1523913507744-1970fd11e9ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
         "artworkTitle": "sculpture1",
         "email": "venkat1@gmail.com",
         "artworkdDescription": "Sculpture, an artistic form in which hard or plastic materials are worked into three-dimensional art objects. The designs may be embodied in freestanding objects, in reliefs on surfaces, or in environments ranging from tableaux to contexts that envelop the spectator.",
@@ -15,8 +15,8 @@
     },
     {
         "Id": "2",
-        "artistName": "maya ",
-        "artistProfilePicUrl": "https://i.pinimg.com/originals/62/87/44/628744f876e7c7008a612b42fa8d9c5c.jpg",
+        "artistName": "venkat2 ",
+        "artistProfilePicUrl": "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         "artworkTitle": "sculpture2",
         "artworkdDescription": "Sculpture, an artistic form in which hard or plastic materials are worked into three-dimensional art objects. The designs may be embodied in freestanding objects, in reliefs on surfaces, or in environments ranging from tableaux to contexts that envelop the spectator.",
         "email": "venkat2@gmail.com",
@@ -31,8 +31,8 @@
     },
     {
         "Id": "3",
-        "artistName": "lakshmi",
-        "artistProfilePicUrl": "https://i.pinimg.com/originals/38/87/74/38877439081908bb80017cd95732d243.jpg",
+        "artistName": "Malkiel3",
+        "artistProfilePicUrl": "https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?size=626&ext=jpg",
         "artworkTitle": "sculpture3",
         "artworkdDescription": "Sculpture, an artistic form in which hard or plastic materials are worked into three-dimensional art objects. The designs may be embodied in freestanding objects, in reliefs on surfaces, or in environments ranging from tableaux to contexts that envelop the spectator.",
         "email": "venkat3@gmail.com",
@@ -50,8 +50,8 @@
     },
     {
         "Id": "4",
-        "artistName": "Raju",
-        "artistProfilePicUrl": "https://thumbs.dreamstime.com/b/handsome-man-hair-style-beard-beauty-face-portrait-fashion-male-model-black-hair-high-resolution-handsome-man-125031765.jpg",
+        "artistName": "venkat4",
+        "artistProfilePicUrl": "https://image.freepik.com/free-photo/handsome-good-looking-indian-man-sitting-chair-relaxing-isolated-white-wall_231208-2649.jpg",
         "artworkTitle": "sculpture4",
         "artworkdDescription": "Sculpture, an artistic form in which hard or plastic materials are worked into three-dimensional art objects. The designs may be embodied in freestanding objects, in reliefs on surfaces, or in environments ranging from tableaux to contexts that envelop the spectator.",
         "email": "venkat4@gmail.com",
@@ -65,8 +65,8 @@
     },
     {
         "Id": "5",
-        "artistName": "Ravi",
-        "artistProfilePicUrl": "https://s3.ap-southeast-1.amazonaws.com/images.asianage.com/images/aa-Cover-5neknqovdb6hesko5h0c8jbr36-20180130131031.Medi.jpeg",
+        "artistName": "malkiel5",
+        "artistProfilePicUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyUR9yR-oN8xgTEKxnWv3jfuWoghMx4JUnAdJiCc2qZFGoHSomq0tYlTQgefp9wUUTZRY&usqp=CAU",
         "artworkTitle": "sculpture5",
         "email": "venkat5@gmail.com",
         "price": "3001",

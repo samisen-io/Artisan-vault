@@ -1,46 +1,69 @@
 [{
-        "Id": 1,
-        "Authorname": "venkat",
-        "Authorprofilepic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOA3NjKMxPO12MbPeAEi_8lyMumnUNe3IRdg&usqp=CAU",
-        "Authortdescription": "hi how are you 1",
-        "Title": "a",
-        "email": "venkat@gmail.com",
-        "Pic": "https://img.freepik.com/free-vector/digital-global-connection-network-technology-background_1017-23324.jpg?size=626&ext=jpg"
+        "Id": "1",
+        "artistName": "Malkiel",
+        "artistProfilePicUrl": "https://images.unsplash.com/photo-1523913507744-1970fd11e9ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+        "artworkTitle": "DigitalArtwork",
+        "email": "malkiel@gmail.com",
+        "price": "10",
+        "artworkUrl": "https://i.pinimg.com/originals/e1/d2/71/e1d27144d29bc6a58683fe34167ecb2d.jpg",
+        "artworkdDescription": "The Arts and Crafts movement was an international trend in the decorative and fine arts that developed earliest and most fully in the British Isles[1] and subsequently spread across the British Empire and to the rest of Europe and Americ",
+        "slogan": "ironman",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": ["https://i.pinimg.com/originals/e1/d2/71/e1d27144d29bc6a58683fe34167ecb2d.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Sr4hn6hQoHRfgunU8hfA6aG-CDlFEeUr75K1HxhRU9-CKHWJMIScJfkMc0F69rWJNfA&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhDBxEuvfbbw-3YiROrdRgP3Rsil8gGszWN41VCnWfJUlcFY5Lqy9ufwMmjofF6VKORUY&usqp=CAU"]
+    }, {
+        "Id": "2",
+        "artistName": "venkat2",
+        "artistProfilePicUrl": "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+
+        "artworkTitle": "DigitalArtwork",
+        "email": "venkat2@gmail.com",
+        "price": "100",
+        "artworkUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtpHj4v7RnlPxn1VWa2deECKw0b3Y_JOBjg08EiUuKv7g7RRcSx9jCfMxrrNkPOCdo6gA&usqp=CAU",
+        "artworkdDescription": "The Arts and Crafts movement was an international trend in the decorative and fine arts that developed earliest and most fully in the British Isles[1] and subsequently spread across the British Empire and to the rest of Europe and Americ",
+        "slogan": "hulk",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtpHj4v7RnlPxn1VWa2deECKw0b3Y_JOBjg08EiUuKv7g7RRcSx9jCfMxrrNkPOCdo6gA&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcMF525LQQLEgUrUbt7SF886lbJAtSB2jC3mbCWr1Ri2S2nm95rKtrIg8zkKWAM5fouZ4&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1zktd3QffEKI26UHtgr2a-rCtdR-3Fc45p7-NJ4R3HPgNFlcNtgY89dD69yErr6sEqkk&usqp=CAU"]
     },
     {
-        "Id": 2,
-        "Authorname": "mani",
-        "Authorprofilepic": "https://i2-prod.manchestereveningnews.co.uk/incoming/article20462339.ece/ALTERNATES/s615/1_GettyImages-1285519479.jpg",
-        "Authortdescription": "hi how are you 2",
-        "Title": "b",
-        "email": "mani@gmail.com",
-        "Pic": "https://images.idgesg.net/images/article/2017/10/user_interface_futuristic_digital_transformation_thinkstock_826567492-100740667-large.jpg"
+        "Id": "3",
+        "artistName": "Malkiel3",
+        "artistProfilePicUrl": "https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?size=626&ext=jpg",
+
+        "artworkTitle": "DigitalArtwork",
+        "email": "Malkiel3@gmail.com",
+        "price": "180",
+        "artworkUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzcE5mD5Sb450LVBKgPxlvMQmdwa8JdRNFuaYbCf1mjeYjkDQeBAP2S6Zj3zYqiOk6jCk&usqp=CAU",
+        "artworkdDescription": "The Arts and Crafts movement was an international trend in the decorative and fine arts that developed earliest and most fully in the British Isles[1] and subsequently spread across the British Empire and to the rest of Europe and Americ",
+        "slogan": "bat-man",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzcE5mD5Sb450LVBKgPxlvMQmdwa8JdRNFuaYbCf1mjeYjkDQeBAP2S6Zj3zYqiOk6jCk&usqp=CAU"]
+    },
+
+    {
+        "Id": "4",
+        "artistName": "venkat4",
+        "artistProfilePicUrl": "https://image.freepik.com/free-photo/handsome-good-looking-indian-man-sitting-chair-relaxing-isolated-white-wall_231208-2649.jpg",
+        "artworkTitle": "DigitalArtwork",
+        "email": "venkat4@gmail.com",
+        "price": "290",
+        "artworkUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaeuHPEOTtJFmhObK1kDSHard-VkCbmzwLcQ&usqp=CAU",
+        "artworkdDescription": "The Arts and Crafts movement was an international trend in the decorative and fine arts that developed earliest and most fully in the British Isles[1] and subsequently spread across the British Empire and to the rest of Europe and Americ",
+        "slogan": "bat-man",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaeuHPEOTtJFmhObK1kDSHard-VkCbmzwLcQ&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSegh57tAv4tUnAu6EO0c5n4juy-lgIAG4y_Y7cgyjJazlyw86ycbpBFxDu6dGiNRx8q2M&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCEsRmMz92sPp4c0fhR1R4gHeX0aQaQGNP1-w2tL5hIVRx8tUXLBORIPj8fCgpNq8psJY&usqp=CAU"]
     },
     {
-        "Id": 3,
-        "Authorname": "sesha",
-        "Authorprofilepic": "https://images.unsplash.com/photo-1560241804-02b7b1bc9d55?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWFufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
-        "Authortdescription": "hi how are you 3",
-        "Title": "c",
-        "email": "sesha@gmail.com",
-        "Pic": "https://image.shutterstock.com/image-illustration/blue-digital-cyberspace-data-network-260nw-1693977688.jpg"
-    },
-    {
-        "Id": 4,
-        "Authorname": "sankar",
-        "Authorprofilepic": "https://hips.hearstapps.com/hbz.h-cdn.co/assets/17/15/hbz-hottest-men-jon-hamm-gettyimages-141278424.jpg",
-        "Authortdescription": "hi how are you 4",
-        "Title": "d",
-        "email": "kalyani@gmail.com",
-        "Pic": "https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/beveragedaily.com/article/2018/09/28/digital-remains-untapped-by-drinks-firms/8597278-1-eng-GB/Digital-remains-untapped-by-drinks-firms_wrbm_large.jpg"
-    },
-    {
-        "Id": 5,
-        "Authorname": "sai",
-        "Authorprofilepic": "https://media.gettyimages.com/photos/portrait-of-businessman-with-arms-crossed-picture-id996020588?s=612x612",
-        "Authortdescription": "hi how are you 5",
-        "Title": "e",
-        "email": "sai@gmail.com",
-        "Pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDJb7PvLm0EX_440f77l1_q-ajcXqzmLwdrrE-gj15PcHT1icR_AWPFmpL2jGU8PPlfnw&usqp=CAU"
+        "Id": "5",
+        "artistName": "Malkiel5",
+        "artistProfilePicUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyUR9yR-oN8xgTEKxnWv3jfuWoghMx4JUnAdJiCc2qZFGoHSomq0tYlTQgefp9wUUTZRY&usqp=CAU",
+        "artworkTitle": "DigitalArtwork",
+        "email": "Malkiel5@gmail.com",
+        "price": "390",
+        "artworkUrl": "https://cdn.mos.cms.futurecdn.net/sAU9XvGBeJL2GZZLrXKtZn-1200-80.jpg",
+        "artworkdDescription": "The Arts and Crafts movement was an international trend in the decorative and fine arts that developed earliest and most fully in the British Isles[1] and subsequently spread across the British Empire and to the rest of Europe and Americ",
+        "slogan": "bat-man",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": ["https://cdn.mos.cms.futurecdn.net/sAU9XvGBeJL2GZZLrXKtZn-1200-80.jpg", "https://i.pinimg.com/originals/55/20/da/5520da708f538f37061e0918b5c190ae.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9esMLlfztro7V1yT5eDIjU5JqAPsD4DL64H8fl1AbVf1KM08gRxPrdx21fOW6cUBgfOs&usqp=CAU"]
     }
+
 ]
