@@ -1,92 +1,84 @@
 [{
-        "Id": "1",
-        "artistName": "venkat1",
-        "artistProfilePicUrl": "https://images.unsplash.com/photo-1523913507744-1970fd11e9ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
-        "artworkTitle": "artwork1",
-        "email": "venkat1@gmail.com",
-        "price": "100",
-        "artworkUrl": "https://qph.fs.quoracdn.net/main-qimg-578eeb4e28b389b2cdf1024b5dba73e0",
-        "artworkdDescription": "As you know, the visual characteristics of artwork are lines, colors, values, shapes, textures, space, and movement. To describe them, you must think beyond straight or curved, red or orange, light or dark, round or square, striped or polka dot, shallow or deep, and small or large.",
-        "slogan": "Iron-man",
-        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
-        "pictures": [
-            "https://qph.fs.quoracdn.net/main-qimg-578eeb4e28b389b2cdf1024b5dba73e0",
-            "https://lh3.googleusercontent.com/proxy/SyEtJZLvNUt0J9C9NG8zMhU9ya8q3WhGi7joffJ7FYyQDKxfdj9tLkM6b9kaZIG6UR2jRnV6Jm2x73i_SOryKLELdpx0gqhSOmfyqLAblbsAd4YTupsy2R6OTeuagtfaSMPtT7yUtijamKcWRC99G0wD68fdkw7qOYE",
-            "https://lh3.googleusercontent.com/proxy/9vttJtWpPXU2LbZosmCnMfcr6NUs3_EGTpVKn1nL51j2DyKyIUQ0kBch3SDWEUMqj171aN6d0reAxOa3ADeAHj-o_0uYwfOW-vPxEabyJ5QCl_qSrSG2Vf0ePHZYjcfJe8dUqcH202LD0V_8OepTRHHi7uBr--EsnD4"
-        ]
+        "Id": 1,
+        "Artistname": "Malkiel",
+        "Creator": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg",
+        "Artdescription": "hi how are you",
+        "imagedescription": "ddddddddddddddd",
+        "email": "malkiel@gmail.com",
+        "Artimg": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
+
     },
+
     {
-        "Id": "2",
-        "artistName": "venkat2",
-        "artistProfilePicUrl": "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "artworkTitle": "eye",
+
+        "Id": 2,
+        "Artistname": "venkat2",
+        "Creator": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg",
         "email": "venkat2@gmail.com",
-        "price": "250",
-        "artworkUrl": "https://images.saatchiart.com/saatchi/746017/art/4116740/additional_97b9ff617e2c60336af3d48e95718d53847e0ebd-8.jpg",
-        "artworkdDescription": "As you know, the visual characteristics of artwork are lines, colors, values, shapes, textures, space, and movement. To describe them, you must think beyond straight or curved, red or orange, light or dark, round or square, striped or polka dot, shallow or deep, and small or large.",
-        "slogan": "Hulk",
-        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
-        "pictures": [
-            "https://images.saatchiart.com/saatchi/746017/art/4116740/additional_97b9ff617e2c60336af3d48e95718d53847e0ebd-8.jpg",
-            "https://render.fineartamerica.com/images/rendered/default/canvas-print/10/14/mirror/break/images/artworkimages/medium/1/niqab-eyes-sampad-art-canvas-print.jpg",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN2phnOTi7CoJCJ1dJ2CshIQmiCr-r3K7kXuHSB2BvQAf0JvE-q0-nMl8qVC7-H-66ETc&usqp=CAU"
-        ]
-    },
-    {
-        "Id": "3",
-        "artistName": "venkat3",
-        "artistProfilePicUrl": "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "artworkTitle": "drawing",
-        "email": "venkat3@gmail.com",
-        "price": "200",
-        "artworkUrl": "https://i.pinimg.com/236x/07/a0/ce/07a0ceb0a99ad561e100aaba2a492b7c--modern-artwork-modern-art-paintings.jpg",
-        "artworkdDescription": "Davide Cambria (b. 1986, Messina, Italy) is a self-taught painter. His work has become part of private collections across Europe, United States, Asia and Australia. He lives and works in Rome.",
-        "slogan": "Thor",
-        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
-        "pictures": [
-            "https://i.pinimg.com/236x/07/a0/ce/07a0ceb0a99ad561e100aaba2a492b7c--modern-artwork-modern-art-paintings.jpg",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBu3-4OqSiUIAmgu4Az3N3xHu_HGL-1MSDpJlRWI9Sok8Dq9mewgf2oGz_s0gHBBl9dQQ&usqp=CAU",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0gikHN9nygInMF15vKEy_pW2yfC5LR9rEa_bweLRQFdiA5yiYdXGr6akWRQufKAfZjrY&usqp=CAU",
-            "https://i.pinimg.com/originals/69/12/a8/6912a8786fef0ec96c562363a0cdecab.jpg",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98ck8lG_uYxiVcFcF_cbm7hR5uHwgVFTrMrLkBvWA95YJ5Ml1e5TLBuKl8ep1CzPCB54&usqp=CAU"
-        ]
-    },
-    {
-        "Id": "4",
-        "artistName": "venkat4",
-        "artistProfilePicUrl": "https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?k=6&m=1179420343&s=612x612&w=0&h=y7GrwxrbixTWvJfaeiu55rWXMGYr6oP583uzJJ4-Kis=",
-        "artworkTitle": "Lion",
+        "Artdescription": "hi how are you2",
+        "imagedescription": "ddddddddddddddd",
+        "Artimg": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
+
+    }, {
+        "Id": 3,
+        "Artistname": "Malkiel3",
+        "Creator": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg",
+        "email": "malkiel3@gmail.com",
+        "Artdescription": "hi how are you3",
+        "imagedescription": "ddddddddddddddd",
+        "Artimg": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
+
+    }, {
+        "Id": 4,
+        "Artistname": "venkat4",
+        "Creator": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg",
         "email": "venkat4@gmail.com",
-        "price": "100",
-        "artworkUrl": "https://images.all-free-download.com/images/graphicthumb/lion_africa_sleepy_lion_215036.jpg",
-        "artworkdDescription": "Typically, the lion inhabits grasslands and savannas, but is absent in dense forests. It is usually more diurnal than other wild cats, but when persecuted, it adapts to being active at night and at twilight. During the Neolithic period, the lion ranged throughout Africa, Southeast Europe, and Western and South Asia, but it has been reduced to fragmented populations in sub-Saharan Africa and one population in western India. It has been listed as Vulnerable on the IUCN Red List since 1996 because populations in African countries have declined by about 43% since the early 1990s. Lion populations are untenable outside designated protected areas. Although the cause of the decline is not fully understood, habitat loss and conflicts with humans are the greatest causes for concern",
-        "slogan": "IRONMAN",
-        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
-        "pictures": [
-            "https://images.all-free-download.com/images/graphicthumb/lion_africa_sleepy_lion_215036.jpg",
-            "https://images.all-free-download.com/images/graphicthumb/resting_lion_190754.jpg",
-            "https://images.all-free-download.com/images/graphicthumb/yawning_white_lion_513993.jpg",
-            "https://images.all-free-download.com/images/graphiclarge/beautiful_lion_dad_513991.jpg",
-            "https://images.all-free-download.com/images/graphiclarge/lion_selfie_514283.jpg"
-        ]
-    },
-    {
-        "Id": "5",
-        "artistName": "venkat5",
-        "artistProfilePicUrl": "https://images.squarespace-cdn.com/content/v1/571114d145bf21108e6acc6f/1598559762695-NBTY0TCW2GPCINKXAY6T/ke17ZwdGBToddI8pDm48kK60W-ob1oA2Fm-j4E_9NQB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0kD6Ec8Uq9YczfrzwR7e2Mh5VMMOxnTbph8FXiclivDQnof69TlCeE0rAhj6HUpXkw/aveda+men.jpg?format=2500w",
-        "artworkTitle": "photography",
-        "email": "venkat5@gmail.com",
-        "price": "1000",
-        "artworkUrl": "https://www.designmantic.com/blog/wp-content/uploads/2020/01/Photography-Logos-1280x720.png",
-        "artworkdDescription": "Photography is the art, application, and practice of creating durable images by recording light, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film. It is employed in many fields of science, manufacturing (e.g., photolithography), and business, as well as its more direct uses for art, film and video production, recreational purposes, hobby, and mass communication",
-        "slogan": "Bat-man",
-        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
-        "pictures": [
-            "https://www.designmantic.com/blog/wp-content/uploads/2020/01/Photography-Logos-1280x720.png",
-            "https://swall.teahub.io/photos/small/203-2033728_photo-wallpaper-colors-design-camera-abstraction-hd-image.jpg",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-V3pbDNBfvWq899sYvRpd30UvW9gL6KCNY9jN1l2TbEh9OijwIwEt4etMbVO-P0ZhDVk&usqp=CAU",
-            "https://i.ytimg.com/vi/ejNIow5DPUM/maxresdefault.jpg",
-            "https://i.ytimg.com/vi/xEmgaOvvv0M/maxresdefault.jpg"
-        ]
+        "Artdescription": "hi how are you4",
+        "imagedescription": "ddddddddddddddd",
+        "Artimg": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
+
+    }, {
+
+        "Id": 5,
+        "Artistname": "malkiel5",
+        "Creator": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg",
+        "email": "malkiel5@gmail.com",
+        "Artdescription": "hi how are you5",
+        "imagedescription": "ddddddddddddddd",
+        "Artimg": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
+    }, {
+        "Id": 6,
+        "Artistname": "venkat6",
+        "Creator": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg",
+        "email": "venkat6@gmail.com",
+        "Artdescription": "hi how are you6",
+        "imagedescription": "ddddddddddddddd",
+        "Artimg": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
+    }, {
+        "Id": 7,
+        "Artistname": "malkiel7",
+        "Creator": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg",
+        "email": "malkiel7@gmail.com",
+        "Artdescription": "hi how are you7",
+        "imagedescription": "ddddddddddddddd",
+        "Artimg": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
+    }, {
+        "Id": 8,
+        "Artistname": "venkat8",
+        "Creator": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg",
+        "email": "venkat8@gmail.com",
+        "Artdescription": "hi how are you8",
+        "imagedescription": "ddddddddddddddd",
+        "Artimg": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
+    }, {
+
+        "Id": 9,
+        "Artistname": "malkiel9",
+        "Creator": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg",
+        "email": "malkiel@gmail.com",
+        "Artdescription": "hi how are you9",
+        "imagedescription": "ddddddddddddddd",
+        "Artimg": "https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg"
     }
+
 ]

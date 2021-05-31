@@ -1,0 +1,99 @@
+[{
+        "Id": "1",
+        "artistName": "Malkiel",
+        "type": "toppaid",
+        "artistProfilePicUrl": "https://images.unsplash.com/photo-1523913507744-1970fd11e9ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+        "artworkTitle": "artwork1",
+        "email": "venkat1@gmail.com",
+        "price": "120",
+        "artworkUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuPA5TR0BczAgWcFj6AT_-49lncFqS_DbRzg&usqp=CAU",
+        "artworkdDescription": "As you know, the visual characteristics of artwork are lines, colors, values, shapes, textures, space, and movement. To describe them, you must think beyond straight or curved, red or orange, light or dark, round or square, striped or polka dot, shallow or deep, and small or large.",
+        "slogan": "Iron-Man",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuPA5TR0BczAgWcFj6AT_-49lncFqS_DbRzg&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ6NWouQFQrbZbLEv9RDYLOSPC5oYSYUDr776JRxG8LMMhsq6XuU4OMSVWgWkv6x3xUUM&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH9fPm_9f5jkWnxV7L9ITdgJfU_UaTt6X9-O1Y5Ql3zT0v46LxTOs_EiemYtgUeRaaAfE&usqp=CAU",
+            "https://apicms.mstar.com.my/uploads/images/2020/08/31/840803.JPG",
+            "https://1.bp.blogspot.com/-_GLvt6_ZjPQ/Xuefs6e8YiI/AAAAAAAAG60/VFRznGqj9nE_Vur7otW3I4yGEbmvTRMgwCK4BGAsYHg/d/Lukisan%2BPotret%2BMuhammad%2BEzzwan%2B%25287%2529.jpg"
+        ]
+    },
+    {
+        "Id": "1",
+        "artistName": "Malkiel",
+        "type": "craft",
+        "artistProfilePicUrl": "https://images.unsplash.com/photo-1523913507744-1970fd11e9ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+        "artworkTitle": "craftartwork",
+        "email": "malkiel@gmail.com",
+        "price": "10",
+        "artworkUrl": "https://i.ytimg.com/vi/0jDCK_RHQuI/maxresdefault.jpg",
+        "artworkdDescription": "The Arts and Crafts movement was an international trend in the decorative and fine arts that developed earliest and most fully in the British Isles[1] and subsequently spread across the British Empire and to the rest of Europe and Americ",
+        "slogan": "ironman",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": ["https://i.ytimg.com/vi/0jDCK_RHQuI/maxresdefault.jpg", "https://i.pinimg.com/originals/33/62/6f/33626f12f09b7c8e498e0577ebc51629.jpg", "https://i.pinimg.com/originals/58/05/94/580594d43511bb60900f6dd47775df4b.jpg", "https://i.pinimg.com/originals/2c/05/d2/2c05d22489af21f4b4192025fc15f809.jpg"]
+    },
+    {
+        "Id": "2",
+        "artistName": "venkat2",
+        "type": "digital",
+        "artistProfilePicUrl": "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "artworkTitle": "DigitalArtwork",
+        "email": "venkat2@gmail.com",
+        "price": "100",
+        "artworkUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtpHj4v7RnlPxn1VWa2deECKw0b3Y_JOBjg08EiUuKv7g7RRcSx9jCfMxrrNkPOCdo6gA&usqp=CAU",
+        "artworkdDescription": "The Arts and Crafts movement was an international trend in the decorative and fine arts that developed earliest and most fully in the British Isles[1] and subsequently spread across the British Empire and to the rest of Europe and Americ",
+        "slogan": "hulk",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtpHj4v7RnlPxn1VWa2deECKw0b3Y_JOBjg08EiUuKv7g7RRcSx9jCfMxrrNkPOCdo6gA&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcMF525LQQLEgUrUbt7SF886lbJAtSB2jC3mbCWr1Ri2S2nm95rKtrIg8zkKWAM5fouZ4&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1zktd3QffEKI26UHtgr2a-rCtdR-3Fc45p7-NJ4R3HPgNFlcNtgY89dD69yErr6sEqkk&usqp=CAU"]
+    },
+    {
+        "Id": "3",
+        "artistName": "Malkiel3",
+        "type": "photography",
+        "artistProfilePicUrl": "https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?size=626&ext=jpg",
+        "artworkTitle": "photography3",
+        "email": "venkat3@gmail.com",
+        "price": "800",
+        "artworkUrl": "https://wallpapercave.com/wp/kjh8eTP.jpg",
+        "artworkdDescription": "Fine-art photography is photography created in line with the vision of the photographer as artist, using photography as a medium for creative expression. The goal of fine-art photography is to express an idea, a message, or an emotion. This stands in contrast to representational photography, such as photojournalism, which provides a documentary visual account of specific subjects and events, literally representing objective reality rather than the subjective intent of the photographer; and commercial photography, the primary focus of which is to advertise products, or services.",
+        "slogan": "Hulk",
+        "facebookPageUrl": "https://www.facebook.com/professionalphotographersclub/",
+        "pictures": [
+            "https://wallpapercave.com/wp/kjh8eTP.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRumY2QFn4HnXx1hUQkHst63M7jd2ZV-htYyw&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvw_Q81xobaJrVahrnqobcN6b9ycbND370H6AERo5PQss0RYHhIfDbe9gKMs0XBAZn-co&usqp=CAU"
+        ]
+    },
+    {
+        "Id": "4",
+        "artistName": "venkat4",
+        "type": "drawing",
+        "artistProfilePicUrl": "https://image.freepik.com/free-photo/handsome-good-looking-indian-man-sitting-chair-relaxing-isolated-white-wall_231208-2649.jpg",
+        "artworkTitle": "digitalartwork",
+        "email": "venkat4@gmail.com",
+        "price": "290",
+        "artworkUrl": "https://image.shutterstock.com/z/stock-photo-stock-realistic-raster-headphones-music-sketch-illustration-171709016.jpg",
+        "artworkdDescription": "Drawing is a form of visual art in which an artist uses instruments to mark paper or other two-dimensional surface. Drawing instruments include graphite pencils, pen and ink, various kinds of paints, inked brushes, colored pencils, crayons, charcoal, chalk, pastels, erasers, markers, styluses, and metals (such as silverpoint). Digital drawing is the act of using a computer to draw. Common methods of digital drawing include a stylus or finger on a touchscreen device, stylus- or finger-to-touchpad, or in some cases, a mouse. There are many digital art programs and devices.",
+        "slogan": "bat-man",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": ["https://image.shutterstock.com/z/stock-photo-stock-realistic-raster-headphones-music-sketch-illustration-171709016.jpg"]
+    },
+    {
+        "Id": "5",
+        "artistName": "malkiel5",
+        "type": "sculpture",
+        "artistProfilePicUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyUR9yR-oN8xgTEKxnWv3jfuWoghMx4JUnAdJiCc2qZFGoHSomq0tYlTQgefp9wUUTZRY&usqp=CAU",
+        "artworkTitle": "sculpture5",
+        "email": "venkat5@gmail.com",
+        "price": "3001",
+        "artworkUrl": "https://cdn.britannica.com/93/2093-004-21AB275C/Hagar-marble-sculpture-Edmonia-Lewis-Washington-DC-1875.jpg",
+        "artworkdDescription": "",
+        "slogan": "captain america",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": [
+            "https://5.imimg.com/data5/QL/AR/LW/SELLER-58661806/a309192c7487ef8d32db79d98cd8caf2-wall-sculptures-art-sculpture-500x500.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqxMOnyF4bHkwcK_HQsyoPWOqwgJz3pg96uD4ryegIXSk9CK_neIfKbpSlqAFjnS1XU_o&usqp=CAU",
+            "https://cdn.britannica.com/93/2093-004-21AB275C/Hagar-marble-sculpture-Edmonia-Lewis-Washington-DC-1875.jpg"
+        ]
+    }
+]

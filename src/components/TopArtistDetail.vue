@@ -54,9 +54,19 @@
       </div>
     </b-card>
     <b-container>
+      <!-- <b-input-group>
+        <b-form-input
+          v-model="search"
+          type="text"
+          placeholder="search for artwork by title"
+        ></b-form-input>
+      </b-input-group> -->
+      <br />
       <b-row cols-md="4">
         <b-col
-          v-for="(relatedArtwork, index) in displayRelatedArtworkByArtist.artwork"
+          v-for="(
+            relatedArtwork, index
+          ) in displayRelatedArtworkByArtist.artwork"
           :key="relatedArtwork.id"
         >
           <b-card
@@ -90,7 +100,10 @@
                 block
                 variant="outline-primary"
                 v-bind:href="
-                  '/ArtworkDetails?' + relatedArtwork.type + '=' + relatedArtwork.id
+                  '/ArtworkDetails?' +
+                  relatedArtwork.type +
+                  '=' +
+                  relatedArtwork.id
                 "
                 >View</b-button
               >
@@ -115,6 +128,11 @@ export default {
     Navbar,
     Footer,
   },
+  data() {
+    return {
+      search: "",
+    };
+  },
 
   mixins: [artist],
   computed: {
@@ -122,7 +140,7 @@ export default {
       this.$store.state.relatedArtwork;
       return this.$store.state.relatedArtwork;
     },
-   
+
     displayRelatedArtworkByArtist() {
       var artworkObj;
       artworkObj = this.$store.state.relatedArtwork.find((obj) =>
@@ -130,6 +148,7 @@ export default {
       );
       return artworkObj;
     },
+   
   },
   created() {
     this.loading = true;

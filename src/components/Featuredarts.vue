@@ -54,7 +54,7 @@
                       v-bind:href="
                         '/ArtworkDetails?featuredArtWorkId=' + featuredArt.Id
                       "
-                      variant="outline-primary"
+                     variant="dark"
                       >View</b-button
                     >
                   </div>

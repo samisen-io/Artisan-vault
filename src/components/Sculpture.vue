@@ -34,8 +34,6 @@
                     style="max-width: 25rem"
                   ></b-avatar>
 
-                  
-
                   <hr style="padding: 0" />
 
                   <b-card-text>
@@ -44,7 +42,9 @@
 
                   <b-button
                     block
-                    v-bind:href="'/ArtworkDetails?sculptureArtworkId=' + sculpture.Id"
+                    v-bind:href="
+                      '/ArtworkDetails?sculptureArtworkId=' + sculpture.Id
+                    "
                     variant="outline-primary"
                     >View</b-button
                   >
@@ -56,7 +56,7 @@
       </center>
     </b-container>
     <br />
-   
+
     <Footer />
   </div>
 </template>

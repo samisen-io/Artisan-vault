@@ -23,10 +23,12 @@
               </ul>
             </div>
             <div class="col-sm">
+              <center>
               <h3>Company Name</h3>
-              <!-- <p>
-               
-              </p> -->
+              <b>
+               SAMISEN DISTRIBUTED TECHNOLOGIES
+              </b> 
+              </center>
             </div>
           </div>
           <p class="copyright">Samisen © 2021</p>

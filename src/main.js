@@ -13,6 +13,11 @@ import Carousel3d from 'vue-carousel-3d';
 import VueSlickCarousel from 'vue-slick-carousel'
 // optional style for arrows & dots
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+import VueGlide from 'vue-glide-js'
+import 'vue-glide-js/dist/vue-glide.css'
+import 'owl.carousel/dist/assets/owl.carousel.css'
+import 'owl.carousel'
+Vue.use(VueGlide)
 Vue.use(VueSlickCarousel);
 Vue.use(Carousel3d);
 Vue.prototype.$axios = axios;
@@ -33,9 +38,6 @@ const firebaseConfig = {
     measurementId: "G-6K3ZB6CGZB"
 };
 firebase.initializeApp(firebaseConfig);
-
-
-
 new Vue({
     router,
     store,

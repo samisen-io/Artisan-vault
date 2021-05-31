@@ -1,0 +1,69 @@
+[{
+        "Id": "1",
+        "artistName": "Malkiel",
+        "artistProfilePicUrl": "https://images.unsplash.com/photo-1523913507744-1970fd11e9ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+        "artworkTitle": "craftartwork",
+        "email": "malkiel@gmail.com",
+        "price": "10",
+        "artworkUrl": "https://i.ytimg.com/vi/0jDCK_RHQuI/maxresdefault.jpg",
+        "artworkdDescription": "The Arts and Crafts movement was an international trend in the decorative and fine arts that developed earliest and most fully in the British Isles[1] and subsequently spread across the British Empire and to the rest of Europe and Americ",
+        "slogan": "ironman",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": ["https://i.ytimg.com/vi/0jDCK_RHQuI/maxresdefault.jpg", "https://i.pinimg.com/originals/33/62/6f/33626f12f09b7c8e498e0577ebc51629.jpg", "https://i.pinimg.com/originals/58/05/94/580594d43511bb60900f6dd47775df4b.jpg", "https://i.pinimg.com/originals/2c/05/d2/2c05d22489af21f4b4192025fc15f809.jpg"]
+    }, {
+        "Id": "2",
+        "artistName": "venkat2",
+        "artistProfilePicUrl": "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+
+        "artworkTitle": "craftartwork",
+        "email": "venkat2@gmail.com",
+        "price": "100",
+        "artworkUrl": "https://i.pinimg.com/originals/cb/2d/df/cb2ddfbc1e9feb512c4f4a70f64b18b1.jpg",
+        "artworkdDescription": "The Arts and Crafts movement was an international trend in the decorative and fine arts that developed earliest and most fully in the British Isles[1] and subsequently spread across the British Empire and to the rest of Europe and Americ",
+        "slogan": "hulk",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": ["https://i.pinimg.com/originals/cb/2d/df/cb2ddfbc1e9feb512c4f4a70f64b18b1.jpg", "https://i.pinimg.com/originals/9d/a1/c4/9da1c45b9dbb6c41aa2740947cbaaa56.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnW_La8DSOm1RiAo3VGOPtkz95UzXewN6ZTDQ9MxmXJuoM504vrsf77useG2yvQSJ_wNM&usqp=CAU"]
+    },
+    {
+        "Id": "3",
+        "artistName": "Malkiel3",
+        "artistProfilePicUrl": "https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?size=626&ext=jpg",
+
+        "artworkTitle": "craftartwork",
+        "email": "Malkiel3@gmail.com",
+        "price": "180",
+        "artworkUrl": "https://www.arabnews.com/sites/default/files/styles/n_670_395/public/2020/09/04/2256441-1489572748.jpg?itok=3tkKaYOQ",
+        "artworkdDescription": "The Arts and Crafts movement was an international trend in the decorative and fine arts that developed earliest and most fully in the British Isles[1] and subsequently spread across the British Empire and to the rest of Europe and Americ",
+        "slogan": "bat-man",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": ["https://www.arabnews.com/sites/default/files/styles/n_670_395/public/2020/09/04/2256441-1489572748.jpg?itok=3tkKaYOQ", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4xX0s5vCuUBjQNgEd1v6Tyu87jgrlHGbpkj9lNlQtVvSSJRrQYRhLV9nJ00QRCzsMRB0&usqp=CAU", "https://static.boredpanda.com/blog/wp-content/uploads/2011/07/pod0036-leaf-cutout-lorenzo-duran.jpg"]
+    },
+
+    {
+        "Id": "4",
+        "artistName": "venkat4",
+        "artistProfilePicUrl": "https://image.freepik.com/free-photo/handsome-good-looking-indian-man-sitting-chair-relaxing-isolated-white-wall_231208-2649.jpg",
+        "artworkTitle": "craftartwork",
+        "email": "venkat4@gmail.com",
+        "price": "290",
+        "artworkUrl": "https://www.goodnewsnetwork.org/wp-content/uploads/2021/01/leaf-art-feature-photo-swns.jpg",
+        "artworkdDescription": "The Arts and Crafts movement was an international trend in the decorative and fine arts that developed earliest and most fully in the British Isles[1] and subsequently spread across the British Empire and to the rest of Europe and Americ",
+        "slogan": "bat-man",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": ["https://www.goodnewsnetwork.org/wp-content/uploads/2021/01/leaf-art-feature-photo-swns.jpg"]
+    },
+    {
+        "Id": "5",
+        "artistName": "Malkiel5",
+        "artistProfilePicUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyUR9yR-oN8xgTEKxnWv3jfuWoghMx4JUnAdJiCc2qZFGoHSomq0tYlTQgefp9wUUTZRY&usqp=CAU",
+        "artworkTitle": "craftartwork",
+        "email": "Malkiel5@gmail.com",
+        "price": "390",
+        "artworkUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7v2gTVlvgTf-lstrE7Uxgo_-VPDHA1zKTBuL9l903GSqgh1x7BsiO0QcU74BmDa7zoOk&usqp=CAU",
+        "artworkdDescription": "The Arts and Crafts movement was an international trend in the decorative and fine arts that developed earliest and most fully in the British Isles[1] and subsequently spread across the British Empire and to the rest of Europe and Americ",
+        "slogan": "bat-man",
+        "facebookPageUrl": "https://www.facebook.com/woodlandadventure/",
+        "pictures": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7v2gTVlvgTf-lstrE7Uxgo_-VPDHA1zKTBuL9l903GSqgh1x7BsiO0QcU74BmDa7zoOk&usqp=CAU"]
+    }
+
+]

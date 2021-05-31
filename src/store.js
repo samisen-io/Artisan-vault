@@ -14,10 +14,18 @@ export default new Vuex.Store({
         featureds: [],
         highestPaids: [],
         topArtists: [],
-        example: [],
-        relatedArtwork: []
+        relatedArtwork: [],
+        highlightedCards: [],
+        example: []
     },
     mutations: {
+        setexample(state, example) {
+            state.example = example;
+        },
+        sethighlightedCards(state, highlightedCards) {
+            state.highlightedCards = highlightedCards;
+        },
+
         setrelatedArtwork(state, relatedArtwork) {
             state.relatedArtwork = relatedArtwork;
         },
@@ -50,6 +58,13 @@ export default new Vuex.Store({
     },
 
     actions: {
+        fetchexample({ commit }) {
+            return client.fetchexample().then(example => commit('setexample', example))
+        },
+        fetchhighlightedCards({ commit }) {
+            return client.fetchhighlightedCards().then(highlightedCards => commit('sethighlightedCards', highlightedCards))
+        },
+
         fetchrelatedArtwork({ commit }) {
             return client.fetchrelatedArtwork().then(relatedArtwork => commit('setrelatedArtwork', relatedArtwork))
         },

@@ -3,10 +3,11 @@
     <b-container>
       <div>
         <b-card no-body class="overflow-hidden" border-variant="0">
-          <b-row no-gutters>
+          <b-row >
+            
             <b-col md="7">
               <b-card-img
-                src="https://cdn.kinsights.com/cache/ba/0b/ba0b91b435ddd6f3d829524869cfb943.png"
+                :src="craft.artworkUrl"
                 alt="Image"
                 class="rounded-0"
                 img-alt="image"
@@ -19,10 +20,7 @@
                 <br />
                 <b-row>
                   <b-col col md="4">
-                    <b-avatar
-                      size="5rem"
-                      src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mh-chris-hemsworth-attends-the-tag-heuer-museum-in-motion-news-photo-968210608-1554829603.jpg"
-                    >
+                    <b-avatar size="5rem" :src="craft.artistProfilePicUrl">
                     </b-avatar>
                   </b-col>
                   <b-col col md="6">
@@ -30,34 +28,38 @@
                     <a
                       href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man"
                     >
-                      <h3>@venkat</h3></a
+                      <h3>@{{ craft.artistName }}</h3></a
                     >
                   </b-col>
                 </b-row>
                 <br />
                 <b-card-text>
                   <br />
-                  <h1><p class="font-weight-bold">venkat</p></h1>
+                  <h1>
+                    <p class="font-weight-bold">{{ craft.artistName }}</p>
+                  </h1>
                 </b-card-text>
                 <b-card-text>
                   <br />
                   <h4>PhotoPrice</h4>
-                  <h3>5000 Rs</h3>
+                  <h3>{{ craft.price }} Rs</h3>
                 </b-card-text>
                 <b-card-text>
                   <br />
 
                   <b-row>
-                    <b-col col md="3">
+                    <b-col>
                       <b-card-text>
-                        <b-button href="/Artwork" variant="outline-dark"
+                        <b-button  variant="outline-dark"
                           >Place a bid</b-button
                         >
                       </b-card-text>
                     </b-col>
-                    <b-col col>
+                    <b-col col md="8">
                       <b-card-text>
-                        <b-button href="/Artwork" variant="outline-dark"
+                        <b-button 
+                          v-bind:href="'/ArtworkDetails?craftArtworkId=' + craft.Id"
+                       variant="outline-dark"
                           >View artwork</b-button
                         >
                       </b-card-text>
@@ -74,7 +76,22 @@
 </template>
 
 <script>
-export default {};
+export default {
+  computed: {
+    craft() {
+      var artworkObj;
+      artworkObj = this.$store.state.highlightedCards.find((obj) =>
+        obj.type.toLowerCase().includes("craft")
+      );
+      return artworkObj;
+    },
+  },
+
+  created() {
+    this.loading = true;
+    this.$store.dispatch("fetchhighlightedCards");
+  },
+};
 </script>
 
 <style>
