@@ -3,8 +3,7 @@
     <b-container>
       <div>
         <b-card no-body class="overflow-hidden" border-variant="0">
-          <b-row >
-            
+          <b-row>
             <b-col md="7">
               <b-card-img
                 :src="craft.artworkUrl"
@@ -26,7 +25,7 @@
                   <b-col col md="6">
                     <br />
                     <a
-                      href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man"
+                      :href="craft.facebookPageUrl" target="_blank"
                     >
                       <h3>@{{ craft.artistName }}</h3></a
                     >
@@ -50,16 +49,16 @@
                   <b-row>
                     <b-col>
                       <b-card-text>
-                        <b-button  variant="outline-dark"
-                          >Place a bid</b-button
-                        >
+                        <b-button variant="outline-dark">Place a bid</b-button>
                       </b-card-text>
                     </b-col>
                     <b-col col md="8">
                       <b-card-text>
-                        <b-button 
-                          v-bind:href="'/ArtworkDetails?craftArtworkId=' + craft.Id"
-                       variant="outline-dark"
+                        <b-button
+                          v-bind:href="
+                            '/ArtworkDetails?craftArtworkId=' + craft.Id
+                          "
+                          variant="outline-dark"
                           >View artwork</b-button
                         >
                       </b-card-text>

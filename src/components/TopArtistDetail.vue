@@ -44,6 +44,7 @@
           </b-col>
         </b-row>
       </b-container>
+      <!-- Related Artwork by an artist -->
       <div class="section-title">
         <b-row style="margin: 3px">
           <b-col col md="10">
@@ -54,19 +55,17 @@
       </div>
     </b-card>
     <b-container>
-      <!-- <b-input-group>
+      <b-input-group>
         <b-form-input
           v-model="search"
           type="text"
           placeholder="search for artwork by title"
         ></b-form-input>
-      </b-input-group> -->
+      </b-input-group>
       <br />
       <b-row cols-md="4">
         <b-col
-          v-for="(
-            relatedArtwork, index
-          ) in displayRelatedArtworkByArtist.artwork"
+          v-for="(relatedArtwork, index) in filterFeaturedArtsByTitle.artwork"
           :key="relatedArtwork.id"
         >
           <b-card
@@ -79,7 +78,7 @@
           >
             <div class="mb-1">
               <b-avatar
-                :src="displayRelatedArtworkByArtist.artistProfilePicUrl"
+                :src="filterFeaturedArtsByTitle.artistProfilePicUrl"
                 size="4rem"
                 class="text-center"
                 style="max-width: 25rem"
@@ -148,7 +147,22 @@ export default {
       );
       return artworkObj;
     },
-   
+
+    filterFeaturedArtsByTitle() {
+      if (this.search) {
+        var artworkObj;
+        artworkObj = this.$store.state.relatedArtwork.filter((obj) =>
+          obj.ArtistId.toLowerCase().includes(this.id.toLowerCase())
+        );
+        return artworkObj.filter((obj) => {
+          return obj.artwork.artworkTitle[0]
+            .toLowerCase()
+            .includes(this.search.toLowerCase());
+        });
+      } else {
+        return this.displayRelatedArtworkByArtist;
+      }
+    },
   },
   created() {
     this.loading = true;

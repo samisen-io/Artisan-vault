@@ -8,7 +8,7 @@ import featureds from './data/featured.json'
 import topArtists from './data/topartist.json'
 import highlightedCards from './data/highlightedCards.json'
 import relatedArtwork from './data/RelatedArtwork.json'
-import example from './data/example.json'
+
 const fetch = (mockData, time = 0) => {
     return new Promise((resolve) => {
         setTimeout(() => {
@@ -18,9 +18,7 @@ const fetch = (mockData, time = 0) => {
 }
 
 export default {
-    fetchexample() {
-        return fetch(example, 100)
-    },
+
 
     fetchhighlightedCards() {
         return fetch(highlightedCards, 100)

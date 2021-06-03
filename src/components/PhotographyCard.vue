@@ -27,7 +27,7 @@
                   <b-col col md="6">
                     <br />
                     <a
-                      href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man"
+                    :href="photography.facebookPageUrl" target="_blank"
                     >
                       <h3>@{{ photography.artistName }}</h3></a
                     >

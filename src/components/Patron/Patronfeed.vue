@@ -1,7 +1,7 @@
 <template>
   <div>
     <br />
-        <h4 class="display-4" style=" padding-right:75%;">Artwork</h4>
+        <h4 class="display-4" style=" padding-right:75%;">Feed</h4>
     <hr />
     <br />
     <b-container>

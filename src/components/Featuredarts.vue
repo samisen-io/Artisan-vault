@@ -15,9 +15,6 @@
         </b-row>
       </div>
       <b-container>
-        <b-row>
-          <b-col md="12" class="my-1"> </b-col>
-        </b-row>
         <center>
           <VueSlickCarousel v-bind="settings">
             <b-row
@@ -54,7 +51,7 @@
                       v-bind:href="
                         '/ArtworkDetails?featuredArtWorkId=' + featuredArt.Id
                       "
-                     variant="dark"
+                      variant="outline-primary"
                       >View</b-button
                     >
                   </div>

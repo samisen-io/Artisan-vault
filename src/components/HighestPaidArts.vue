@@ -16,9 +16,7 @@
         </b-row>
       </div>
       <b-container>
-        <b-row>
-          <b-col md="12" class="my-1"> </b-col>
-        </b-row>
+        
         <center>
           <VueSlickCarousel v-bind="settings">
             <b-row v-for="highestPaidArt in getAllhighestPaidArts" :key="highestPaidArt.id">

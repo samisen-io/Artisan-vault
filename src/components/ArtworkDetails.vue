@@ -5,6 +5,9 @@
     <navbar />
     <br />
     <Carousel3d />
+
+  
+    
     <br />
     <b-container>
       <h4 class="display-4">{{ artwork.artistName }}</h4>
@@ -116,6 +119,7 @@ export default {
     Footer,
   },
   mixins: [artwork],
+
 };
 </script>
 <style>

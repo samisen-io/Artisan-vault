@@ -17,6 +17,9 @@ import VueGlide from 'vue-glide-js'
 import 'vue-glide-js/dist/vue-glide.css'
 import 'owl.carousel/dist/assets/owl.carousel.css'
 import 'owl.carousel'
+import VueSocialSharing from 'vue-social-sharing'
+
+Vue.use(VueSocialSharing);
 Vue.use(VueGlide)
 Vue.use(VueSlickCarousel);
 Vue.use(Carousel3d);

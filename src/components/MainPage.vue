@@ -28,7 +28,7 @@ import Footer from "./Footer.vue";
 import MainPageCard from "./MainPageCard";
 import TopArtist from "../components/TopArtist";
 import FeaturedArts from "../components/FeaturedArts";
-import HighestPaidArts from "../components/HighestPaidArts"
+import HighestPaidArts from "../components/HighestPaidArts";
 
 export default {
   name: "Mainpage",
@@ -39,6 +39,13 @@ export default {
     TopArtist,
     FeaturedArts,
     HighestPaidArts,
+  },
+
+  created() {
+   
+    this.loading = true;
+    this.$store.dispatch("fetchFeatureds");
+    this.$store.state.featureds;
   },
 };
 </script>

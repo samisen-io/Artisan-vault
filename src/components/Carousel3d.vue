@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <p id="demo"></p>
+    
     <b-jumbotron bg-variant="dark" text-variant="white" border-variant="grey ">
       <div>
         <carousel-3d
@@ -8,11 +10,11 @@
           :autoplay="true"
           :autoplayTimeout="3500"
           :width="500"
-          :height="350"
+          :height="400"
         >
           <div v-for="(picture, index) in artwork.pictures" :key="picture">
             <slide :index="index">
-              <img :src="picture" :width="500" :height="370" />
+              <img :src="picture" :width="500" :height="400" />
             </slide>
           </div>
         </carousel-3d>
@@ -38,7 +40,7 @@
           <a
             v-bind:href="
               'https://api.addthis.com/oexchange/0.8/forward/whatsapp/offer?url=' +
-              currenturl
+              currentUrl
             "
             target="_blank"
             ><img
@@ -70,6 +72,11 @@ export default {
     Slide,
   },
   mixins: [artwork],
+  created: function () {
+    var currentUrl = window.location.pathname;
+
+    console.log(currentUrl);
+  },
 };
 </script>
 
@@ -91,6 +98,6 @@ export default {
 }
 
 .jumbotron {
-  height: 440px;
+  height: 490px;
 }
 </style>

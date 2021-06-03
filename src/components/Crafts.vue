@@ -15,7 +15,7 @@
       </b-row>
       <center>
         <VueSlickCarousel v-bind="settings">
-          <b-row v-for="craft in crafts" :key="craft.id">
+          <b-row v-for="craft in getAllcraftsArts" :key="craft.id">
             <b-col>
               <b-card
                 :img-src="craft.artworkUrl"
@@ -111,8 +111,9 @@ export default {
       },
     };
   },
+  
   computed: {
-    crafts() {
+    getAllcraftsArts() {
       return this.$store.state.crafts;
     },
   },

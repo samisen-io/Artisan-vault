@@ -26,45 +26,45 @@
                   </b-col>
                   <b-col col md="6">
                     <br />
-                    <a
-                      href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man"
-                    >
-                      <h3>@{{highestPaidArt.artistName}}</h3></a
+                    <a :href="highestPaidArt.facebookPageUrl" target="_blank">
+                      <h3>@{{ highestPaidArt.artistName }}</h3></a
                     >
                   </b-col>
                 </b-row>
                 <br />
                 <b-card-text>
                   <br />
-                  <h1><p class="font-weight-bold">{{highestPaidArt.artistName}}</p></h1>
+                  <h1>
+                    <p class="font-weight-bold">
+                      {{ highestPaidArt.artistName }}
+                    </p>
+                  </h1>
                 </b-card-text>
                 <b-card-text>
                   <br />
                   <h4>PhotoPrice</h4>
-                  <h3>{{highestPaidArt.price}} Rs</h3>
+                  <h3>{{ highestPaidArt.price }} Rs</h3>
                 </b-card-text>
                 <b-card-text>
                   <br />
 
                   <b-row>
-                    <b-col col >
+                    <b-col col>
                       <b-card-text>
-                        <b-button  variant="outline-dark"
-                          >Place a bid</b-button
-                        >
+                        <b-button variant="outline-dark">Place a bid</b-button>
                       </b-card-text>
                     </b-col>
                     <b-col col md="8">
-                     
                       <b-card-text>
                         <b-button
-                        v-bind:href="'/ArtworkDetails?highestPaidArtWorkId=' + highestPaidArt.Id"
-                                                 
+                          v-bind:href="
+                            '/ArtworkDetails?highestPaidArtWorkId=' +
+                            highestPaidArt.Id
+                          "
                           variant="outline-dark"
                           >View artwork</b-button
                         >
                       </b-card-text>
-                     
                     </b-col>
                   </b-row>
                 </b-card-text>
@@ -79,9 +79,10 @@
 
 <script>
 export default {
- computed: {
+  computed: {
     highestPaidArt() {
       var artworkObj;
+
       artworkObj = this.$store.state.highlightedCards.find((obj) =>
         obj.type.toLowerCase().includes("toppaid")
       );
@@ -93,7 +94,6 @@ export default {
     this.loading = true;
     this.$store.dispatch("fetchhighlightedCards");
   },
-
 };
 </script>
 

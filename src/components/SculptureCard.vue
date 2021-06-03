@@ -22,8 +22,9 @@
                   </b-col>
                   <b-col col md="6">
                     <br />
+                     
                     <a
-                      href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man"
+                      :href="sculpture.facebookPageUrl" target="_blank"
                     >
                       <h3>@{{sculpture.artistName}}</h3></a
                     >
